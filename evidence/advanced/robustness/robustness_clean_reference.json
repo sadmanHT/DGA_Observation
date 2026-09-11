@@ -1,0 +1,8 @@
+{
+  "accuracy": 0.9566666666666667,
+  "balanced_accuracy": 0.9034565986289431,
+  "macro_f1": 0.8971428631169127,
+  "weighted_f1": 0.9571211687821545,
+  "vectorized_feature_validation_max_abs_difference": 8.881784197001252e-16,
+  "interpretation": "Clean-trained 75% model evaluated under controlled test-time corruption; not field validation."
+}

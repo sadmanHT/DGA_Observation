@@ -1,0 +1,22 @@
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+
+# raw data is never redistributed
+data/raw/
+*.whl
+
+# generated runs
+runs/
+advanced_run/
+refinement_run/
+
+# LaTeX auxiliaries
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.blg
+paper/*.toc
+paper/*.synctex.gz

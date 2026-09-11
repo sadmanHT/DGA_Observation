@@ -1,0 +1,8 @@
+# For continuity with the canonical final_5fold model. Pin the rest after the first successful canonical advanced run.
+scikit-learn==1.9.0
+numpy>=2.0
+pandas>=2.2
+matplotlib>=3.8
+shap>=0.46
+scipy>=1.13
+joblib>=1.4

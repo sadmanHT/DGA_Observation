@@ -1,0 +1,985 @@
+horizon_percent,class_label,class_name,n_cases,feature,mean_abs_shap,family,gas
+50,1,Normal mode,731,H2_first,1.8666042352916798,endpoint_change,H2
+50,1,Normal mode,731,H2_last,2.123957893718138,endpoint_change,H2
+50,1,Normal mode,731,H2_mean,0.42555381240482937,statistical,H2
+50,1,Normal mode,731,H2_std,0.3615291137171655,statistical,H2
+50,1,Normal mode,731,H2_min,0.7916989580902627,statistical,H2
+50,1,Normal mode,731,H2_max,0.09956940119732087,statistical,H2
+50,1,Normal mode,731,H2_median,0.484301923811513,statistical,H2
+50,1,Normal mode,731,H2_q25,1.8741032403487725,statistical,H2
+50,1,Normal mode,731,H2_q75,0.06065247475549865,statistical,H2
+50,1,Normal mode,731,H2_delta,2.057253407830455,endpoint_change,H2
+50,1,Normal mode,731,H2_slope,1.5681907688229317,trend,H2
+50,1,Normal mode,731,H2_trend_r2,0.17702037364209014,trend,H2
+50,1,Normal mode,731,H2_mean_diff,2.057253407971992,local_dynamics,H2
+50,1,Normal mode,731,H2_std_diff,0.2888855714523238,local_dynamics,H2
+50,1,Normal mode,731,H2_max_abs_diff,0.3929061531403749,local_dynamics,H2
+50,1,Normal mode,731,H2_early_mean,0.17508226361061283,phase_shift,H2
+50,1,Normal mode,731,H2_late_mean,0.763735761488894,phase_shift,H2
+50,1,Normal mode,731,H2_late_minus_early,4.807505283029772,phase_shift,H2
+50,1,Normal mode,731,H2_positive_diff_fraction,0.03796870911647883,local_dynamics,H2
+50,1,Normal mode,731,CO_first,2.5367334537303114,endpoint_change,CO
+50,1,Normal mode,731,CO_last,3.0036323974024786,endpoint_change,CO
+50,1,Normal mode,731,CO_mean,0.18992208309033495,statistical,CO
+50,1,Normal mode,731,CO_std,0.9351550584045347,statistical,CO
+50,1,Normal mode,731,CO_min,1.7192412881403976,statistical,CO
+50,1,Normal mode,731,CO_max,4.651574471610718,statistical,CO
+50,1,Normal mode,731,CO_median,2.7869523896266415,statistical,CO
+50,1,Normal mode,731,CO_q25,2.17664178850722,statistical,CO
+50,1,Normal mode,731,CO_q75,1.3624677504923326,statistical,CO
+50,1,Normal mode,731,CO_delta,3.990090751731709,endpoint_change,CO
+50,1,Normal mode,731,CO_slope,0.49458797439986635,trend,CO
+50,1,Normal mode,731,CO_trend_r2,0.45873085786478884,trend,CO
+50,1,Normal mode,731,CO_mean_diff,3.9900907517227076,local_dynamics,CO
+50,1,Normal mode,731,CO_std_diff,0.1257928111442217,local_dynamics,CO
+50,1,Normal mode,731,CO_max_abs_diff,0.5938145653181639,local_dynamics,CO
+50,1,Normal mode,731,CO_early_mean,0.9126682425256148,phase_shift,CO
+50,1,Normal mode,731,CO_late_mean,1.58300454486999,phase_shift,CO
+50,1,Normal mode,731,CO_late_minus_early,6.248789030856303,phase_shift,CO
+50,1,Normal mode,731,CO_positive_diff_fraction,0.1339692268761539,local_dynamics,CO
+50,1,Normal mode,731,C2H4_first,1.6654496927041065,endpoint_change,C2H4
+50,1,Normal mode,731,C2H4_last,1.75321067361658,endpoint_change,C2H4
+50,1,Normal mode,731,C2H4_mean,0.928690481500524,statistical,C2H4
+50,1,Normal mode,731,C2H4_std,1.1134367128278717,statistical,C2H4
+50,1,Normal mode,731,C2H4_min,1.8696937496244335,statistical,C2H4
+50,1,Normal mode,731,C2H4_max,1.4518958711256904,statistical,C2H4
+50,1,Normal mode,731,C2H4_median,1.6679231651261042,statistical,C2H4
+50,1,Normal mode,731,C2H4_q25,1.793956859773949,statistical,C2H4
+50,1,Normal mode,731,C2H4_q75,1.2283416922746333,statistical,C2H4
+50,1,Normal mode,731,C2H4_delta,0.7579620385263965,endpoint_change,C2H4
+50,1,Normal mode,731,C2H4_slope,0.07066072892608885,trend,C2H4
+50,1,Normal mode,731,C2H4_trend_r2,0.23260536438093124,trend,C2H4
+50,1,Normal mode,731,C2H4_mean_diff,0.7579620384954169,local_dynamics,C2H4
+50,1,Normal mode,731,C2H4_std_diff,0.22926125017480484,local_dynamics,C2H4
+50,1,Normal mode,731,C2H4_max_abs_diff,0.14587635241973065,local_dynamics,C2H4
+50,1,Normal mode,731,C2H4_early_mean,0.73022834589167,phase_shift,C2H4
+50,1,Normal mode,731,C2H4_late_mean,0.7042121139399198,phase_shift,C2H4
+50,1,Normal mode,731,C2H4_late_minus_early,0.2249928909134632,phase_shift,C2H4
+50,1,Normal mode,731,C2H4_positive_diff_fraction,0.45770683095029274,local_dynamics,C2H4
+50,1,Normal mode,731,C2H2_first,0.5194017399633499,endpoint_change,C2H2
+50,1,Normal mode,731,C2H2_last,0.4765872657543799,endpoint_change,C2H2
+50,1,Normal mode,731,C2H2_mean,0.09341532707280015,statistical,C2H2
+50,1,Normal mode,731,C2H2_std,0.5528511875529422,statistical,C2H2
+50,1,Normal mode,731,C2H2_min,1.0924605265724867,statistical,C2H2
+50,1,Normal mode,731,C2H2_max,3.222212542949273,statistical,C2H2
+50,1,Normal mode,731,C2H2_median,0.31299368267809713,statistical,C2H2
+50,1,Normal mode,731,C2H2_q25,0.43972194682644056,statistical,C2H2
+50,1,Normal mode,731,C2H2_q75,0.49689533743310293,statistical,C2H2
+50,1,Normal mode,731,C2H2_delta,0.18925895439999096,endpoint_change,C2H2
+50,1,Normal mode,731,C2H2_slope,0.7971180443231447,trend,C2H2
+50,1,Normal mode,731,C2H2_trend_r2,0.1557176409273513,trend,C2H2
+50,1,Normal mode,731,C2H2_mean_diff,0.18925895439993284,local_dynamics,C2H2
+50,1,Normal mode,731,C2H2_std_diff,0.4061326327898449,local_dynamics,C2H2
+50,1,Normal mode,731,C2H2_max_abs_diff,0.7929307989844913,local_dynamics,C2H2
+50,1,Normal mode,731,C2H2_early_mean,0.22346514435913217,phase_shift,C2H2
+50,1,Normal mode,731,C2H2_late_mean,0.18732598070898307,phase_shift,C2H2
+50,1,Normal mode,731,C2H2_late_minus_early,0.258201105153994,phase_shift,C2H2
+50,1,Normal mode,731,C2H2_positive_diff_fraction,0.3186611547967284,local_dynamics,C2H2
+50,1,Normal mode,731,corr_H2_CO,0.39894869543839706,cross_gas_correlation,cross-gas
+50,1,Normal mode,731,corr_H2_C2H4,0.24266771068461407,cross_gas_correlation,cross-gas
+50,1,Normal mode,731,corr_H2_C2H2,0.05458463560664436,cross_gas_correlation,cross-gas
+50,1,Normal mode,731,corr_CO_C2H4,0.2222800686824021,cross_gas_correlation,cross-gas
+50,1,Normal mode,731,corr_CO_C2H2,0.19831847440839495,cross_gas_correlation,cross-gas
+50,1,Normal mode,731,corr_C2H4_C2H2,0.05461926817243311,cross_gas_correlation,cross-gas
+50,2,Partial discharge,38,H2_first,0.25151047395416837,endpoint_change,H2
+50,2,Partial discharge,38,H2_last,0.02795819195074449,endpoint_change,H2
+50,2,Partial discharge,38,H2_mean,0.5028652076950176,statistical,H2
+50,2,Partial discharge,38,H2_std,0.1777965176981048,statistical,H2
+50,2,Partial discharge,38,H2_min,0.507053650447604,statistical,H2
+50,2,Partial discharge,38,H2_max,0.35781342382091663,statistical,H2
+50,2,Partial discharge,38,H2_median,1.9513310187670805,statistical,H2
+50,2,Partial discharge,38,H2_q25,0.22963177883197902,statistical,H2
+50,2,Partial discharge,38,H2_q75,0.15219301612445213,statistical,H2
+50,2,Partial discharge,38,H2_delta,2.1357745587277166,endpoint_change,H2
+50,2,Partial discharge,38,H2_slope,1.3708149197760962,trend,H2
+50,2,Partial discharge,38,H2_trend_r2,0.6978436480815338,trend,H2
+50,2,Partial discharge,38,H2_mean_diff,2.1357745587012205,local_dynamics,H2
+50,2,Partial discharge,38,H2_std_diff,0.49616649280041986,local_dynamics,H2
+50,2,Partial discharge,38,H2_max_abs_diff,0.8791929621458999,local_dynamics,H2
+50,2,Partial discharge,38,H2_early_mean,0.1844767338759077,phase_shift,H2
+50,2,Partial discharge,38,H2_late_mean,0.3674561876574536,phase_shift,H2
+50,2,Partial discharge,38,H2_late_minus_early,1.5221402431457347,phase_shift,H2
+50,2,Partial discharge,38,H2_positive_diff_fraction,0.192192157341832,local_dynamics,H2
+50,2,Partial discharge,38,CO_first,3.6807641425281585,endpoint_change,CO
+50,2,Partial discharge,38,CO_last,4.673486172975354,endpoint_change,CO
+50,2,Partial discharge,38,CO_mean,2.5176329959483454,statistical,CO
+50,2,Partial discharge,38,CO_std,1.2197828836098497,statistical,CO
+50,2,Partial discharge,38,CO_min,2.6520920026424095,statistical,CO
+50,2,Partial discharge,38,CO_max,4.194864203079329,statistical,CO
+50,2,Partial discharge,38,CO_median,0.4313020389558236,statistical,CO
+50,2,Partial discharge,38,CO_q25,3.9577625650315635,statistical,CO
+50,2,Partial discharge,38,CO_q75,2.6397283636822206,statistical,CO
+50,2,Partial discharge,38,CO_delta,3.1665210307608946,endpoint_change,CO
+50,2,Partial discharge,38,CO_slope,1.6775181563954937,trend,CO
+50,2,Partial discharge,38,CO_trend_r2,0.7183901001892822,trend,CO
+50,2,Partial discharge,38,CO_mean_diff,3.1665210307617335,local_dynamics,CO
+50,2,Partial discharge,38,CO_std_diff,0.25713606540188855,local_dynamics,CO
+50,2,Partial discharge,38,CO_max_abs_diff,0.11317114860171673,local_dynamics,CO
+50,2,Partial discharge,38,CO_early_mean,4.07170435624824,phase_shift,CO
+50,2,Partial discharge,38,CO_late_mean,3.5850182283317285,phase_shift,CO
+50,2,Partial discharge,38,CO_late_minus_early,2.200270233746636,phase_shift,CO
+50,2,Partial discharge,38,CO_positive_diff_fraction,1.6012559288242243,local_dynamics,CO
+50,2,Partial discharge,38,C2H4_first,1.3029216295475141,endpoint_change,C2H4
+50,2,Partial discharge,38,C2H4_last,1.8123320080121825,endpoint_change,C2H4
+50,2,Partial discharge,38,C2H4_mean,0.6266757424745414,statistical,C2H4
+50,2,Partial discharge,38,C2H4_std,0.591841656417318,statistical,C2H4
+50,2,Partial discharge,38,C2H4_min,0.9224804484333227,statistical,C2H4
+50,2,Partial discharge,38,C2H4_max,1.8100125006512464,statistical,C2H4
+50,2,Partial discharge,38,C2H4_median,1.4269605959983285,statistical,C2H4
+50,2,Partial discharge,38,C2H4_q25,1.6689912492841992,statistical,C2H4
+50,2,Partial discharge,38,C2H4_q75,0.6739269567245916,statistical,C2H4
+50,2,Partial discharge,38,C2H4_delta,1.7908655400488758,endpoint_change,C2H4
+50,2,Partial discharge,38,C2H4_slope,1.4317721927927658,trend,C2H4
+50,2,Partial discharge,38,C2H4_trend_r2,0.10902263747499151,trend,C2H4
+50,2,Partial discharge,38,C2H4_mean_diff,1.7908655400539288,local_dynamics,C2H4
+50,2,Partial discharge,38,C2H4_std_diff,0.1536424329780839,local_dynamics,C2H4
+50,2,Partial discharge,38,C2H4_max_abs_diff,0.1265809051079375,local_dynamics,C2H4
+50,2,Partial discharge,38,C2H4_early_mean,1.4708329970783829,phase_shift,C2H4
+50,2,Partial discharge,38,C2H4_late_mean,1.2345429925535416,phase_shift,C2H4
+50,2,Partial discharge,38,C2H4_late_minus_early,1.0026566979722815,phase_shift,C2H4
+50,2,Partial discharge,38,C2H4_positive_diff_fraction,0.6213389785285376,local_dynamics,C2H4
+50,2,Partial discharge,38,C2H2_first,0.6434595615771458,endpoint_change,C2H2
+50,2,Partial discharge,38,C2H2_last,0.32044170185654297,endpoint_change,C2H2
+50,2,Partial discharge,38,C2H2_mean,1.184325271323127,statistical,C2H2
+50,2,Partial discharge,38,C2H2_std,1.4681712208706643,statistical,C2H2
+50,2,Partial discharge,38,C2H2_min,0.8591424052040275,statistical,C2H2
+50,2,Partial discharge,38,C2H2_max,0.9328393084302334,statistical,C2H2
+50,2,Partial discharge,38,C2H2_median,0.09838020817692812,statistical,C2H2
+50,2,Partial discharge,38,C2H2_q25,1.8830840983456194,statistical,C2H2
+50,2,Partial discharge,38,C2H2_q75,1.3156440491009664,statistical,C2H2
+50,2,Partial discharge,38,C2H2_delta,1.0954181549260926,endpoint_change,C2H2
+50,2,Partial discharge,38,C2H2_slope,2.14920677002243,trend,C2H2
+50,2,Partial discharge,38,C2H2_trend_r2,0.14146208475168245,trend,C2H2
+50,2,Partial discharge,38,C2H2_mean_diff,1.0954181549260238,local_dynamics,C2H2
+50,2,Partial discharge,38,C2H2_std_diff,3.606061972287188,local_dynamics,C2H2
+50,2,Partial discharge,38,C2H2_max_abs_diff,4.479952246369023,local_dynamics,C2H2
+50,2,Partial discharge,38,C2H2_early_mean,0.6401867057163407,phase_shift,C2H2
+50,2,Partial discharge,38,C2H2_late_mean,0.6411697659633014,phase_shift,C2H2
+50,2,Partial discharge,38,C2H2_late_minus_early,0.0013352851351660661,phase_shift,C2H2
+50,2,Partial discharge,38,C2H2_positive_diff_fraction,0.3514966585043136,local_dynamics,C2H2
+50,2,Partial discharge,38,corr_H2_CO,0.9330667126800883,cross_gas_correlation,cross-gas
+50,2,Partial discharge,38,corr_H2_C2H4,0.4119794308170337,cross_gas_correlation,cross-gas
+50,2,Partial discharge,38,corr_H2_C2H2,0.025679185240288744,cross_gas_correlation,cross-gas
+50,2,Partial discharge,38,corr_CO_C2H4,0.24713534307999172,cross_gas_correlation,cross-gas
+50,2,Partial discharge,38,corr_CO_C2H2,0.25395699073532657,cross_gas_correlation,cross-gas
+50,2,Partial discharge,38,corr_C2H4_C2H2,0.011261238643859507,cross_gas_correlation,cross-gas
+50,3,Low energy discharge,49,H2_first,1.9886567477861714,endpoint_change,H2
+50,3,Low energy discharge,49,H2_last,1.8309522663988675,endpoint_change,H2
+50,3,Low energy discharge,49,H2_mean,1.177994808523037,statistical,H2
+50,3,Low energy discharge,49,H2_std,0.07180400291718896,statistical,H2
+50,3,Low energy discharge,49,H2_min,2.173641539061616,statistical,H2
+50,3,Low energy discharge,49,H2_max,1.3863826534409782,statistical,H2
+50,3,Low energy discharge,49,H2_median,1.6987520425277987,statistical,H2
+50,3,Low energy discharge,49,H2_q25,2.0886449621069985,statistical,H2
+50,3,Low energy discharge,49,H2_q75,1.0014229003348734,statistical,H2
+50,3,Low energy discharge,49,H2_delta,0.4640066179393903,endpoint_change,H2
+50,3,Low energy discharge,49,H2_slope,2.002519145703771,trend,H2
+50,3,Low energy discharge,49,H2_trend_r2,0.2376500213642012,trend,H2
+50,3,Low energy discharge,49,H2_mean_diff,0.46400661786857944,local_dynamics,H2
+50,3,Low energy discharge,49,H2_std_diff,0.30531006577632436,local_dynamics,H2
+50,3,Low energy discharge,49,H2_max_abs_diff,0.27435932850944067,local_dynamics,H2
+50,3,Low energy discharge,49,H2_early_mean,0.011784243926617878,phase_shift,H2
+50,3,Low energy discharge,49,H2_late_mean,0.09142845405567424,phase_shift,H2
+50,3,Low energy discharge,49,H2_late_minus_early,0.7871867996260933,phase_shift,H2
+50,3,Low energy discharge,49,H2_positive_diff_fraction,0.1338405656241078,local_dynamics,H2
+50,3,Low energy discharge,49,CO_first,2.085232823372238,endpoint_change,CO
+50,3,Low energy discharge,49,CO_last,2.673084236366035,endpoint_change,CO
+50,3,Low energy discharge,49,CO_mean,1.4712725248225569,statistical,CO
+50,3,Low energy discharge,49,CO_std,0.5159152276411749,statistical,CO
+50,3,Low energy discharge,49,CO_min,0.3075633697639793,statistical,CO
+50,3,Low energy discharge,49,CO_max,0.641393302590405,statistical,CO
+50,3,Low energy discharge,49,CO_median,0.5016335886430174,statistical,CO
+50,3,Low energy discharge,49,CO_q25,3.298014986617325,statistical,CO
+50,3,Low energy discharge,49,CO_q75,1.850439270914838,statistical,CO
+50,3,Low energy discharge,49,CO_delta,1.9068943325129661,endpoint_change,CO
+50,3,Low energy discharge,49,CO_slope,0.8269321234727065,trend,CO
+50,3,Low energy discharge,49,CO_trend_r2,0.1470457540416298,trend,CO
+50,3,Low energy discharge,49,CO_mean_diff,1.906894332508812,local_dynamics,CO
+50,3,Low energy discharge,49,CO_std_diff,0.04813995704878836,local_dynamics,CO
+50,3,Low energy discharge,49,CO_max_abs_diff,0.046757328368960634,local_dynamics,CO
+50,3,Low energy discharge,49,CO_early_mean,1.8972880291942704,phase_shift,CO
+50,3,Low energy discharge,49,CO_late_mean,3.0855733180566323,phase_shift,CO
+50,3,Low energy discharge,49,CO_late_minus_early,4.57298485023277,phase_shift,CO
+50,3,Low energy discharge,49,CO_positive_diff_fraction,1.1688002278882175,local_dynamics,CO
+50,3,Low energy discharge,49,C2H4_first,0.024014184996034575,endpoint_change,C2H4
+50,3,Low energy discharge,49,C2H4_last,0.39418051313581853,endpoint_change,C2H4
+50,3,Low energy discharge,49,C2H4_mean,0.8416489591570935,statistical,C2H4
+50,3,Low energy discharge,49,C2H4_std,0.579109541405956,statistical,C2H4
+50,3,Low energy discharge,49,C2H4_min,1.0401347818943039,statistical,C2H4
+50,3,Low energy discharge,49,C2H4_max,0.2721608326269348,statistical,C2H4
+50,3,Low energy discharge,49,C2H4_median,2.0620387543172707,statistical,C2H4
+50,3,Low energy discharge,49,C2H4_q25,0.9767280724526227,statistical,C2H4
+50,3,Low energy discharge,49,C2H4_q75,1.1623648743607495,statistical,C2H4
+50,3,Low energy discharge,49,C2H4_delta,3.211041303416978,endpoint_change,C2H4
+50,3,Low energy discharge,49,C2H4_slope,2.8524409629758125,trend,C2H4
+50,3,Low energy discharge,49,C2H4_trend_r2,0.023082908493242876,trend,C2H4
+50,3,Low energy discharge,49,C2H4_mean_diff,3.2110413034292713,local_dynamics,C2H4
+50,3,Low energy discharge,49,C2H4_std_diff,0.17765515683399055,local_dynamics,C2H4
+50,3,Low energy discharge,49,C2H4_max_abs_diff,0.1417875342867372,local_dynamics,C2H4
+50,3,Low energy discharge,49,C2H4_early_mean,0.1003433814512605,phase_shift,C2H4
+50,3,Low energy discharge,49,C2H4_late_mean,0.503782867208981,phase_shift,C2H4
+50,3,Low energy discharge,49,C2H4_late_minus_early,3.400044249256907,phase_shift,C2H4
+50,3,Low energy discharge,49,C2H4_positive_diff_fraction,0.17182741146327637,local_dynamics,C2H4
+50,3,Low energy discharge,49,C2H2_first,0.3895488149961573,endpoint_change,C2H2
+50,3,Low energy discharge,49,C2H2_last,0.5552896370121159,endpoint_change,C2H2
+50,3,Low energy discharge,49,C2H2_mean,0.18137299494692982,statistical,C2H2
+50,3,Low energy discharge,49,C2H2_std,0.2820554510970633,statistical,C2H2
+50,3,Low energy discharge,49,C2H2_min,0.9130902186404014,statistical,C2H2
+50,3,Low energy discharge,49,C2H2_max,1.434368202553525,statistical,C2H2
+50,3,Low energy discharge,49,C2H2_median,0.08784914844250526,statistical,C2H2
+50,3,Low energy discharge,49,C2H2_q25,0.1817191728640857,statistical,C2H2
+50,3,Low energy discharge,49,C2H2_q75,0.6073984394098756,statistical,C2H2
+50,3,Low energy discharge,49,C2H2_delta,0.9459028897382451,endpoint_change,C2H2
+50,3,Low energy discharge,49,C2H2_slope,0.47669678469535154,trend,C2H2
+50,3,Low energy discharge,49,C2H2_trend_r2,0.1827873290387301,trend,C2H2
+50,3,Low energy discharge,49,C2H2_mean_diff,0.9459028897382729,local_dynamics,C2H2
+50,3,Low energy discharge,49,C2H2_std_diff,1.525288931890757,local_dynamics,C2H2
+50,3,Low energy discharge,49,C2H2_max_abs_diff,1.9929571554294316,local_dynamics,C2H2
+50,3,Low energy discharge,49,C2H2_early_mean,0.11812141051887728,phase_shift,C2H2
+50,3,Low energy discharge,49,C2H2_late_mean,0.12353643639407126,phase_shift,C2H2
+50,3,Low energy discharge,49,C2H2_late_minus_early,1.7375080392207698,phase_shift,C2H2
+50,3,Low energy discharge,49,C2H2_positive_diff_fraction,0.1674798892755671,local_dynamics,C2H2
+50,3,Low energy discharge,49,corr_H2_CO,0.07138329895976685,cross_gas_correlation,cross-gas
+50,3,Low energy discharge,49,corr_H2_C2H4,0.10132170902301217,cross_gas_correlation,cross-gas
+50,3,Low energy discharge,49,corr_H2_C2H2,0.24539373372430903,cross_gas_correlation,cross-gas
+50,3,Low energy discharge,49,corr_CO_C2H4,0.03693973458348261,cross_gas_correlation,cross-gas
+50,3,Low energy discharge,49,corr_CO_C2H2,0.10400882362350147,cross_gas_correlation,cross-gas
+50,3,Low energy discharge,49,corr_C2H4_C2H2,0.08124447387981969,cross_gas_correlation,cross-gas
+50,4,Low-temperature overheating,82,H2_first,0.22556323667723602,endpoint_change,H2
+50,4,Low-temperature overheating,82,H2_last,0.2271400854751615,endpoint_change,H2
+50,4,Low-temperature overheating,82,H2_mean,0.07296567057910042,statistical,H2
+50,4,Low-temperature overheating,82,H2_std,0.07044179079534822,statistical,H2
+50,4,Low-temperature overheating,82,H2_min,0.6710310522530962,statistical,H2
+50,4,Low-temperature overheating,82,H2_max,0.8420217906278606,statistical,H2
+50,4,Low-temperature overheating,82,H2_median,0.45754834669761135,statistical,H2
+50,4,Low-temperature overheating,82,H2_q25,0.10808410127507273,statistical,H2
+50,4,Low-temperature overheating,82,H2_q75,0.7453414527542427,statistical,H2
+50,4,Low-temperature overheating,82,H2_delta,0.07265290804964078,endpoint_change,H2
+50,4,Low-temperature overheating,82,H2_slope,1.193278637152432,trend,H2
+50,4,Low-temperature overheating,82,H2_trend_r2,0.6869278923809129,trend,H2
+50,4,Low-temperature overheating,82,H2_mean_diff,0.07265290795534689,local_dynamics,H2
+50,4,Low-temperature overheating,82,H2_std_diff,0.666587569872898,local_dynamics,H2
+50,4,Low-temperature overheating,82,H2_max_abs_diff,1.0965414530234512,local_dynamics,H2
+50,4,Low-temperature overheating,82,H2_early_mean,0.06300256591335937,phase_shift,H2
+50,4,Low-temperature overheating,82,H2_late_mean,0.18209269844795317,phase_shift,H2
+50,4,Low-temperature overheating,82,H2_late_minus_early,1.925963606721755,phase_shift,H2
+50,4,Low-temperature overheating,82,H2_positive_diff_fraction,0.3599698939809694,local_dynamics,H2
+50,4,Low-temperature overheating,82,CO_first,0.9423971944787825,endpoint_change,CO
+50,4,Low-temperature overheating,82,CO_last,1.322236872613699,endpoint_change,CO
+50,4,Low-temperature overheating,82,CO_mean,0.3370273531031885,statistical,CO
+50,4,Low-temperature overheating,82,CO_std,0.22862144841473964,statistical,CO
+50,4,Low-temperature overheating,82,CO_min,0.7747380632762144,statistical,CO
+50,4,Low-temperature overheating,82,CO_max,3.1555765326361858,statistical,CO
+50,4,Low-temperature overheating,82,CO_median,3.340265462440411,statistical,CO
+50,4,Low-temperature overheating,82,CO_q25,3.3194467458910424,statistical,CO
+50,4,Low-temperature overheating,82,CO_q75,2.3783115562977986,statistical,CO
+50,4,Low-temperature overheating,82,CO_delta,1.759369842993845,endpoint_change,CO
+50,4,Low-temperature overheating,82,CO_slope,0.24018121743763166,trend,CO
+50,4,Low-temperature overheating,82,CO_trend_r2,0.11081676799539925,trend,CO
+50,4,Low-temperature overheating,82,CO_mean_diff,1.7593698429979274,local_dynamics,CO
+50,4,Low-temperature overheating,82,CO_std_diff,0.35590159435258145,local_dynamics,CO
+50,4,Low-temperature overheating,82,CO_max_abs_diff,0.6723842176539624,local_dynamics,CO
+50,4,Low-temperature overheating,82,CO_early_mean,2.796419004396451,phase_shift,CO
+50,4,Low-temperature overheating,82,CO_late_mean,2.3309396390235824,phase_shift,CO
+50,4,Low-temperature overheating,82,CO_late_minus_early,2.238665136013876,phase_shift,CO
+50,4,Low-temperature overheating,82,CO_positive_diff_fraction,0.31239911491674366,local_dynamics,CO
+50,4,Low-temperature overheating,82,C2H4_first,0.9976391426481196,endpoint_change,C2H4
+50,4,Low-temperature overheating,82,C2H4_last,1.2187061523409215,endpoint_change,C2H4
+50,4,Low-temperature overheating,82,C2H4_mean,0.6238109419635867,statistical,C2H4
+50,4,Low-temperature overheating,82,C2H4_std,0.09719317711709008,statistical,C2H4
+50,4,Low-temperature overheating,82,C2H4_min,0.41023412612566607,statistical,C2H4
+50,4,Low-temperature overheating,82,C2H4_max,0.731790932554939,statistical,C2H4
+50,4,Low-temperature overheating,82,C2H4_median,1.3197882749175032,statistical,C2H4
+50,4,Low-temperature overheating,82,C2H4_q25,2.232605682560698,statistical,C2H4
+50,4,Low-temperature overheating,82,C2H4_q75,0.6674056377682785,statistical,C2H4
+50,4,Low-temperature overheating,82,C2H4_delta,1.2332555822714357,endpoint_change,C2H4
+50,4,Low-temperature overheating,82,C2H4_slope,0.7049759755663422,trend,C2H4
+50,4,Low-temperature overheating,82,C2H4_trend_r2,0.12386343434139878,trend,C2H4
+50,4,Low-temperature overheating,82,C2H4_mean_diff,1.2332555822486804,local_dynamics,C2H4
+50,4,Low-temperature overheating,82,C2H4_std_diff,0.09902323771921487,local_dynamics,C2H4
+50,4,Low-temperature overheating,82,C2H4_max_abs_diff,0.07752695674361514,local_dynamics,C2H4
+50,4,Low-temperature overheating,82,C2H4_early_mean,0.29541567023410814,phase_shift,C2H4
+50,4,Low-temperature overheating,82,C2H4_late_mean,0.5870002041713097,phase_shift,C2H4
+50,4,Low-temperature overheating,82,C2H4_late_minus_early,1.846393197843392,phase_shift,C2H4
+50,4,Low-temperature overheating,82,C2H4_positive_diff_fraction,0.014156080844518313,local_dynamics,C2H4
+50,4,Low-temperature overheating,82,C2H2_first,0.3833783921369727,endpoint_change,C2H2
+50,4,Low-temperature overheating,82,C2H2_last,0.4028848845675226,endpoint_change,C2H2
+50,4,Low-temperature overheating,82,C2H2_mean,0.45934997408348394,statistical,C2H2
+50,4,Low-temperature overheating,82,C2H2_std,0.6817630656589462,statistical,C2H2
+50,4,Low-temperature overheating,82,C2H2_min,0.5764650342441493,statistical,C2H2
+50,4,Low-temperature overheating,82,C2H2_max,1.160133006374129,statistical,C2H2
+50,4,Low-temperature overheating,82,C2H2_median,0.3036167352990262,statistical,C2H2
+50,4,Low-temperature overheating,82,C2H2_q25,1.0304405909106755,statistical,C2H2
+50,4,Low-temperature overheating,82,C2H2_q75,0.6620673390825034,statistical,C2H2
+50,4,Low-temperature overheating,82,C2H2_delta,0.09009874702964306,endpoint_change,C2H2
+50,4,Low-temperature overheating,82,C2H2_slope,1.9780658543448313,trend,C2H2
+50,4,Low-temperature overheating,82,C2H2_trend_r2,0.16249209156889158,trend,C2H2
+50,4,Low-temperature overheating,82,C2H2_mean_diff,0.09009874702961428,local_dynamics,C2H2
+50,4,Low-temperature overheating,82,C2H2_std_diff,0.6328852294266608,local_dynamics,C2H2
+50,4,Low-temperature overheating,82,C2H2_max_abs_diff,1.0524536708944534,local_dynamics,C2H2
+50,4,Low-temperature overheating,82,C2H2_early_mean,0.026871053820629705,phase_shift,C2H2
+50,4,Low-temperature overheating,82,C2H2_late_mean,0.38787287542491344,phase_shift,C2H2
+50,4,Low-temperature overheating,82,C2H2_late_minus_early,2.057534449310548,phase_shift,C2H2
+50,4,Low-temperature overheating,82,C2H2_positive_diff_fraction,0.041126448812342245,local_dynamics,C2H2
+50,4,Low-temperature overheating,82,corr_H2_CO,0.41482049727741904,cross_gas_correlation,cross-gas
+50,4,Low-temperature overheating,82,corr_H2_C2H4,0.0951583528269034,cross_gas_correlation,cross-gas
+50,4,Low-temperature overheating,82,corr_H2_C2H2,0.17307211546265272,cross_gas_correlation,cross-gas
+50,4,Low-temperature overheating,82,corr_CO_C2H4,0.012096562077440202,cross_gas_correlation,cross-gas
+50,4,Low-temperature overheating,82,corr_CO_C2H2,0.023864078112198688,cross_gas_correlation,cross-gas
+50,4,Low-temperature overheating,82,corr_C2H4_C2H2,0.06057307774576156,cross_gas_correlation,cross-gas
+75,1,Normal mode,731,H2_first,1.048960396868919,endpoint_change,H2
+75,1,Normal mode,731,H2_last,1.44570441075368,endpoint_change,H2
+75,1,Normal mode,731,H2_mean,0.4240944334216232,statistical,H2
+75,1,Normal mode,731,H2_std,0.33249943084803396,statistical,H2
+75,1,Normal mode,731,H2_min,0.8694849141371878,statistical,H2
+75,1,Normal mode,731,H2_max,2.715148689794989,statistical,H2
+75,1,Normal mode,731,H2_median,0.3126347181128324,statistical,H2
+75,1,Normal mode,731,H2_q25,0.8886431360868803,statistical,H2
+75,1,Normal mode,731,H2_q75,2.124727662521616,statistical,H2
+75,1,Normal mode,731,H2_delta,1.6442647218202917,endpoint_change,H2
+75,1,Normal mode,731,H2_slope,2.0421832918942835,trend,H2
+75,1,Normal mode,731,H2_trend_r2,0.41362323043008103,trend,H2
+75,1,Normal mode,731,H2_mean_diff,1.6442647218320194,local_dynamics,H2
+75,1,Normal mode,731,H2_std_diff,0.5699296468197977,local_dynamics,H2
+75,1,Normal mode,731,H2_max_abs_diff,0.23602250012608345,local_dynamics,H2
+75,1,Normal mode,731,H2_early_mean,0.8656386696638796,phase_shift,H2
+75,1,Normal mode,731,H2_late_mean,0.48591407502558837,phase_shift,H2
+75,1,Normal mode,731,H2_late_minus_early,1.273403943011121,phase_shift,H2
+75,1,Normal mode,731,H2_positive_diff_fraction,0.5032198232552972,local_dynamics,H2
+75,1,Normal mode,731,CO_first,4.340472006808864,endpoint_change,CO
+75,1,Normal mode,731,CO_last,5.1699717859318595,endpoint_change,CO
+75,1,Normal mode,731,CO_mean,0.8508589521214659,statistical,CO
+75,1,Normal mode,731,CO_std,0.934935755854092,statistical,CO
+75,1,Normal mode,731,CO_min,0.19394075029514932,statistical,CO
+75,1,Normal mode,731,CO_max,0.21806849321069938,statistical,CO
+75,1,Normal mode,731,CO_median,0.14264942162315236,statistical,CO
+75,1,Normal mode,731,CO_q25,3.4549543829255422,statistical,CO
+75,1,Normal mode,731,CO_q75,2.9117475912593265,statistical,CO
+75,1,Normal mode,731,CO_delta,4.706115902894428,endpoint_change,CO
+75,1,Normal mode,731,CO_slope,5.310241801532642,trend,CO
+75,1,Normal mode,731,CO_trend_r2,0.08101625500109091,trend,CO
+75,1,Normal mode,731,CO_mean_diff,4.7061159028933455,local_dynamics,CO
+75,1,Normal mode,731,CO_std_diff,1.3431107841853613,local_dynamics,CO
+75,1,Normal mode,731,CO_max_abs_diff,1.963965286676623,local_dynamics,CO
+75,1,Normal mode,731,CO_early_mean,0.275919606062817,phase_shift,CO
+75,1,Normal mode,731,CO_late_mean,0.09809076249052665,phase_shift,CO
+75,1,Normal mode,731,CO_late_minus_early,1.482807268561266,phase_shift,CO
+75,1,Normal mode,731,CO_positive_diff_fraction,0.42065622091485305,local_dynamics,CO
+75,1,Normal mode,731,C2H4_first,3.2210676277246346,endpoint_change,C2H4
+75,1,Normal mode,731,C2H4_last,2.781702792742039,endpoint_change,C2H4
+75,1,Normal mode,731,C2H4_mean,0.552730645680906,statistical,C2H4
+75,1,Normal mode,731,C2H4_std,0.7208969820559956,statistical,C2H4
+75,1,Normal mode,731,C2H4_min,3.1128149460271355,statistical,C2H4
+75,1,Normal mode,731,C2H4_max,0.752277073103986,statistical,C2H4
+75,1,Normal mode,731,C2H4_median,1.319937184159406,statistical,C2H4
+75,1,Normal mode,731,C2H4_q25,2.8484857968657273,statistical,C2H4
+75,1,Normal mode,731,C2H4_q75,0.6603746151098316,statistical,C2H4
+75,1,Normal mode,731,C2H4_delta,0.4066075266161074,endpoint_change,C2H4
+75,1,Normal mode,731,C2H4_slope,2.2213976938978734,trend,C2H4
+75,1,Normal mode,731,C2H4_trend_r2,0.4606821092549763,trend,C2H4
+75,1,Normal mode,731,C2H4_mean_diff,0.4066075266184533,local_dynamics,C2H4
+75,1,Normal mode,731,C2H4_std_diff,0.4260428435802724,local_dynamics,C2H4
+75,1,Normal mode,731,C2H4_max_abs_diff,0.5667688861083696,local_dynamics,C2H4
+75,1,Normal mode,731,C2H4_early_mean,0.20108217624430563,phase_shift,C2H4
+75,1,Normal mode,731,C2H4_late_mean,0.1035404049653909,phase_shift,C2H4
+75,1,Normal mode,731,C2H4_late_minus_early,0.34155475759882525,phase_shift,C2H4
+75,1,Normal mode,731,C2H4_positive_diff_fraction,0.6282824930335246,local_dynamics,C2H4
+75,1,Normal mode,731,C2H2_first,0.25808066078171765,endpoint_change,C2H2
+75,1,Normal mode,731,C2H2_last,0.27024612705305623,endpoint_change,C2H2
+75,1,Normal mode,731,C2H2_mean,0.4564884936597974,statistical,C2H2
+75,1,Normal mode,731,C2H2_std,1.507540076245175,statistical,C2H2
+75,1,Normal mode,731,C2H2_min,0.36952135623989996,statistical,C2H2
+75,1,Normal mode,731,C2H2_max,0.2333449086232855,statistical,C2H2
+75,1,Normal mode,731,C2H2_median,0.1726111686513745,statistical,C2H2
+75,1,Normal mode,731,C2H2_q25,0.6918464400460439,statistical,C2H2
+75,1,Normal mode,731,C2H2_q75,0.800759851350608,statistical,C2H2
+75,1,Normal mode,731,C2H2_delta,0.14731538301391767,endpoint_change,C2H2
+75,1,Normal mode,731,C2H2_slope,1.192013048325871,trend,C2H2
+75,1,Normal mode,731,C2H2_trend_r2,0.5681313158011564,trend,C2H2
+75,1,Normal mode,731,C2H2_mean_diff,0.14731538301640193,local_dynamics,C2H2
+75,1,Normal mode,731,C2H2_std_diff,0.9368172681146261,local_dynamics,C2H2
+75,1,Normal mode,731,C2H2_max_abs_diff,0.7865161221731565,local_dynamics,C2H2
+75,1,Normal mode,731,C2H2_early_mean,0.36273593819831024,phase_shift,C2H2
+75,1,Normal mode,731,C2H2_late_mean,0.6386499835768865,phase_shift,C2H2
+75,1,Normal mode,731,C2H2_late_minus_early,1.1589883019230718,phase_shift,C2H2
+75,1,Normal mode,731,C2H2_positive_diff_fraction,0.4666265629804578,local_dynamics,C2H2
+75,1,Normal mode,731,corr_H2_CO,0.2590541400498168,cross_gas_correlation,cross-gas
+75,1,Normal mode,731,corr_H2_C2H4,0.5594650784693864,cross_gas_correlation,cross-gas
+75,1,Normal mode,731,corr_H2_C2H2,0.5896020505706385,cross_gas_correlation,cross-gas
+75,1,Normal mode,731,corr_CO_C2H4,0.4190370401290873,cross_gas_correlation,cross-gas
+75,1,Normal mode,731,corr_CO_C2H2,0.5650602556882018,cross_gas_correlation,cross-gas
+75,1,Normal mode,731,corr_C2H4_C2H2,0.41372085430561334,cross_gas_correlation,cross-gas
+75,2,Partial discharge,38,H2_first,0.749034407621038,endpoint_change,H2
+75,2,Partial discharge,38,H2_last,1.1754350039469468,endpoint_change,H2
+75,2,Partial discharge,38,H2_mean,0.06005782030169395,statistical,H2
+75,2,Partial discharge,38,H2_std,0.12143776495968295,statistical,H2
+75,2,Partial discharge,38,H2_min,0.5239795186766404,statistical,H2
+75,2,Partial discharge,38,H2_max,0.7310826548751702,statistical,H2
+75,2,Partial discharge,38,H2_median,0.24437850926077576,statistical,H2
+75,2,Partial discharge,38,H2_q25,0.07447991268588812,statistical,H2
+75,2,Partial discharge,38,H2_q75,0.09207168623054222,statistical,H2
+75,2,Partial discharge,38,H2_delta,1.7686243775559702,endpoint_change,H2
+75,2,Partial discharge,38,H2_slope,2.276236572578588,trend,H2
+75,2,Partial discharge,38,H2_trend_r2,0.09607470320344241,trend,H2
+75,2,Partial discharge,38,H2_mean_diff,1.7686243775512103,local_dynamics,H2
+75,2,Partial discharge,38,H2_std_diff,0.3177831089804103,local_dynamics,H2
+75,2,Partial discharge,38,H2_max_abs_diff,0.8172280520145937,local_dynamics,H2
+75,2,Partial discharge,38,H2_early_mean,0.5342649142696159,phase_shift,H2
+75,2,Partial discharge,38,H2_late_mean,0.28086885148499724,phase_shift,H2
+75,2,Partial discharge,38,H2_late_minus_early,1.1129486908723865,phase_shift,H2
+75,2,Partial discharge,38,H2_positive_diff_fraction,0.6941499260353786,local_dynamics,H2
+75,2,Partial discharge,38,CO_first,4.215777530974611,endpoint_change,CO
+75,2,Partial discharge,38,CO_last,6.2058752889231314,endpoint_change,CO
+75,2,Partial discharge,38,CO_mean,5.749615198192339,statistical,CO
+75,2,Partial discharge,38,CO_std,0.3098186424710595,statistical,CO
+75,2,Partial discharge,38,CO_min,5.237850029002784,statistical,CO
+75,2,Partial discharge,38,CO_max,5.89533590627127,statistical,CO
+75,2,Partial discharge,38,CO_median,5.640899975457397,statistical,CO
+75,2,Partial discharge,38,CO_q25,5.536524575794212,statistical,CO
+75,2,Partial discharge,38,CO_q75,5.763859932755776,statistical,CO
+75,2,Partial discharge,38,CO_delta,3.9079697311137216,endpoint_change,CO
+75,2,Partial discharge,38,CO_slope,0.1252400672603359,trend,CO
+75,2,Partial discharge,38,CO_trend_r2,0.23940965215897414,trend,CO
+75,2,Partial discharge,38,CO_mean_diff,3.907969731113656,local_dynamics,CO
+75,2,Partial discharge,38,CO_std_diff,0.9252069786671873,local_dynamics,CO
+75,2,Partial discharge,38,CO_max_abs_diff,1.1987155369757594,local_dynamics,CO
+75,2,Partial discharge,38,CO_early_mean,5.1139150475015,phase_shift,CO
+75,2,Partial discharge,38,CO_late_mean,5.204112979508711,phase_shift,CO
+75,2,Partial discharge,38,CO_late_minus_early,0.5937207706947972,phase_shift,CO
+75,2,Partial discharge,38,CO_positive_diff_fraction,4.157971503169205,local_dynamics,CO
+75,2,Partial discharge,38,C2H4_first,1.8739151888157066,endpoint_change,C2H4
+75,2,Partial discharge,38,C2H4_last,2.9232582086658545,endpoint_change,C2H4
+75,2,Partial discharge,38,C2H4_mean,1.7540709785573199,statistical,C2H4
+75,2,Partial discharge,38,C2H4_std,0.0007870567361887716,statistical,C2H4
+75,2,Partial discharge,38,C2H4_min,1.570814607035329,statistical,C2H4
+75,2,Partial discharge,38,C2H4_max,2.992609560928972,statistical,C2H4
+75,2,Partial discharge,38,C2H4_median,1.6941233653732155,statistical,C2H4
+75,2,Partial discharge,38,C2H4_q25,1.4616781178936682,statistical,C2H4
+75,2,Partial discharge,38,C2H4_q75,1.5388909975598224,statistical,C2H4
+75,2,Partial discharge,38,C2H4_delta,2.0451515862240073,endpoint_change,C2H4
+75,2,Partial discharge,38,C2H4_slope,1.1661001407077873,trend,C2H4
+75,2,Partial discharge,38,C2H4_trend_r2,0.9789108248585777,trend,C2H4
+75,2,Partial discharge,38,C2H4_mean_diff,2.045151586223959,local_dynamics,C2H4
+75,2,Partial discharge,38,C2H4_std_diff,0.000848833503907943,local_dynamics,C2H4
+75,2,Partial discharge,38,C2H4_max_abs_diff,0.3037667097003885,local_dynamics,C2H4
+75,2,Partial discharge,38,C2H4_early_mean,2.0106236391916448,phase_shift,C2H4
+75,2,Partial discharge,38,C2H4_late_mean,1.8889897043031814,phase_shift,C2H4
+75,2,Partial discharge,38,C2H4_late_minus_early,0.5555055685176136,phase_shift,C2H4
+75,2,Partial discharge,38,C2H4_positive_diff_fraction,1.1705293947936295,local_dynamics,C2H4
+75,2,Partial discharge,38,C2H2_first,0.45305415104021596,endpoint_change,C2H2
+75,2,Partial discharge,38,C2H2_last,1.155994504268765,endpoint_change,C2H2
+75,2,Partial discharge,38,C2H2_mean,0.6414099341178044,statistical,C2H2
+75,2,Partial discharge,38,C2H2_std,0.47027660454090253,statistical,C2H2
+75,2,Partial discharge,38,C2H2_min,0.6532260841127552,statistical,C2H2
+75,2,Partial discharge,38,C2H2_max,1.5855691284065738,statistical,C2H2
+75,2,Partial discharge,38,C2H2_median,0.16243516104326627,statistical,C2H2
+75,2,Partial discharge,38,C2H2_q25,2.1969117741219333,statistical,C2H2
+75,2,Partial discharge,38,C2H2_q75,0.25476085355832284,statistical,C2H2
+75,2,Partial discharge,38,C2H2_delta,1.5741885055542932,endpoint_change,C2H2
+75,2,Partial discharge,38,C2H2_slope,2.1461846352022373,trend,C2H2
+75,2,Partial discharge,38,C2H2_trend_r2,0.9728726362296412,trend,C2H2
+75,2,Partial discharge,38,C2H2_mean_diff,1.5741885055689764,local_dynamics,C2H2
+75,2,Partial discharge,38,C2H2_std_diff,0.006980375444642724,local_dynamics,C2H2
+75,2,Partial discharge,38,C2H2_max_abs_diff,0.6202761928651911,local_dynamics,C2H2
+75,2,Partial discharge,38,C2H2_early_mean,1.1515602001354408,phase_shift,C2H2
+75,2,Partial discharge,38,C2H2_late_mean,0.8493505799721675,phase_shift,C2H2
+75,2,Partial discharge,38,C2H2_late_minus_early,0.843265280097279,phase_shift,C2H2
+75,2,Partial discharge,38,C2H2_positive_diff_fraction,1.5252977097007006,local_dynamics,C2H2
+75,2,Partial discharge,38,corr_H2_CO,1.104110527118623,cross_gas_correlation,cross-gas
+75,2,Partial discharge,38,corr_H2_C2H4,0.9029123262231386,cross_gas_correlation,cross-gas
+75,2,Partial discharge,38,corr_H2_C2H2,2.760107630954156,cross_gas_correlation,cross-gas
+75,2,Partial discharge,38,corr_CO_C2H4,0.7690777609693832,cross_gas_correlation,cross-gas
+75,2,Partial discharge,38,corr_CO_C2H2,1.6662212108663057,cross_gas_correlation,cross-gas
+75,2,Partial discharge,38,corr_C2H4_C2H2,0.18246591065870837,cross_gas_correlation,cross-gas
+75,3,Low energy discharge,49,H2_first,0.6400207405170127,endpoint_change,H2
+75,3,Low energy discharge,49,H2_last,0.5353650903839964,endpoint_change,H2
+75,3,Low energy discharge,49,H2_mean,0.9340775407894468,statistical,H2
+75,3,Low energy discharge,49,H2_std,1.058191689061404,statistical,H2
+75,3,Low energy discharge,49,H2_min,0.44516852342338525,statistical,H2
+75,3,Low energy discharge,49,H2_max,0.09265780209795005,statistical,H2
+75,3,Low energy discharge,49,H2_median,0.5393356288917646,statistical,H2
+75,3,Low energy discharge,49,H2_q25,2.13487833448089,statistical,H2
+75,3,Low energy discharge,49,H2_q75,0.4353975259822012,statistical,H2
+75,3,Low energy discharge,49,H2_delta,0.11602745398800407,endpoint_change,H2
+75,3,Low energy discharge,49,H2_slope,0.9434756896821501,trend,H2
+75,3,Low energy discharge,49,H2_trend_r2,0.9722306637221373,trend,H2
+75,3,Low energy discharge,49,H2_mean_diff,0.11602745399500773,local_dynamics,H2
+75,3,Low energy discharge,49,H2_std_diff,0.9298445762003165,local_dynamics,H2
+75,3,Low energy discharge,49,H2_max_abs_diff,1.1626069426173007,local_dynamics,H2
+75,3,Low energy discharge,49,H2_early_mean,0.22882222285355414,phase_shift,H2
+75,3,Low energy discharge,49,H2_late_mean,0.09633264568284995,phase_shift,H2
+75,3,Low energy discharge,49,H2_late_minus_early,0.44295554436281553,phase_shift,H2
+75,3,Low energy discharge,49,H2_positive_diff_fraction,0.3532920620918186,local_dynamics,H2
+75,3,Low energy discharge,49,CO_first,1.5043073185557347,endpoint_change,CO
+75,3,Low energy discharge,49,CO_last,3.7809783933411576,endpoint_change,CO
+75,3,Low energy discharge,49,CO_mean,0.8847538491151519,statistical,CO
+75,3,Low energy discharge,49,CO_std,1.0586553660480464,statistical,CO
+75,3,Low energy discharge,49,CO_min,2.465321333591435,statistical,CO
+75,3,Low energy discharge,49,CO_max,0.12265006109495678,statistical,CO
+75,3,Low energy discharge,49,CO_median,1.4589006905926007,statistical,CO
+75,3,Low energy discharge,49,CO_q25,1.5896190102711225,statistical,CO
+75,3,Low energy discharge,49,CO_q75,1.668880651409132,statistical,CO
+75,3,Low energy discharge,49,CO_delta,3.9863873377299575,endpoint_change,CO
+75,3,Low energy discharge,49,CO_slope,4.7652893532773675,trend,CO
+75,3,Low energy discharge,49,CO_trend_r2,0.24619665260671722,trend,CO
+75,3,Low energy discharge,49,CO_mean_diff,3.9863873377284618,local_dynamics,CO
+75,3,Low energy discharge,49,CO_std_diff,1.3126491749433709,local_dynamics,CO
+75,3,Low energy discharge,49,CO_max_abs_diff,1.8666985083273184,local_dynamics,CO
+75,3,Low energy discharge,49,CO_early_mean,0.5602885580066415,phase_shift,CO
+75,3,Low energy discharge,49,CO_late_mean,1.338056507897847,phase_shift,CO
+75,3,Low energy discharge,49,CO_late_minus_early,1.5921058893811941,phase_shift,CO
+75,3,Low energy discharge,49,CO_positive_diff_fraction,1.5717032945639509,local_dynamics,CO
+75,3,Low energy discharge,49,C2H4_first,0.0856591496458389,endpoint_change,C2H4
+75,3,Low energy discharge,49,C2H4_last,1.203971389932684,endpoint_change,C2H4
+75,3,Low energy discharge,49,C2H4_mean,1.1722210492096472,statistical,C2H4
+75,3,Low energy discharge,49,C2H4_std,0.07101147863781632,statistical,C2H4
+75,3,Low energy discharge,49,C2H4_min,0.4925776186774245,statistical,C2H4
+75,3,Low energy discharge,49,C2H4_max,2.5760054239127865,statistical,C2H4
+75,3,Low energy discharge,49,C2H4_median,2.216322980783122,statistical,C2H4
+75,3,Low energy discharge,49,C2H4_q25,1.0291762999434932,statistical,C2H4
+75,3,Low energy discharge,49,C2H4_q75,0.08105654962126932,statistical,C2H4
+75,3,Low energy discharge,49,C2H4_delta,3.910874087324318,endpoint_change,C2H4
+75,3,Low energy discharge,49,C2H4_slope,4.58162600840182,trend,C2H4
+75,3,Low energy discharge,49,C2H4_trend_r2,0.14009361023167158,trend,C2H4
+75,3,Low energy discharge,49,C2H4_mean_diff,3.910874087324861,local_dynamics,C2H4
+75,3,Low energy discharge,49,C2H4_std_diff,0.8245470895356097,local_dynamics,C2H4
+75,3,Low energy discharge,49,C2H4_max_abs_diff,2.359730682548094,local_dynamics,C2H4
+75,3,Low energy discharge,49,C2H4_early_mean,0.5982430398597786,phase_shift,C2H4
+75,3,Low energy discharge,49,C2H4_late_mean,0.12608194467347664,phase_shift,C2H4
+75,3,Low energy discharge,49,C2H4_late_minus_early,3.000442288741114,phase_shift,C2H4
+75,3,Low energy discharge,49,C2H4_positive_diff_fraction,0.4835893002685892,local_dynamics,C2H4
+75,3,Low energy discharge,49,C2H2_first,1.1335009478567601,endpoint_change,C2H2
+75,3,Low energy discharge,49,C2H2_last,1.067500538497968,endpoint_change,C2H2
+75,3,Low energy discharge,49,C2H2_mean,0.7862125743562142,statistical,C2H2
+75,3,Low energy discharge,49,C2H2_std,1.7029571343283505,statistical,C2H2
+75,3,Low energy discharge,49,C2H2_min,1.162646831048989,statistical,C2H2
+75,3,Low energy discharge,49,C2H2_max,0.5816298663113577,statistical,C2H2
+75,3,Low energy discharge,49,C2H2_median,1.0334055997278093,statistical,C2H2
+75,3,Low energy discharge,49,C2H2_q25,1.2531342905331035,statistical,C2H2
+75,3,Low energy discharge,49,C2H2_q75,0.9512835367608433,statistical,C2H2
+75,3,Low energy discharge,49,C2H2_delta,0.31597042018586347,endpoint_change,C2H2
+75,3,Low energy discharge,49,C2H2_slope,0.08301168825428636,trend,C2H2
+75,3,Low energy discharge,49,C2H2_trend_r2,0.5170673379802682,trend,C2H2
+75,3,Low energy discharge,49,C2H2_mean_diff,0.3159704201760884,local_dynamics,C2H2
+75,3,Low energy discharge,49,C2H2_std_diff,1.2116267271423273,local_dynamics,C2H2
+75,3,Low energy discharge,49,C2H2_max_abs_diff,0.6216612113043967,local_dynamics,C2H2
+75,3,Low energy discharge,49,C2H2_early_mean,0.4931030087885956,phase_shift,C2H2
+75,3,Low energy discharge,49,C2H2_late_mean,0.5691738739955841,phase_shift,C2H2
+75,3,Low energy discharge,49,C2H2_late_minus_early,0.43338506445019004,phase_shift,C2H2
+75,3,Low energy discharge,49,C2H2_positive_diff_fraction,0.16980049341346,local_dynamics,C2H2
+75,3,Low energy discharge,49,corr_H2_CO,0.8068115968762334,cross_gas_correlation,cross-gas
+75,3,Low energy discharge,49,corr_H2_C2H4,0.06563516335046002,cross_gas_correlation,cross-gas
+75,3,Low energy discharge,49,corr_H2_C2H2,1.0063297299996494,cross_gas_correlation,cross-gas
+75,3,Low energy discharge,49,corr_CO_C2H4,0.4125267166348604,cross_gas_correlation,cross-gas
+75,3,Low energy discharge,49,corr_CO_C2H2,0.6360552794396881,cross_gas_correlation,cross-gas
+75,3,Low energy discharge,49,corr_C2H4_C2H2,0.45011716767463406,cross_gas_correlation,cross-gas
+75,4,Low-temperature overheating,82,H2_first,0.5833379366722001,endpoint_change,H2
+75,4,Low-temperature overheating,82,H2_last,0.6354708666624345,endpoint_change,H2
+75,4,Low-temperature overheating,82,H2_mean,0.4420554804554413,statistical,H2
+75,4,Low-temperature overheating,82,H2_std,0.8527650063821357,statistical,H2
+75,4,Low-temperature overheating,82,H2_min,0.2721522475009162,statistical,H2
+75,4,Low-temperature overheating,82,H2_max,2.03002693087761,statistical,H2
+75,4,Low-temperature overheating,82,H2_median,0.5659256461145334,statistical,H2
+75,4,Low-temperature overheating,82,H2_q25,1.3373481701020415,statistical,H2
+75,4,Low-temperature overheating,82,H2_q75,1.8923436657499109,statistical,H2
+75,4,Low-temperature overheating,82,H2_delta,0.14564340883001384,endpoint_change,H2
+75,4,Low-temperature overheating,82,H2_slope,0.36745920314468333,trend,H2
+75,4,Low-temperature overheating,82,H2_trend_r2,0.5073866458578282,trend,H2
+75,4,Low-temperature overheating,82,H2_mean_diff,0.14564340880599527,local_dynamics,H2
+75,4,Low-temperature overheating,82,H2_std_diff,0.10191340101082308,local_dynamics,H2
+75,4,Low-temperature overheating,82,H2_max_abs_diff,0.22830638302356607,local_dynamics,H2
+75,4,Low-temperature overheating,82,H2_early_mean,0.3475986328857109,phase_shift,H2
+75,4,Low-temperature overheating,82,H2_late_mean,0.2385624673868413,phase_shift,H2
+75,4,Low-temperature overheating,82,H2_late_minus_early,0.4647147605190793,phase_shift,H2
+75,4,Low-temperature overheating,82,H2_positive_diff_fraction,0.20317690091806986,local_dynamics,H2
+75,4,Low-temperature overheating,82,CO_first,1.8200730411670658,endpoint_change,CO
+75,4,Low-temperature overheating,82,CO_last,0.9084839902205891,endpoint_change,CO
+75,4,Low-temperature overheating,82,CO_mean,2.202923589038194,statistical,CO
+75,4,Low-temperature overheating,82,CO_std,0.6407816309513492,statistical,CO
+75,4,Low-temperature overheating,82,CO_min,1.4826839636415812,statistical,CO
+75,4,Low-temperature overheating,82,CO_max,3.863782325441779,statistical,CO
+75,4,Low-temperature overheating,82,CO_median,3.125848974243805,statistical,CO
+75,4,Low-temperature overheating,82,CO_q25,0.38593898172891106,statistical,CO
+75,4,Low-temperature overheating,82,CO_q75,1.506375636179901,statistical,CO
+75,4,Low-temperature overheating,82,CO_delta,1.6747954479055724,endpoint_change,CO
+75,4,Low-temperature overheating,82,CO_slope,0.11107297328773746,trend,CO
+75,4,Low-temperature overheating,82,CO_trend_r2,0.32339286354456276,trend,CO
+75,4,Low-temperature overheating,82,CO_mean_diff,1.6747954479053044,local_dynamics,CO
+75,4,Low-temperature overheating,82,CO_std_diff,1.1435371333615167,local_dynamics,CO
+75,4,Low-temperature overheating,82,CO_max_abs_diff,0.9853507922504239,local_dynamics,CO
+75,4,Low-temperature overheating,82,CO_early_mean,3.0152578695313093,phase_shift,CO
+75,4,Low-temperature overheating,82,CO_late_mean,2.6012024289242355,phase_shift,CO
+75,4,Low-temperature overheating,82,CO_late_minus_early,0.6341088568067028,phase_shift,CO
+75,4,Low-temperature overheating,82,CO_positive_diff_fraction,0.28167692017609186,local_dynamics,CO
+75,4,Low-temperature overheating,82,C2H4_first,2.5324109241982553,endpoint_change,C2H4
+75,4,Low-temperature overheating,82,C2H4_last,2.7783884116511914,endpoint_change,C2H4
+75,4,Low-temperature overheating,82,C2H4_mean,0.6094948473051653,statistical,C2H4
+75,4,Low-temperature overheating,82,C2H4_std,0.5165534112444609,statistical,C2H4
+75,4,Low-temperature overheating,82,C2H4_min,3.0853670553404937,statistical,C2H4
+75,4,Low-temperature overheating,82,C2H4_max,0.25861478384909226,statistical,C2H4
+75,4,Low-temperature overheating,82,C2H4_median,0.3402611553105201,statistical,C2H4
+75,4,Low-temperature overheating,82,C2H4_q25,3.255842414533724,statistical,C2H4
+75,4,Low-temperature overheating,82,C2H4_q75,0.3640931420139486,statistical,C2H4
+75,4,Low-temperature overheating,82,C2H4_delta,1.158517197570858,endpoint_change,C2H4
+75,4,Low-temperature overheating,82,C2H4_slope,0.3465670572520028,trend,C2H4
+75,4,Low-temperature overheating,82,C2H4_trend_r2,0.21528481457216264,trend,C2H4
+75,4,Low-temperature overheating,82,C2H4_mean_diff,1.158517197569319,local_dynamics,C2H4
+75,4,Low-temperature overheating,82,C2H4_std_diff,0.1978441062881261,local_dynamics,C2H4
+75,4,Low-temperature overheating,82,C2H4_max_abs_diff,0.6027310783795038,local_dynamics,C2H4
+75,4,Low-temperature overheating,82,C2H4_early_mean,1.0109385521749878,phase_shift,C2H4
+75,4,Low-temperature overheating,82,C2H4_late_mean,1.4544932769045331,phase_shift,C2H4
+75,4,Low-temperature overheating,82,C2H4_late_minus_early,1.3895928515443778,phase_shift,C2H4
+75,4,Low-temperature overheating,82,C2H4_positive_diff_fraction,0.6786611610895046,local_dynamics,C2H4
+75,4,Low-temperature overheating,82,C2H2_first,1.4993607351639646,endpoint_change,C2H2
+75,4,Low-temperature overheating,82,C2H2_last,1.2690348615144504,endpoint_change,C2H2
+75,4,Low-temperature overheating,82,C2H2_mean,0.9737043342720981,statistical,C2H2
+75,4,Low-temperature overheating,82,C2H2_std,0.09740108404335113,statistical,C2H2
+75,4,Low-temperature overheating,82,C2H2_min,1.6039553823823154,statistical,C2H2
+75,4,Low-temperature overheating,82,C2H2_max,0.13070482795690988,statistical,C2H2
+75,4,Low-temperature overheating,82,C2H2_median,1.6781365120933107,statistical,C2H2
+75,4,Low-temperature overheating,82,C2H2_q25,2.3550179614870186,statistical,C2H2
+75,4,Low-temperature overheating,82,C2H2_q75,0.1852782994142701,statistical,C2H2
+75,4,Low-temperature overheating,82,C2H2_delta,0.6416538860149258,endpoint_change,C2H2
+75,4,Low-temperature overheating,82,C2H2_slope,0.9508375527730831,trend,C2H2
+75,4,Low-temperature overheating,82,C2H2_trend_r2,0.055538158237319175,trend,C2H2
+75,4,Low-temperature overheating,82,C2H2_mean_diff,0.6416538860368659,local_dynamics,C2H2
+75,4,Low-temperature overheating,82,C2H2_std_diff,0.510533488642649,local_dynamics,C2H2
+75,4,Low-temperature overheating,82,C2H2_max_abs_diff,0.579220682599492,local_dynamics,C2H2
+75,4,Low-temperature overheating,82,C2H2_early_mean,0.5198070901285345,phase_shift,C2H2
+75,4,Low-temperature overheating,82,C2H2_late_mean,0.5056050211630215,phase_shift,C2H2
+75,4,Low-temperature overheating,82,C2H2_late_minus_early,0.04593927793154049,phase_shift,C2H2
+75,4,Low-temperature overheating,82,C2H2_positive_diff_fraction,0.39290000302749195,local_dynamics,C2H2
+75,4,Low-temperature overheating,82,corr_H2_CO,0.1892354087050837,cross_gas_correlation,cross-gas
+75,4,Low-temperature overheating,82,corr_H2_C2H4,0.23100526781893285,cross_gas_correlation,cross-gas
+75,4,Low-temperature overheating,82,corr_H2_C2H2,0.37638003970498435,cross_gas_correlation,cross-gas
+75,4,Low-temperature overheating,82,corr_CO_C2H4,0.14622525391838076,cross_gas_correlation,cross-gas
+75,4,Low-temperature overheating,82,corr_CO_C2H2,0.7156509058878371,cross_gas_correlation,cross-gas
+75,4,Low-temperature overheating,82,corr_C2H4_C2H2,0.27140075715768036,cross_gas_correlation,cross-gas
+100,1,Normal mode,731,H2_first,1.0519944875559237,endpoint_change,H2
+100,1,Normal mode,731,H2_last,0.8175247638887588,endpoint_change,H2
+100,1,Normal mode,731,H2_mean,0.2659021923295178,statistical,H2
+100,1,Normal mode,731,H2_std,1.3261901907287772,statistical,H2
+100,1,Normal mode,731,H2_min,2.5117221040960502,statistical,H2
+100,1,Normal mode,731,H2_max,0.6636924616474705,statistical,H2
+100,1,Normal mode,731,H2_median,1.4521674747242732,statistical,H2
+100,1,Normal mode,731,H2_q25,0.2814468457431588,statistical,H2
+100,1,Normal mode,731,H2_q75,1.0025054423676878,statistical,H2
+100,1,Normal mode,731,H2_delta,0.0405739079333121,endpoint_change,H2
+100,1,Normal mode,731,H2_slope,1.1583687591562342,trend,H2
+100,1,Normal mode,731,H2_trend_r2,0.7178437441283799,trend,H2
+100,1,Normal mode,731,H2_mean_diff,0.04057390793177323,local_dynamics,H2
+100,1,Normal mode,731,H2_std_diff,0.3368712597374749,local_dynamics,H2
+100,1,Normal mode,731,H2_max_abs_diff,1.749647707713667,local_dynamics,H2
+100,1,Normal mode,731,H2_early_mean,0.6060412403305452,phase_shift,H2
+100,1,Normal mode,731,H2_late_mean,0.5525600223015685,phase_shift,H2
+100,1,Normal mode,731,H2_late_minus_early,0.13282385988051457,phase_shift,H2
+100,1,Normal mode,731,H2_positive_diff_fraction,1.0451012694863566,local_dynamics,H2
+100,1,Normal mode,731,CO_first,4.248400570437148,endpoint_change,CO
+100,1,Normal mode,731,CO_last,2.934306682925427,endpoint_change,CO
+100,1,Normal mode,731,CO_mean,1.9148361056641159,statistical,CO
+100,1,Normal mode,731,CO_std,0.4303662931294282,statistical,CO
+100,1,Normal mode,731,CO_min,1.9149848765058277,statistical,CO
+100,1,Normal mode,731,CO_max,1.2474354799445213,statistical,CO
+100,1,Normal mode,731,CO_median,2.9629625624893468,statistical,CO
+100,1,Normal mode,731,CO_q25,0.6439141625477873,statistical,CO
+100,1,Normal mode,731,CO_q75,3.2125850115431778,statistical,CO
+100,1,Normal mode,731,CO_delta,0.10927639814613031,endpoint_change,CO
+100,1,Normal mode,731,CO_slope,0.366465435774652,trend,CO
+100,1,Normal mode,731,CO_trend_r2,0.6085352851400728,trend,CO
+100,1,Normal mode,731,CO_mean_diff,0.10927639814575153,local_dynamics,CO
+100,1,Normal mode,731,CO_std_diff,0.7733528315131699,local_dynamics,CO
+100,1,Normal mode,731,CO_max_abs_diff,4.7242428749569445,local_dynamics,CO
+100,1,Normal mode,731,CO_early_mean,3.0623685218054937,phase_shift,CO
+100,1,Normal mode,731,CO_late_mean,2.7130374069569227,phase_shift,CO
+100,1,Normal mode,731,CO_late_minus_early,0.8789287039105054,phase_shift,CO
+100,1,Normal mode,731,CO_positive_diff_fraction,1.29752951006582,local_dynamics,CO
+100,1,Normal mode,731,C2H4_first,1.2203987880551683,endpoint_change,C2H4
+100,1,Normal mode,731,C2H4_last,0.281625905996153,endpoint_change,C2H4
+100,1,Normal mode,731,C2H4_mean,0.16245378173504016,statistical,C2H4
+100,1,Normal mode,731,C2H4_std,1.1151090966389112,statistical,C2H4
+100,1,Normal mode,731,C2H4_min,3.0029847058203405,statistical,C2H4
+100,1,Normal mode,731,C2H4_max,0.4741181072857313,statistical,C2H4
+100,1,Normal mode,731,C2H4_median,0.7735909315689065,statistical,C2H4
+100,1,Normal mode,731,C2H4_q25,1.0797341754362175,statistical,C2H4
+100,1,Normal mode,731,C2H4_q75,0.5577564485293282,statistical,C2H4
+100,1,Normal mode,731,C2H4_delta,1.2881976946145586,endpoint_change,C2H4
+100,1,Normal mode,731,C2H4_slope,2.181632155101022,trend,C2H4
+100,1,Normal mode,731,C2H4_trend_r2,0.6583640098628593,trend,C2H4
+100,1,Normal mode,731,C2H4_mean_diff,1.288197694614325,local_dynamics,C2H4
+100,1,Normal mode,731,C2H4_std_diff,0.5152028388950775,local_dynamics,C2H4
+100,1,Normal mode,731,C2H4_max_abs_diff,1.2701172457647767,local_dynamics,C2H4
+100,1,Normal mode,731,C2H4_early_mean,0.8507057577518351,phase_shift,C2H4
+100,1,Normal mode,731,C2H4_late_mean,0.6727301425937794,phase_shift,C2H4
+100,1,Normal mode,731,C2H4_late_minus_early,3.3017280445495354,phase_shift,C2H4
+100,1,Normal mode,731,C2H4_positive_diff_fraction,1.2352781680486287,local_dynamics,C2H4
+100,1,Normal mode,731,C2H2_first,0.8504842545494394,endpoint_change,C2H2
+100,1,Normal mode,731,C2H2_last,0.2512363275212818,endpoint_change,C2H2
+100,1,Normal mode,731,C2H2_mean,0.3632631434167346,statistical,C2H2
+100,1,Normal mode,731,C2H2_std,1.0926588491442066,statistical,C2H2
+100,1,Normal mode,731,C2H2_min,0.9087317089150182,statistical,C2H2
+100,1,Normal mode,731,C2H2_max,0.8860218459531044,statistical,C2H2
+100,1,Normal mode,731,C2H2_median,0.8528677077991911,statistical,C2H2
+100,1,Normal mode,731,C2H2_q25,1.2887059065921473,statistical,C2H2
+100,1,Normal mode,731,C2H2_q75,1.2305276024762912,statistical,C2H2
+100,1,Normal mode,731,C2H2_delta,0.6229855112346159,endpoint_change,C2H2
+100,1,Normal mode,731,C2H2_slope,0.5740502465649913,trend,C2H2
+100,1,Normal mode,731,C2H2_trend_r2,0.4792779154891495,trend,C2H2
+100,1,Normal mode,731,C2H2_mean_diff,0.6229855112321971,local_dynamics,C2H2
+100,1,Normal mode,731,C2H2_std_diff,1.3427905280925294,local_dynamics,C2H2
+100,1,Normal mode,731,C2H2_max_abs_diff,2.6903702006945167,local_dynamics,C2H2
+100,1,Normal mode,731,C2H2_early_mean,0.23960746253187779,phase_shift,C2H2
+100,1,Normal mode,731,C2H2_late_mean,0.11573720428900469,phase_shift,C2H2
+100,1,Normal mode,731,C2H2_late_minus_early,0.6684329137112225,phase_shift,C2H2
+100,1,Normal mode,731,C2H2_positive_diff_fraction,0.5124807226294965,local_dynamics,C2H2
+100,1,Normal mode,731,corr_H2_CO,0.32990557931065456,cross_gas_correlation,cross-gas
+100,1,Normal mode,731,corr_H2_C2H4,1.2226764756885262,cross_gas_correlation,cross-gas
+100,1,Normal mode,731,corr_H2_C2H2,0.22164279624748492,cross_gas_correlation,cross-gas
+100,1,Normal mode,731,corr_CO_C2H4,0.31211867047739505,cross_gas_correlation,cross-gas
+100,1,Normal mode,731,corr_CO_C2H2,0.15994347531272446,cross_gas_correlation,cross-gas
+100,1,Normal mode,731,corr_C2H4_C2H2,0.10114749846902645,cross_gas_correlation,cross-gas
+100,2,Partial discharge,38,H2_first,0.6114167401579378,endpoint_change,H2
+100,2,Partial discharge,38,H2_last,0.8689477219507377,endpoint_change,H2
+100,2,Partial discharge,38,H2_mean,0.3821202557458888,statistical,H2
+100,2,Partial discharge,38,H2_std,1.2926601469883778,statistical,H2
+100,2,Partial discharge,38,H2_min,0.6707981619240072,statistical,H2
+100,2,Partial discharge,38,H2_max,0.5916863754908533,statistical,H2
+100,2,Partial discharge,38,H2_median,0.3856156674507684,statistical,H2
+100,2,Partial discharge,38,H2_q25,0.548754377669187,statistical,H2
+100,2,Partial discharge,38,H2_q75,0.15191242353124634,statistical,H2
+100,2,Partial discharge,38,H2_delta,0.7455460736493501,endpoint_change,H2
+100,2,Partial discharge,38,H2_slope,0.4972722880982665,trend,H2
+100,2,Partial discharge,38,H2_trend_r2,0.3983623012005635,trend,H2
+100,2,Partial discharge,38,H2_mean_diff,0.7455460736486191,local_dynamics,H2
+100,2,Partial discharge,38,H2_std_diff,0.3831442191980868,local_dynamics,H2
+100,2,Partial discharge,38,H2_max_abs_diff,0.7775771975275508,local_dynamics,H2
+100,2,Partial discharge,38,H2_early_mean,0.6677891704568536,phase_shift,H2
+100,2,Partial discharge,38,H2_late_mean,0.5903319615258995,phase_shift,H2
+100,2,Partial discharge,38,H2_late_minus_early,0.07992142434765614,phase_shift,H2
+100,2,Partial discharge,38,H2_positive_diff_fraction,0.7642024331771566,local_dynamics,H2
+100,2,Partial discharge,38,CO_first,4.102751073766361,endpoint_change,CO
+100,2,Partial discharge,38,CO_last,4.996963042650573,endpoint_change,CO
+100,2,Partial discharge,38,CO_mean,7.391017939372159,statistical,CO
+100,2,Partial discharge,38,CO_std,1.4858135917323714,statistical,CO
+100,2,Partial discharge,38,CO_min,5.169502380011269,statistical,CO
+100,2,Partial discharge,38,CO_max,7.172282063341546,statistical,CO
+100,2,Partial discharge,38,CO_median,7.402445839956674,statistical,CO
+100,2,Partial discharge,38,CO_q25,7.417469923479772,statistical,CO
+100,2,Partial discharge,38,CO_q75,7.360061423590043,statistical,CO
+100,2,Partial discharge,38,CO_delta,1.1468726795175317,endpoint_change,CO
+100,2,Partial discharge,38,CO_slope,5.445925885016825,trend,CO
+100,2,Partial discharge,38,CO_trend_r2,0.7074859874507643,trend,CO
+100,2,Partial discharge,38,CO_mean_diff,1.1468726795174309,local_dynamics,CO
+100,2,Partial discharge,38,CO_std_diff,1.2437840399100684,local_dynamics,CO
+100,2,Partial discharge,38,CO_max_abs_diff,0.5662777558545474,local_dynamics,CO
+100,2,Partial discharge,38,CO_early_mean,4.033256567044514,phase_shift,CO
+100,2,Partial discharge,38,CO_late_mean,6.3054191937786985,phase_shift,CO
+100,2,Partial discharge,38,CO_late_minus_early,3.4957654218310195,phase_shift,CO
+100,2,Partial discharge,38,CO_positive_diff_fraction,1.6756788243024499,local_dynamics,CO
+100,2,Partial discharge,38,C2H4_first,1.3190227109437935,endpoint_change,C2H4
+100,2,Partial discharge,38,C2H4_last,1.6646597617330487,endpoint_change,C2H4
+100,2,Partial discharge,38,C2H4_mean,2.401599757951067,statistical,C2H4
+100,2,Partial discharge,38,C2H4_std,1.6609352898592835,statistical,C2H4
+100,2,Partial discharge,38,C2H4_min,1.318247978754615,statistical,C2H4
+100,2,Partial discharge,38,C2H4_max,2.4678740145301314,statistical,C2H4
+100,2,Partial discharge,38,C2H4_median,2.352035619139998,statistical,C2H4
+100,2,Partial discharge,38,C2H4_q25,1.8009032282969206,statistical,C2H4
+100,2,Partial discharge,38,C2H4_q75,2.896315175633161,statistical,C2H4
+100,2,Partial discharge,38,C2H4_delta,0.44776302686327013,endpoint_change,C2H4
+100,2,Partial discharge,38,C2H4_slope,0.031627465471884476,trend,C2H4
+100,2,Partial discharge,38,C2H4_trend_r2,0.17726116481958076,trend,C2H4
+100,2,Partial discharge,38,C2H4_mean_diff,0.4477630268631766,local_dynamics,C2H4
+100,2,Partial discharge,38,C2H4_std_diff,0.31377072401620515,local_dynamics,C2H4
+100,2,Partial discharge,38,C2H4_max_abs_diff,0.2923886020022895,local_dynamics,C2H4
+100,2,Partial discharge,38,C2H4_early_mean,1.256476219850862,phase_shift,C2H4
+100,2,Partial discharge,38,C2H4_late_mean,1.185662953338553,phase_shift,C2H4
+100,2,Partial discharge,38,C2H4_late_minus_early,0.2360205886263813,phase_shift,C2H4
+100,2,Partial discharge,38,C2H4_positive_diff_fraction,0.3621251365424357,local_dynamics,C2H4
+100,2,Partial discharge,38,C2H2_first,0.48091005364909734,endpoint_change,C2H2
+100,2,Partial discharge,38,C2H2_last,0.49859671881486717,endpoint_change,C2H2
+100,2,Partial discharge,38,C2H2_mean,0.10449904487414136,statistical,C2H2
+100,2,Partial discharge,38,C2H2_std,1.0011557778004274,statistical,C2H2
+100,2,Partial discharge,38,C2H2_min,0.6862315380864328,statistical,C2H2
+100,2,Partial discharge,38,C2H2_max,0.9596070024385156,statistical,C2H2
+100,2,Partial discharge,38,C2H2_median,0.44763527804356945,statistical,C2H2
+100,2,Partial discharge,38,C2H2_q25,0.3719535578250616,statistical,C2H2
+100,2,Partial discharge,38,C2H2_q75,0.2723443739536833,statistical,C2H2
+100,2,Partial discharge,38,C2H2_delta,1.442760544919124,endpoint_change,C2H2
+100,2,Partial discharge,38,C2H2_slope,1.0823111389799531,trend,C2H2
+100,2,Partial discharge,38,C2H2_trend_r2,0.13940295376373416,trend,C2H2
+100,2,Partial discharge,38,C2H2_mean_diff,1.442760544918903,local_dynamics,C2H2
+100,2,Partial discharge,38,C2H2_std_diff,0.31183478878697374,local_dynamics,C2H2
+100,2,Partial discharge,38,C2H2_max_abs_diff,0.20991375572076826,local_dynamics,C2H2
+100,2,Partial discharge,38,C2H2_early_mean,0.14247397097556044,phase_shift,C2H2
+100,2,Partial discharge,38,C2H2_late_mean,0.13581115121082013,phase_shift,C2H2
+100,2,Partial discharge,38,C2H2_late_minus_early,0.4901234770819492,phase_shift,C2H2
+100,2,Partial discharge,38,C2H2_positive_diff_fraction,0.7019596921081916,local_dynamics,C2H2
+100,2,Partial discharge,38,corr_H2_CO,2.171237289270458,cross_gas_correlation,cross-gas
+100,2,Partial discharge,38,corr_H2_C2H4,0.13673414094450811,cross_gas_correlation,cross-gas
+100,2,Partial discharge,38,corr_H2_C2H2,0.49623200594731437,cross_gas_correlation,cross-gas
+100,2,Partial discharge,38,corr_CO_C2H4,0.4280360825254544,cross_gas_correlation,cross-gas
+100,2,Partial discharge,38,corr_CO_C2H2,0.5557143351164898,cross_gas_correlation,cross-gas
+100,2,Partial discharge,38,corr_C2H4_C2H2,0.37982696702509255,cross_gas_correlation,cross-gas
+100,3,Low energy discharge,49,H2_first,1.059285561842175,endpoint_change,H2
+100,3,Low energy discharge,49,H2_last,0.8063036416838101,endpoint_change,H2
+100,3,Low energy discharge,49,H2_mean,0.21211455172092916,statistical,H2
+100,3,Low energy discharge,49,H2_std,0.4911502707974174,statistical,H2
+100,3,Low energy discharge,49,H2_min,0.6124201240807632,statistical,H2
+100,3,Low energy discharge,49,H2_max,0.8002518960724253,statistical,H2
+100,3,Low energy discharge,49,H2_median,0.46432914418111504,statistical,H2
+100,3,Low energy discharge,49,H2_q25,0.7739893679876243,statistical,H2
+100,3,Low energy discharge,49,H2_q75,0.19855153902666284,statistical,H2
+100,3,Low energy discharge,49,H2_delta,0.04979538629797074,endpoint_change,H2
+100,3,Low energy discharge,49,H2_slope,1.1869180974158664,trend,H2
+100,3,Low energy discharge,49,H2_trend_r2,0.10864078897207763,trend,H2
+100,3,Low energy discharge,49,H2_mean_diff,0.0497953862989699,local_dynamics,H2
+100,3,Low energy discharge,49,H2_std_diff,1.1057961685796,local_dynamics,H2
+100,3,Low energy discharge,49,H2_max_abs_diff,0.9150737347785687,local_dynamics,H2
+100,3,Low energy discharge,49,H2_early_mean,0.8681680703374245,phase_shift,H2
+100,3,Low energy discharge,49,H2_late_mean,0.5288180744656774,phase_shift,H2
+100,3,Low energy discharge,49,H2_late_minus_early,0.39421950006545137,phase_shift,H2
+100,3,Low energy discharge,49,H2_positive_diff_fraction,0.30898710020664033,local_dynamics,H2
+100,3,Low energy discharge,49,CO_first,3.469463058341269,endpoint_change,CO
+100,3,Low energy discharge,49,CO_last,3.395515344294662,endpoint_change,CO
+100,3,Low energy discharge,49,CO_mean,0.0991102951752973,statistical,CO
+100,3,Low energy discharge,49,CO_std,0.9303459019273435,statistical,CO
+100,3,Low energy discharge,49,CO_min,1.5078534278822282,statistical,CO
+100,3,Low energy discharge,49,CO_max,0.2077011047377612,statistical,CO
+100,3,Low energy discharge,49,CO_median,0.4931155938199713,statistical,CO
+100,3,Low energy discharge,49,CO_q25,0.18259044504253613,statistical,CO
+100,3,Low energy discharge,49,CO_q75,0.6144768313969594,statistical,CO
+100,3,Low energy discharge,49,CO_delta,0.4069172394631567,endpoint_change,CO
+100,3,Low energy discharge,49,CO_slope,1.6316172106317663,trend,CO
+100,3,Low energy discharge,49,CO_trend_r2,1.2911804751041835,trend,CO
+100,3,Low energy discharge,49,CO_mean_diff,0.4069172394631481,local_dynamics,CO
+100,3,Low energy discharge,49,CO_std_diff,0.8791841453789458,local_dynamics,CO
+100,3,Low energy discharge,49,CO_max_abs_diff,5.985118928413333,local_dynamics,CO
+100,3,Low energy discharge,49,CO_early_mean,1.689666834458866,phase_shift,CO
+100,3,Low energy discharge,49,CO_late_mean,1.3652427605277158,phase_shift,CO
+100,3,Low energy discharge,49,CO_late_minus_early,0.28022568296253325,phase_shift,CO
+100,3,Low energy discharge,49,CO_positive_diff_fraction,1.4449802427237775,local_dynamics,CO
+100,3,Low energy discharge,49,C2H4_first,2.401682543907864,endpoint_change,C2H4
+100,3,Low energy discharge,49,C2H4_last,2.7332544758086135,endpoint_change,C2H4
+100,3,Low energy discharge,49,C2H4_mean,0.6894424305380387,statistical,C2H4
+100,3,Low energy discharge,49,C2H4_std,0.8207612014469159,statistical,C2H4
+100,3,Low energy discharge,49,C2H4_min,1.7806138697456495,statistical,C2H4
+100,3,Low energy discharge,49,C2H4_max,2.444647025343915,statistical,C2H4
+100,3,Low energy discharge,49,C2H4_median,0.09544510501113834,statistical,C2H4
+100,3,Low energy discharge,49,C2H4_q25,0.0019987244413348934,statistical,C2H4
+100,3,Low energy discharge,49,C2H4_q75,0.34470442190249084,statistical,C2H4
+100,3,Low energy discharge,49,C2H4_delta,1.1383814620626829,endpoint_change,C2H4
+100,3,Low energy discharge,49,C2H4_slope,1.569359060877768,trend,C2H4
+100,3,Low energy discharge,49,C2H4_trend_r2,0.7837524347581611,trend,C2H4
+100,3,Low energy discharge,49,C2H4_mean_diff,1.1383814620592878,local_dynamics,C2H4
+100,3,Low energy discharge,49,C2H4_std_diff,0.5486568854432717,local_dynamics,C2H4
+100,3,Low energy discharge,49,C2H4_max_abs_diff,4.07828746143029,local_dynamics,C2H4
+100,3,Low energy discharge,49,C2H4_early_mean,2.4258777846818895,phase_shift,C2H4
+100,3,Low energy discharge,49,C2H4_late_mean,1.3407632425526146,phase_shift,C2H4
+100,3,Low energy discharge,49,C2H4_late_minus_early,2.3919189645430925,phase_shift,C2H4
+100,3,Low energy discharge,49,C2H4_positive_diff_fraction,1.9923665873860408,local_dynamics,C2H4
+100,3,Low energy discharge,49,C2H2_first,0.15566846525109654,endpoint_change,C2H2
+100,3,Low energy discharge,49,C2H2_last,0.25499694284225954,endpoint_change,C2H2
+100,3,Low energy discharge,49,C2H2_mean,0.23790291996713375,statistical,C2H2
+100,3,Low energy discharge,49,C2H2_std,0.2821300961108074,statistical,C2H2
+100,3,Low energy discharge,49,C2H2_min,0.6670350846744239,statistical,C2H2
+100,3,Low energy discharge,49,C2H2_max,0.27023866293765864,statistical,C2H2
+100,3,Low energy discharge,49,C2H2_median,0.5781362373116559,statistical,C2H2
+100,3,Low energy discharge,49,C2H2_q25,0.06714784764420642,statistical,C2H2
+100,3,Low energy discharge,49,C2H2_q75,0.8511984820570938,statistical,C2H2
+100,3,Low energy discharge,49,C2H2_delta,0.32891387039994785,endpoint_change,C2H2
+100,3,Low energy discharge,49,C2H2_slope,0.12207049292138235,trend,C2H2
+100,3,Low energy discharge,49,C2H2_trend_r2,0.3049392887648271,trend,C2H2
+100,3,Low energy discharge,49,C2H2_mean_diff,0.3289138703895029,local_dynamics,C2H2
+100,3,Low energy discharge,49,C2H2_std_diff,1.8377407203511256,local_dynamics,C2H2
+100,3,Low energy discharge,49,C2H2_max_abs_diff,3.322603040827694,local_dynamics,C2H2
+100,3,Low energy discharge,49,C2H2_early_mean,0.13527265457861182,phase_shift,C2H2
+100,3,Low energy discharge,49,C2H2_late_mean,0.007304812228640886,phase_shift,C2H2
+100,3,Low energy discharge,49,C2H2_late_minus_early,0.26168025364404507,phase_shift,C2H2
+100,3,Low energy discharge,49,C2H2_positive_diff_fraction,0.4050866477235145,local_dynamics,C2H2
+100,3,Low energy discharge,49,corr_H2_CO,0.5438008249757138,cross_gas_correlation,cross-gas
+100,3,Low energy discharge,49,corr_H2_C2H4,1.502427987106653,cross_gas_correlation,cross-gas
+100,3,Low energy discharge,49,corr_H2_C2H2,0.05820220953726609,cross_gas_correlation,cross-gas
+100,3,Low energy discharge,49,corr_CO_C2H4,0.07751164803209576,cross_gas_correlation,cross-gas
+100,3,Low energy discharge,49,corr_CO_C2H2,0.9022346559819558,cross_gas_correlation,cross-gas
+100,3,Low energy discharge,49,corr_C2H4_C2H2,0.5994847300627105,cross_gas_correlation,cross-gas
+100,4,Low-temperature overheating,82,H2_first,1.2354181876871537,endpoint_change,H2
+100,4,Low-temperature overheating,82,H2_last,0.6707757926183487,endpoint_change,H2
+100,4,Low-temperature overheating,82,H2_mean,0.46580548316030074,statistical,H2
+100,4,Low-temperature overheating,82,H2_std,0.6156589647993811,statistical,H2
+100,4,Low-temperature overheating,82,H2_min,2.1727853185424535,statistical,H2
+100,4,Low-temperature overheating,82,H2_max,0.8485383882880947,statistical,H2
+100,4,Low-temperature overheating,82,H2_median,1.5396403910346723,statistical,H2
+100,4,Low-temperature overheating,82,H2_q25,1.7809742257663295,statistical,H2
+100,4,Low-temperature overheating,82,H2_q75,1.0872653620857824,statistical,H2
+100,4,Low-temperature overheating,82,H2_delta,0.7298735984448216,endpoint_change,H2
+100,4,Low-temperature overheating,82,H2_slope,0.4788215129480517,trend,H2
+100,4,Low-temperature overheating,82,H2_trend_r2,0.34705953926759325,trend,H2
+100,4,Low-temperature overheating,82,H2_mean_diff,0.7298735984444379,local_dynamics,H2
+100,4,Low-temperature overheating,82,H2_std_diff,0.4778626709832017,local_dynamics,H2
+100,4,Low-temperature overheating,82,H2_max_abs_diff,0.12569406768925367,local_dynamics,H2
+100,4,Low-temperature overheating,82,H2_early_mean,0.5331293717293597,phase_shift,H2
+100,4,Low-temperature overheating,82,H2_late_mean,0.39956272298077355,phase_shift,H2
+100,4,Low-temperature overheating,82,H2_late_minus_early,0.20537931850261146,phase_shift,H2
+100,4,Low-temperature overheating,82,H2_positive_diff_fraction,0.6400371559640547,local_dynamics,H2
+100,4,Low-temperature overheating,82,CO_first,0.03178626605034475,endpoint_change,CO
+100,4,Low-temperature overheating,82,CO_last,0.7783375097827281,endpoint_change,CO
+100,4,Low-temperature overheating,82,CO_mean,2.121776529902305,statistical,CO
+100,4,Low-temperature overheating,82,CO_std,0.22910747220985908,statistical,CO
+100,4,Low-temperature overheating,82,CO_min,2.3497262474507887,statistical,CO
+100,4,Low-temperature overheating,82,CO_max,2.4420401317944496,statistical,CO
+100,4,Low-temperature overheating,82,CO_median,0.4171599321397487,statistical,CO
+100,4,Low-temperature overheating,82,CO_q25,4.577110261473509,statistical,CO
+100,4,Low-temperature overheating,82,CO_q75,0.6232503244532627,statistical,CO
+100,4,Low-temperature overheating,82,CO_delta,1.1426447940391256,endpoint_change,CO
+100,4,Low-temperature overheating,82,CO_slope,1.1437141900912469,trend,CO
+100,4,Low-temperature overheating,82,CO_trend_r2,0.07015887819486909,trend,CO
+100,4,Low-temperature overheating,82,CO_mean_diff,1.1426447940386326,local_dynamics,CO
+100,4,Low-temperature overheating,82,CO_std_diff,1.100145814382157,local_dynamics,CO
+100,4,Low-temperature overheating,82,CO_max_abs_diff,1.283844752719714,local_dynamics,CO
+100,4,Low-temperature overheating,82,CO_early_mean,0.05178135546061924,phase_shift,CO
+100,4,Low-temperature overheating,82,CO_late_mean,0.5320844314375776,phase_shift,CO
+100,4,Low-temperature overheating,82,CO_late_minus_early,0.7967115945878052,phase_shift,CO
+100,4,Low-temperature overheating,82,CO_positive_diff_fraction,0.6520370544263274,local_dynamics,CO
+100,4,Low-temperature overheating,82,C2H4_first,3.089084848991182,endpoint_change,C2H4
+100,4,Low-temperature overheating,82,C2H4_last,1.9472509758474994,endpoint_change,C2H4
+100,4,Low-temperature overheating,82,C2H4_mean,0.6378251846559655,statistical,C2H4
+100,4,Low-temperature overheating,82,C2H4_std,1.8213652522091517,statistical,C2H4
+100,4,Low-temperature overheating,82,C2H4_min,4.5459730749982254,statistical,C2H4
+100,4,Low-temperature overheating,82,C2H4_max,0.2776609591421025,statistical,C2H4
+100,4,Low-temperature overheating,82,C2H4_median,0.743781381823888,statistical,C2H4
+100,4,Low-temperature overheating,82,C2H4_q25,2.505248832662877,statistical,C2H4
+100,4,Low-temperature overheating,82,C2H4_q75,2.1775111596972523,statistical,C2H4
+100,4,Low-temperature overheating,82,C2H4_delta,0.7252870694940814,endpoint_change,C2H4
+100,4,Low-temperature overheating,82,C2H4_slope,0.9119223767713015,trend,C2H4
+100,4,Low-temperature overheating,82,C2H4_trend_r2,0.1678362519185757,trend,C2H4
+100,4,Low-temperature overheating,82,C2H4_mean_diff,0.7252870694964406,local_dynamics,C2H4
+100,4,Low-temperature overheating,82,C2H4_std_diff,0.5088070119463783,local_dynamics,C2H4
+100,4,Low-temperature overheating,82,C2H4_max_abs_diff,1.6017989478892867,local_dynamics,C2H4
+100,4,Low-temperature overheating,82,C2H4_early_mean,0.762348057589295,phase_shift,C2H4
+100,4,Low-temperature overheating,82,C2H4_late_mean,1.4206053216064676,phase_shift,C2H4
+100,4,Low-temperature overheating,82,C2H4_late_minus_early,1.55015374823414,phase_shift,C2H4
+100,4,Low-temperature overheating,82,C2H4_positive_diff_fraction,0.8747441835003563,local_dynamics,C2H4
+100,4,Low-temperature overheating,82,C2H2_first,1.484363260322049,endpoint_change,C2H2
+100,4,Low-temperature overheating,82,C2H2_last,0.5591045061402395,endpoint_change,C2H2
+100,4,Low-temperature overheating,82,C2H2_mean,0.8573727201696905,statistical,C2H2
+100,4,Low-temperature overheating,82,C2H2_std,0.03874790098201055,statistical,C2H2
+100,4,Low-temperature overheating,82,C2H2_min,0.3476687787695562,statistical,C2H2
+100,4,Low-temperature overheating,82,C2H2_max,0.19312645870687545,statistical,C2H2
+100,4,Low-temperature overheating,82,C2H2_median,0.0794287863594412,statistical,C2H2
+100,4,Low-temperature overheating,82,C2H2_q25,1.6315655482035978,statistical,C2H2
+100,4,Low-temperature overheating,82,C2H2_q75,0.41806494266958205,statistical,C2H2
+100,4,Low-temperature overheating,82,C2H2_delta,1.3885371162783031,endpoint_change,C2H2
+100,4,Low-temperature overheating,82,C2H2_slope,1.3854871129215016,trend,C2H2
+100,4,Low-temperature overheating,82,C2H2_trend_r2,0.9135648846982247,trend,C2H2
+100,4,Low-temperature overheating,82,C2H2_mean_diff,1.3885371162915645,local_dynamics,C2H2
+100,4,Low-temperature overheating,82,C2H2_std_diff,1.2648338067892984,local_dynamics,C2H2
+100,4,Low-temperature overheating,82,C2H2_max_abs_diff,1.0544748223072238,local_dynamics,C2H2
+100,4,Low-temperature overheating,82,C2H2_early_mean,0.18163452336228428,phase_shift,C2H2
+100,4,Low-temperature overheating,82,C2H2_late_mean,0.23307990179440669,phase_shift,C2H2
+100,4,Low-temperature overheating,82,C2H2_late_minus_early,0.8567802500302005,phase_shift,C2H2
+100,4,Low-temperature overheating,82,C2H2_positive_diff_fraction,0.7406566220603741,local_dynamics,C2H2
+100,4,Low-temperature overheating,82,corr_H2_CO,0.24508662661894537,cross_gas_correlation,cross-gas
+100,4,Low-temperature overheating,82,corr_H2_C2H4,0.41807860001429625,cross_gas_correlation,cross-gas
+100,4,Low-temperature overheating,82,corr_H2_C2H2,0.03664245110238952,cross_gas_correlation,cross-gas
+100,4,Low-temperature overheating,82,corr_CO_C2H4,0.0954772870128072,cross_gas_correlation,cross-gas
+100,4,Low-temperature overheating,82,corr_CO_C2H2,0.03815539913318209,cross_gas_correlation,cross-gas
+100,4,Low-temperature overheating,82,corr_C2H4_C2H2,0.2577763181874911,cross_gas_correlation,cross-gas

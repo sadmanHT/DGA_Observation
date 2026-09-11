@@ -1,0 +1,10 @@
+path,sha256,bytes
+C:\Users\taufi\Desktop\dga-full-code\runs\final_5fold\features\feature_manifest.json,9c4c0c2e7cb43063ed99d3368aaf4c93bb3930e7ab15e1e8b05212e8c0001847,5153
+C:\Users\taufi\Desktop\dga-full-code\runs\final_5fold\features\features_train_h25.csv,11009c9c05c55c233d9c37ea34e246c7b44e2882196acb1b4f8b1a09da2ad8be,3441172
+C:\Users\taufi\Desktop\dga-full-code\runs\final_5fold\features\features_test_h25.csv,063a76df16f3bf59feaa0b90cb04fbd9cf554fdb3241d56c2e31def75743a366,1474387
+C:\Users\taufi\Desktop\dga-full-code\runs\final_5fold\features\features_train_h50.csv,8995c738b8ebe89ba5bc18a6db8f523fb33c57a1041ed2830c37d7b13e6fc87e,3534157
+C:\Users\taufi\Desktop\dga-full-code\runs\final_5fold\features\features_test_h50.csv,a48202aa9cff4e1aa3912dc6cd999f3cee470ed5a2ea4b9c760a6197a7f41671,1513316
+C:\Users\taufi\Desktop\dga-full-code\runs\final_5fold\features\features_train_h75.csv,1b05b68b253db3e9d5c0dd66491967c0834471b9d21bb426ce24e04c24716760,3510586
+C:\Users\taufi\Desktop\dga-full-code\runs\final_5fold\features\features_test_h75.csv,2ba95b6da589c6c7f028e4af088e397b66a319c1a918170ce2237174762c764b,1504606
+C:\Users\taufi\Desktop\dga-full-code\runs\final_5fold\features\features_train_h100.csv,33a995819c8d87c2810a78c59157ba2e049d68e82145e8b3ba5ebcef7603eebe,3517688
+C:\Users\taufi\Desktop\dga-full-code\runs\final_5fold\features\features_test_h100.csv,4a2fd4ec44ca87118c26eef32e64be45549be27dca33b5ce2b47cd792f5608df,1506894

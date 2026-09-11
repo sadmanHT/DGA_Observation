@@ -1,0 +1,107 @@
+[
+  {
+    "repo_file": "canonical/scripts/01_build_features.py",
+    "source_file": "/mnt/data/github2_extracted/dga-observation-efficient-fdd/scripts/01_build_features.py",
+    "sha256": "2a80f4c538bd2233e2d3204e81af4b724cf6a7fd1c71d551a23fb64b8786559c",
+    "source_sha256": "2a80f4c538bd2233e2d3204e81af4b724cf6a7fd1c71d551a23fb64b8786559c",
+    "exact_copy": true
+  },
+  {
+    "repo_file": "canonical/scripts/02_run_5fold_experiments.py",
+    "source_file": "/mnt/data/github2_extracted/dga-observation-efficient-fdd/scripts/02_run_5fold_experiments.py",
+    "sha256": "e4abe875fb1cd2720cc826142021e7c45cb4775fa1ab1283215523e49ab5da3c",
+    "source_sha256": "e4abe875fb1cd2720cc826142021e7c45cb4775fa1ab1283215523e49ab5da3c",
+    "exact_copy": true
+  },
+  {
+    "repo_file": "canonical/scripts/03_shap_explanations.py",
+    "source_file": "/mnt/data/github2_extracted/dga-observation-efficient-fdd/scripts/03_shap_explanations.py",
+    "sha256": "26e680a58f1e5303dae63674a4ecf89b8566aa26733e122a0203474eac34dbbd",
+    "source_sha256": "26e680a58f1e5303dae63674a4ecf89b8566aa26733e122a0203474eac34dbbd",
+    "exact_copy": true
+  },
+  {
+    "repo_file": "canonical/run_canonical.py",
+    "source_file": "/mnt/data/github2_extracted/dga-observation-efficient-fdd/run_all.py",
+    "sha256": "ce5559dae2dc2cc8c121c11972519f34c48c7ecfb2b146beda4517ee1ce2523e",
+    "source_sha256": "ce5559dae2dc2cc8c121c11972519f34c48c7ecfb2b146beda4517ee1ce2523e",
+    "exact_copy": true
+  },
+  {
+    "repo_file": "advanced/scripts/04_build_dense_features.py",
+    "source_file": "/mnt/data/work_adv/dga_advanced_upgrade_converged/scripts/04_build_dense_features.py",
+    "sha256": "3b36e3cb2f8c7e832007d54087f4d68be2764eb0e1612bed65898601a8572f3f",
+    "source_sha256": "3b36e3cb2f8c7e832007d54087f4d68be2764eb0e1612bed65898601a8572f3f",
+    "exact_copy": true
+  },
+  {
+    "repo_file": "advanced/scripts/05a_dense_representation_curve.py",
+    "source_file": "/mnt/data/work_adv/dga_advanced_upgrade_converged/scripts/05a_dense_representation_curve.py",
+    "sha256": "5a328ec50e5d295932d1c1cbb9f31e80af879d14d9091fb8dcce043e7d3d225c",
+    "source_sha256": "5a328ec50e5d295932d1c1cbb9f31e80af879d14d9091fb8dcce043e7d3d225c",
+    "exact_copy": true
+  },
+  {
+    "repo_file": "advanced/scripts/05_dense_adaptive_stopping.py",
+    "source_file": "/mnt/data/work_adv/dga_advanced_upgrade_converged/scripts/05_dense_adaptive_stopping.py",
+    "sha256": "8cdf1268b7ff1b356610c368f165733aa6c52de8bfa8a435df5240aa6db04751",
+    "source_sha256": "8cdf1268b7ff1b356610c368f165733aa6c52de8bfa8a435df5240aa6db04751",
+    "exact_copy": true
+  },
+  {
+    "repo_file": "advanced/scripts/06_formal_interaction.py",
+    "source_file": "/mnt/data/work_adv/dga_advanced_upgrade_converged/scripts/06_formal_interaction.py",
+    "sha256": "079206e5694303717dbd41fcad7f30dbdc6a5da417422268dfd1ebdd078c7f7f",
+    "source_sha256": "079206e5694303717dbd41fcad7f30dbdc6a5da417422268dfd1ebdd078c7f7f",
+    "exact_copy": true
+  },
+  {
+    "repo_file": "advanced/scripts/07_feature_family_ablation.py",
+    "source_file": "/mnt/data/work_adv/dga_advanced_upgrade_converged/scripts/07_feature_family_ablation.py",
+    "sha256": "28090ceea3f2687c9392e2ab2ecacab9e242c690f00f47b2f2a9f2c41572c8c1",
+    "source_sha256": "28090ceea3f2687c9392e2ab2ecacab9e242c690f00f47b2f2a9f2c41572c8c1",
+    "exact_copy": true
+  },
+  {
+    "repo_file": "advanced/scripts/08_robustness_stress.py",
+    "source_file": "/mnt/data/work_adv/dga_advanced_upgrade_converged/scripts/08_robustness_stress.py",
+    "sha256": "c3c29cf751a48ab127d7facf3ce32c904dd0ceaa38dce4aca41ee092b35ac77e",
+    "source_sha256": "c3c29cf751a48ab127d7facf3ce32c904dd0ceaa38dce4aca41ee092b35ac77e",
+    "exact_copy": true
+  },
+  {
+    "repo_file": "advanced/scripts/09_conformal_dense.py",
+    "source_file": "/mnt/data/work_adv/dga_advanced_upgrade_converged/scripts/09_conformal_dense.py",
+    "sha256": "942f788aeacd291c47ea02c704c9ebedc3095f54b9e2ae13d6446101416600a6",
+    "source_sha256": "942f788aeacd291c47ea02c704c9ebedc3095f54b9e2ae13d6446101416600a6",
+    "exact_copy": true
+  },
+  {
+    "repo_file": "advanced/scripts/10_shap_early_stability.py",
+    "source_file": "/mnt/data/work_adv/dga_advanced_upgrade_converged/scripts/10_shap_early_stability.py",
+    "sha256": "3596dc31349cc2ee7d295032848111e7f725107f73a12330eca897a9c81d7f17",
+    "source_sha256": "3596dc31349cc2ee7d295032848111e7f725107f73a12330eca897a9c81d7f17",
+    "exact_copy": true
+  },
+  {
+    "repo_file": "advanced/scripts/11_summarize_advanced_results.py",
+    "source_file": "/mnt/data/work_adv/dga_advanced_upgrade_converged/scripts/11_summarize_advanced_results.py",
+    "sha256": "902fd8d27f84b69e8bb5b00ac60154c7c27b9175610f0f0794ac3455a8aa736f",
+    "source_sha256": "902fd8d27f84b69e8bb5b00ac60154c7c27b9175610f0f0794ac3455a8aa736f",
+    "exact_copy": true
+  },
+  {
+    "repo_file": "advanced/scripts/advanced_common.py",
+    "source_file": "/mnt/data/work_adv/dga_advanced_upgrade_converged/scripts/advanced_common.py",
+    "sha256": "f905b9424aa2ad4fa48b5c92131dce4fe8ba1de9aeed7dacad748f82240f9b21",
+    "source_sha256": "f905b9424aa2ad4fa48b5c92131dce4fe8ba1de9aeed7dacad748f82240f9b21",
+    "exact_copy": true
+  },
+  {
+    "repo_file": "advanced/run_advanced.py",
+    "source_file": "/mnt/data/work_adv/dga_advanced_upgrade_converged/run_advanced.py",
+    "sha256": "78213b02b6f025271fbcdc34396034946eb0d5fa462c14fed75ca94dfb07fe6e",
+    "source_sha256": "78213b02b6f025271fbcdc34396034946eb0d5fa462c14fed75ca94dfb07fe6e",
+    "exact_copy": true
+  }
+]

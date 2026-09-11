@@ -1,0 +1,13 @@
+{
+  "selection_data": "training OOF only",
+  "noise_model": "independent multiplicative Gaussian, clipped nonnegative",
+  "selection_noise_levels": [
+    0.02,
+    0.05
+  ],
+  "selection_repeats_per_level": 3,
+  "clean_retention_constraint": 0.98,
+  "unsmoothed_clean_oof_macro_f1": 0.8632003428408511,
+  "minimum_eligible_clean_oof_macro_f1": 0.8459363359840341,
+  "selected_causal_moving_average_window": 11
+}

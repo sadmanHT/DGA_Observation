@@ -1,0 +1,13 @@
+{
+  "statistical_75_macro_f1": 0.8416711941391892,
+  "temporal_75_macro_f1": 0.8971428631169127,
+  "effect_75_temporal_minus_statistical": 0.05547166897772349,
+  "statistical_100_macro_f1": 0.9232014772454638,
+  "temporal_100_macro_f1": 0.9026070418115872,
+  "effect_100_temporal_minus_statistical": -0.020594435433876512,
+  "interaction_difference_of_differences": 0.0760661044116,
+  "ci95_low": 0.027847059177085645,
+  "ci95_high": 0.12631159251265753,
+  "bootstrap_samples": 5000,
+  "definition": "(Temporal75-Statistical75) - (Temporal100-Statistical100)"
+}

@@ -1,0 +1,31 @@
+{
+  "raw_root": "/kaggle/input/datasets/sharianhasan/def-files/power_transformers_fdd_and_rul(1)",
+  "canonical_root": "/kaggle/input/datasets/sharianhasan/def-files/final_5fold(1)",
+  "sklearn_version": "1.9.0",
+  "sklearn_file": "/kaggle/working/pydeps_sklearn190/sklearn/__init__.py",
+  "seed": 42,
+  "cv_splits": 5,
+  "bootstrap": 5000,
+  "noise_selection_levels": [
+    0.02,
+    0.05
+  ],
+  "noise_selection_repeats": 3,
+  "noise_test_levels": [
+    0.02,
+    0.05,
+    0.1
+  ],
+  "noise_test_repeats": 20,
+  "clean_retention_constraint": 0.98,
+  "candidate_smoothing_windows": [
+    1,
+    3,
+    5,
+    7,
+    11
+  ],
+  "selected_window": 11,
+  "selected_C": 100.0,
+  "selected_class_weight": "balanced"
+}

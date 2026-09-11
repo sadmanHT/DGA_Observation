@@ -1,0 +1,12 @@
+{
+  "tol": 1e-06,
+  "C": 100.0,
+  "class_weight": "balanced",
+  "training_cv_macro_f1": 0.9158686431719729,
+  "test_metrics_descriptive_only_after_selection": {
+    "accuracy": 0.9522222222222222,
+    "balanced_accuracy": 0.923012183349024,
+    "macro_f1": 0.8966122944927221,
+    "weighted_f1": 0.9542605897731167
+  }
+}

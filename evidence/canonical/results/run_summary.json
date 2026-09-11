@@ -1,0 +1,24 @@
+{
+  "random_state": 42,
+  "cv_folds": 5,
+  "tuning_iterations": 20,
+  "paired_bootstrap_samples": 5000,
+  "primary_metric": "macro-F1",
+  "model_selection": "highest 5-fold TRAIN-CV macro-F1 among explainable candidates; held-out TEST metrics excluded from selection",
+  "selected_model": "LogisticRegression",
+  "best_cv_macro_f1": 0.9151149577722736,
+  "final_full82_h100_test_macro_f1": 0.9026070418115872,
+  "final_full82_h100_test_accuracy": 0.96,
+  "best_params": {
+    "model__class_weight": null,
+    "model__C": 30.0
+  },
+  "smoke_mode": false,
+  "notes": [
+    "The supplied train/test split is preserved exactly.",
+    "All hyperparameter tuning occurs on the training split via stratified 5-fold CV.",
+    "Observation-horizon comparisons use prefix-only feature tables.",
+    "Paired bootstrap comparisons resample the same test cases.",
+    "Selective diagnosis uses native model confidence and makes no probability-calibration claim."
+  ]
+}

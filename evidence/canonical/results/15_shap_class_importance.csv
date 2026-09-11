@@ -1,0 +1,329 @@
+class,class_name,feature,mean_abs_shap
+1,Normal mode,CO_first,5.086589434462227
+1,Normal mode,CO_max_abs_diff,5.075017495962706
+1,Normal mode,CO_q75,4.470928457031067
+1,Normal mode,CO_median,4.3367431322165055
+1,Normal mode,CO_last,4.041227761720415
+1,Normal mode,C2H4_late_minus_early,3.736695894850083
+1,Normal mode,CO_early_mean,3.655196932288956
+1,Normal mode,CO_late_mean,3.5996931871605473
+1,Normal mode,C2H4_min,3.1381067741730377
+1,Normal mode,C2H2_max_abs_diff,2.8654436616076335
+1,Normal mode,CO_mean,2.586189951029016
+1,Normal mode,C2H4_slope,2.5320234864321844
+1,Normal mode,H2_min,2.269965472728239
+1,Normal mode,CO_min,2.211524661025014
+1,Normal mode,corr_H2_C2H4,1.9145128120625061
+1,Normal mode,CO_positive_diff_fraction,1.6797798045611056
+1,Normal mode,H2_max_abs_diff,1.6192847390085932
+1,Normal mode,C2H4_max_abs_diff,1.606299030932857
+1,Normal mode,C2H4_delta,1.5117404538376138
+1,Normal mode,C2H4_mean_diff,1.5117404538371806
+1,Normal mode,C2H4_positive_diff_fraction,1.4974041973531507
+1,Normal mode,C2H4_early_mean,1.4718917118137957
+1,Normal mode,H2_median,1.4555265409455906
+1,Normal mode,H2_std,1.4140102699004278
+1,Normal mode,C2H4_median,1.4027781660909404
+1,Normal mode,C2H2_q75,1.4005333845753807
+1,Normal mode,C2H4_std,1.3890081986265006
+1,Normal mode,C2H2_std,1.3690351107671128
+1,Normal mode,C2H4_q25,1.3484995298459417
+1,Normal mode,C2H2_q25,1.2875747761758072
+1,Normal mode,C2H2_std_diff,1.261129676153144
+1,Normal mode,C2H2_max,1.2423052138538246
+1,Normal mode,CO_max,1.2334425114423258
+1,Normal mode,C2H2_median,1.164101378308307
+1,Normal mode,C2H2_min,1.1639595354727557
+1,Normal mode,H2_slope,1.1176917824367163
+1,Normal mode,C2H4_max,1.0496244121774854
+1,Normal mode,C2H2_late_minus_early,1.013843327279632
+1,Normal mode,H2_positive_diff_fraction,1.0108786349286245
+1,Normal mode,H2_q75,0.9587261222407406
+1,Normal mode,C2H4_trend_r2,0.9433911564706583
+1,Normal mode,C2H4_first,0.9290572999037963
+1,Normal mode,H2_first,0.899260933026108
+1,Normal mode,CO_trend_r2,0.8984344097245942
+1,Normal mode,C2H2_slope,0.7942549969176954
+1,Normal mode,CO_q25,0.7845776393441942
+1,Normal mode,H2_last,0.7771503691235679
+1,Normal mode,C2H4_q75,0.7210052669729631
+1,Normal mode,H2_trend_r2,0.701976539620882
+1,Normal mode,C2H2_positive_diff_fraction,0.6621003739789912
+1,Normal mode,C2H2_first,0.6583012027697653
+1,Normal mode,CO_late_minus_early,0.6434197818245666
+1,Normal mode,H2_max,0.6137183439840107
+1,Normal mode,C2H2_trend_r2,0.5577810677333529
+1,Normal mode,H2_early_mean,0.5452159842025605
+1,Normal mode,H2_late_mean,0.5129132183643458
+1,Normal mode,C2H4_late_mean,0.5078150777751221
+1,Normal mode,CO_std_diff,0.4890118385494869
+1,Normal mode,corr_H2_CO,0.4861481679395595
+1,Normal mode,C2H2_delta,0.4752972720792421
+1,Normal mode,C2H2_mean_diff,0.47529727207352557
+1,Normal mode,C2H4_std_diff,0.4745985681225038
+1,Normal mode,corr_H2_C2H2,0.4558562153572914
+1,Normal mode,C2H2_early_mean,0.3992205462369186
+1,Normal mode,H2_std_diff,0.3672368968226202
+1,Normal mode,C2H2_mean,0.32863479448327504
+1,Normal mode,CO_std,0.3216639026409143
+1,Normal mode,H2_q25,0.31203306855039664
+1,Normal mode,corr_CO_C2H4,0.29206555298131986
+1,Normal mode,C2H2_last,0.2683987359740718
+1,Normal mode,CO_delta,0.22303822189866476
+1,Normal mode,CO_mean_diff,0.22303822189825845
+1,Normal mode,H2_mean,0.19816073337747434
+1,Normal mode,corr_CO_C2H2,0.1862917596577071
+1,Normal mode,C2H4_mean,0.1466347985515685
+1,Normal mode,C2H2_late_mean,0.12742791306862739
+1,Normal mode,H2_delta,0.11701813075530702
+1,Normal mode,H2_mean_diff,0.11701813075418765
+1,Normal mode,H2_late_minus_early,0.10043945518910709
+1,Normal mode,C2H4_last,0.09165495630390248
+1,Normal mode,CO_slope,0.06612174184294335
+1,Normal mode,corr_C2H4_C2H2,0.05583980045211431
+2,Partial discharge,CO_median,4.66208570544584
+2,Partial discharge,CO_q25,4.507430006313349
+2,Partial discharge,CO_mean,4.02862623984193
+2,Partial discharge,CO_q75,3.854205393579927
+2,Partial discharge,CO_slope,2.5426135035659603
+2,Partial discharge,CO_max,2.4440306124776745
+2,Partial discharge,CO_min,1.9653395335708925
+2,Partial discharge,C2H4_median,1.6021273109890941
+2,Partial discharge,C2H4_q75,1.5891816568111397
+2,Partial discharge,C2H2_delta,1.5635980952543604
+2,Partial discharge,C2H2_mean_diff,1.5635980952529154
+2,Partial discharge,H2_std,1.4653459544563943
+2,Partial discharge,C2H4_mean,1.3563782993870752
+2,Partial discharge,CO_late_mean,1.33165348221251
+2,Partial discharge,C2H4_std,1.253448858586184
+2,Partial discharge,C2H4_q25,1.2417788680179696
+2,Partial discharge,C2H2_max_abs_diff,1.1839412156231695
+2,Partial discharge,C2H4_max,1.0192162895882828
+2,Partial discharge,CO_early_mean,1.0034141251757043
+2,Partial discharge,H2_last,0.9519023738834609
+2,Partial discharge,corr_H2_CO,0.890667958565985
+2,Partial discharge,H2_positive_diff_fraction,0.8543275361219653
+2,Partial discharge,C2H4_late_minus_early,0.7908532758348397
+2,Partial discharge,CO_late_minus_early,0.7873220783605683
+2,Partial discharge,H2_early_mean,0.7839451555886223
+2,Partial discharge,H2_first,0.768068783187304
+2,Partial discharge,C2H4_delta,0.7654660593566708
+2,Partial discharge,C2H4_mean_diff,0.7654660593563439
+2,Partial discharge,C2H2_std,0.7537445903105723
+2,Partial discharge,C2H2_first,0.7239010465232446
+2,Partial discharge,C2H2_min,0.7070901843513727
+2,Partial discharge,C2H2_max,0.7035039201188488
+2,Partial discharge,H2_late_mean,0.7014294406490281
+2,Partial discharge,H2_trend_r2,0.6864029627651093
+2,Partial discharge,H2_delta,0.6825335458615823
+2,Partial discharge,H2_mean_diff,0.6825335458605009
+2,Partial discharge,H2_max,0.6304187173529018
+2,Partial discharge,C2H2_positive_diff_fraction,0.6203941233788364
+2,Partial discharge,H2_min,0.6005523984939344
+2,Partial discharge,CO_positive_diff_fraction,0.6004791937489495
+2,Partial discharge,CO_first,0.594425045074029
+2,Partial discharge,H2_q25,0.586244008598187
+2,Partial discharge,C2H2_slope,0.5749278495989758
+2,Partial discharge,H2_max_abs_diff,0.5342243740691764
+2,Partial discharge,corr_H2_C2H2,0.5229521474213943
+2,Partial discharge,H2_std_diff,0.5014295453035728
+2,Partial discharge,H2_slope,0.49224771074358215
+2,Partial discharge,CO_trend_r2,0.4853726768929621
+2,Partial discharge,C2H4_slope,0.4782657231790736
+2,Partial discharge,corr_CO_C2H2,0.4426173449855819
+2,Partial discharge,C2H4_last,0.429752971584359
+2,Partial discharge,H2_q75,0.40991199538293754
+2,Partial discharge,H2_median,0.3973124039072025
+2,Partial discharge,CO_std_diff,0.39588151212803574
+2,Partial discharge,CO_max_abs_diff,0.3780519525845705
+2,Partial discharge,corr_C2H4_C2H2,0.36949406106338106
+2,Partial discharge,H2_mean,0.3428863872073232
+2,Partial discharge,C2H4_std_diff,0.3254952334194371
+2,Partial discharge,CO_last,0.3023740632286949
+2,Partial discharge,CO_mean_diff,0.2861607600975134
+2,Partial discharge,CO_delta,0.28616076009732605
+2,Partial discharge,C2H2_std_diff,0.2823922849568518
+2,Partial discharge,C2H2_last,0.2801857913933636
+2,Partial discharge,C2H2_median,0.26908419759049285
+2,Partial discharge,C2H4_min,0.26259129694805644
+2,Partial discharge,C2H4_max_abs_diff,0.2484516368418929
+2,Partial discharge,corr_H2_C2H4,0.24427895245012993
+2,Partial discharge,C2H2_q75,0.22523187476771256
+2,Partial discharge,C2H4_early_mean,0.20719743302516092
+2,Partial discharge,C2H4_late_mean,0.19862653447375864
+2,Partial discharge,C2H2_late_minus_early,0.1891267577569925
+2,Partial discharge,corr_CO_C2H4,0.15552258529459684
+2,Partial discharge,C2H4_trend_r2,0.14507250659065993
+2,Partial discharge,C2H4_positive_diff_fraction,0.131680548748747
+2,Partial discharge,C2H2_q25,0.125467671844678
+2,Partial discharge,CO_std,0.10762023993321822
+2,Partial discharge,C2H2_late_mean,0.06402923450094249
+2,Partial discharge,H2_late_minus_early,0.05921782622870286
+2,Partial discharge,C2H2_early_mean,0.028170250868862903
+2,Partial discharge,C2H2_mean,0.011149733423567
+2,Partial discharge,C2H4_first,0.003677829120325964
+2,Partial discharge,C2H2_trend_r2,0.0028955388137597592
+3,Low energy discharge,CO_max_abs_diff,7.12822919709987
+3,Low energy discharge,C2H2_max_abs_diff,5.0499771996098355
+3,Low energy discharge,CO_first,3.8898129226206537
+3,Low energy discharge,CO_last,3.6483414847090287
+3,Low energy discharge,C2H4_max_abs_diff,3.499842296878391
+3,Low energy discharge,C2H2_std_diff,2.77792220612701
+3,Low energy discharge,C2H4_last,2.7130552523910363
+3,Low energy discharge,C2H4_early_mean,2.7043961493976445
+3,Low energy discharge,C2H4_positive_diff_fraction,2.6249916923699925
+3,Low energy discharge,C2H4_first,2.4426624310425287
+3,Low energy discharge,corr_H2_C2H4,2.3603026355154846
+3,Low energy discharge,CO_min,2.2941826117091466
+3,Low energy discharge,C2H4_max,2.290314142018487
+3,Low energy discharge,C2H4_late_minus_early,2.2431581688393347
+3,Low energy discharge,CO_early_mean,2.1703356516605568
+3,Low energy discharge,CO_positive_diff_fraction,2.039080987257524
+3,Low energy discharge,CO_late_mean,1.9808116538241005
+3,Low energy discharge,C2H4_min,1.9141461352708093
+3,Low energy discharge,C2H4_slope,1.6666205428025718
+3,Low energy discharge,CO_trend_r2,1.380355981880855
+3,Low energy discharge,CO_slope,1.3640824982591178
+3,Low energy discharge,C2H4_delta,1.3236745108828492
+3,Low energy discharge,C2H4_mean_diff,1.323674510880029
+3,Low energy discharge,C2H4_late_mean,1.2860785850137497
+3,Low energy discharge,C2H4_trend_r2,1.269820725096316
+3,Low energy discharge,H2_std_diff,1.2370075391740825
+3,Low energy discharge,H2_slope,1.2099283404598586
+3,Low energy discharge,C2H2_q75,1.184100231496757
+3,Low energy discharge,CO_max,1.1749845769398948
+3,Low energy discharge,CO_q75,1.1521014644280723
+3,Low energy discharge,H2_max_abs_diff,1.112795696427676
+3,Low energy discharge,H2_first,0.9740692753817388
+3,Low energy discharge,CO_std_diff,0.9355228104719289
+3,Low energy discharge,H2_q25,0.9044338803480673
+3,Low energy discharge,CO_q25,0.9035820381836236
+3,Low energy discharge,H2_max,0.7400218522947913
+3,Low energy discharge,H2_last,0.7393262250413255
+3,Low energy discharge,C2H2_min,0.7356925877116252
+3,Low energy discharge,CO_std,0.7024413524303614
+3,Low energy discharge,CO_mean,0.6978051928951364
+3,Low energy discharge,H2_early_mean,0.6917074373714888
+3,Low energy discharge,corr_H2_CO,0.6881353774455594
+3,Low energy discharge,CO_mean_diff,0.6836283308866546
+3,Low energy discharge,CO_delta,0.6836283308866201
+3,Low energy discharge,C2H2_delta,0.6730478361519694
+3,Low energy discharge,C2H2_mean_diff,0.6730478361353328
+3,Low energy discharge,C2H2_median,0.6715539671589911
+3,Low energy discharge,H2_std,0.6540281404490552
+3,Low energy discharge,H2_median,0.6434868281404948
+3,Low energy discharge,C2H2_std,0.6111269246365229
+3,Low energy discharge,corr_CO_C2H2,0.5908246014885833
+3,Low energy discharge,C2H4_mean,0.5906120151196217
+3,Low energy discharge,corr_C2H4_C2H2,0.5853418983930213
+3,Low energy discharge,C2H2_positive_diff_fraction,0.5690011422735033
+3,Low energy discharge,H2_min,0.5099882364222735
+3,Low energy discharge,C2H2_last,0.45759900714143614
+3,Low energy discharge,H2_late_mean,0.4387346296162569
+3,Low energy discharge,H2_late_minus_early,0.3733296067358945
+3,Low energy discharge,C2H2_mean,0.37123536232217813
+3,Low energy discharge,C2H2_late_minus_early,0.36848174229275915
+3,Low energy discharge,H2_positive_diff_fraction,0.36817290451015566
+3,Low energy discharge,C2H2_max,0.3493737593514087
+3,Low energy discharge,C2H4_std_diff,0.3468530196577389
+3,Low energy discharge,H2_q75,0.345930764578473
+3,Low energy discharge,C2H4_median,0.2839097046691226
+3,Low energy discharge,H2_mean,0.2808389753164343
+3,Low energy discharge,C2H2_trend_r2,0.2668559419119068
+3,Low energy discharge,C2H4_std,0.24612298883655065
+3,Low energy discharge,C2H2_early_mean,0.23603910689768826
+3,Low energy discharge,CO_median,0.20303489059674948
+3,Low energy discharge,corr_CO_C2H4,0.1741995402343749
+3,Low energy discharge,H2_trend_r2,0.1711145094301831
+3,Low energy discharge,C2H2_slope,0.16897208211035644
+3,Low energy discharge,C2H2_q25,0.11109675004785566
+3,Low energy discharge,C2H2_first,0.10610535228480278
+3,Low energy discharge,CO_late_minus_early,0.10366783366018917
+3,Low energy discharge,H2_delta,0.08044635518098067
+3,Low energy discharge,H2_mean_diff,0.08044635517973536
+3,Low energy discharge,corr_H2_C2H2,0.05077070924963634
+3,Low energy discharge,C2H4_q75,0.041989188888075346
+3,Low energy discharge,C2H2_late_mean,0.03275782485807339
+3,Low energy discharge,C2H4_q25,0.002119218644034382
+4,Low-temperature overheating,C2H4_min,4.789661612495497
+4,Low-temperature overheating,CO_q25,4.626434405152629
+4,Low-temperature overheating,C2H4_first,3.3680419018260355
+4,Low-temperature overheating,C2H4_q25,2.588159179219824
+4,Low-temperature overheating,C2H4_std,2.396334068376185
+4,Low-temperature overheating,CO_max,2.3855726779751607
+4,Low-temperature overheating,C2H4_late_minus_early,2.2843910018454863
+4,Low-temperature overheating,C2H4_q75,2.268197734896147
+4,Low-temperature overheating,C2H4_last,2.191647324502754
+4,Low-temperature overheating,H2_min,2.179401310656596
+4,Low-temperature overheating,C2H4_max_abs_diff,2.141994902787486
+4,Low-temperature overheating,CO_mean,2.140241481707966
+4,Low-temperature overheating,CO_min,2.047997484254993
+4,Low-temperature overheating,C2H4_late_mean,1.9925201972626836
+4,Low-temperature overheating,H2_q25,1.8027109574967264
+4,Low-temperature overheating,CO_max_abs_diff,1.6751597485524035
+4,Low-temperature overheating,C2H2_q25,1.5241391980683465
+4,Low-temperature overheating,C2H2_first,1.4883076015777927
+4,Low-temperature overheating,C2H2_mean_diff,1.3658475311910698
+4,Low-temperature overheating,C2H2_delta,1.3658475311816505
+4,Low-temperature overheating,C2H4_slope,1.3436686668086597
+4,Low-temperature overheating,CO_slope,1.2446527471499162
+4,Low-temperature overheating,C2H2_std_diff,1.23440024501718
+4,Low-temperature overheating,H2_median,1.2093521167123373
+4,Low-temperature overheating,C2H2_slope,1.200210764406395
+4,Low-temperature overheating,H2_first,1.1052614252205688
+4,Low-temperature overheating,C2H4_early_mean,1.0253070045585553
+4,Low-temperature overheating,H2_q75,1.0227073530451694
+4,Low-temperature overheating,C2H2_max_abs_diff,1.0005923223792192
+4,Low-temperature overheating,C2H4_positive_diff_fraction,0.995906946268114
+4,Low-temperature overheating,CO_positive_diff_fraction,0.9597803764453966
+4,Low-temperature overheating,C2H4_mean_diff,0.9535320023136266
+4,Low-temperature overheating,C2H4_delta,0.9535320023113742
+4,Low-temperature overheating,CO_std_diff,0.8423924840505885
+4,Low-temperature overheating,C2H2_trend_r2,0.8217414708315636
+4,Low-temperature overheating,H2_max,0.7233214789257459
+4,Low-temperature overheating,C2H2_mean,0.7110198902290333
+4,Low-temperature overheating,H2_std,0.7053638250049428
+4,Low-temperature overheating,corr_H2_C2H4,0.6900687759032834
+4,Low-temperature overheating,H2_delta,0.6459617702873154
+4,Low-temperature overheating,H2_mean_diff,0.6459617702861143
+4,Low-temperature overheating,CO_delta,0.620505792687979
+4,Low-temperature overheating,CO_mean_diff,0.6205057926874126
+4,Low-temperature overheating,C2H4_mean,0.6191314857158684
+4,Low-temperature overheating,C2H2_positive_diff_fraction,0.6107073928736716
+4,Low-temperature overheating,CO_first,0.6023514667673324
+4,Low-temperature overheating,H2_last,0.564574220281422
+4,Low-temperature overheating,CO_q75,0.5353784009768322
+4,Low-temperature overheating,CO_median,0.5283774638257883
+4,Low-temperature overheating,H2_positive_diff_fraction,0.5247240033167873
+4,Low-temperature overheating,C2H4_std_diff,0.49595635436078594
+4,Low-temperature overheating,CO_std,0.4883976897226728
+4,Low-temperature overheating,C2H4_median,0.48325884956720255
+4,Low-temperature overheating,CO_early_mean,0.4814471554524889
+4,Low-temperature overheating,C2H2_late_minus_early,0.4562348272298484
+4,Low-temperature overheating,H2_early_mean,0.4529782659854031
+4,Low-temperature overheating,C2H2_last,0.44581195172213756
+4,Low-temperature overheating,C2H2_q75,0.4416650278463316
+4,Low-temperature overheating,H2_mean,0.42556462914631243
+4,Low-temperature overheating,H2_slope,0.40001115272038795
+4,Low-temperature overheating,H2_std_diff,0.3683410970479846
+4,Low-temperature overheating,H2_late_minus_early,0.33210797777551215
+4,Low-temperature overheating,CO_late_mean,0.2872280511240774
+4,Low-temperature overheating,corr_H2_CO,0.2836155868190562
+4,Low-temperature overheating,C2H2_min,0.2788232365902378
+4,Low-temperature overheating,corr_C2H4_C2H2,0.2716876377816398
+4,Low-temperature overheating,H2_late_mean,0.2502184073315454
+4,Low-temperature overheating,CO_late_minus_early,0.24757013019623864
+4,Low-temperature overheating,C2H2_median,0.22346321355882667
+4,Low-temperature overheating,C2H4_max,0.22147344025261903
+4,Low-temperature overheating,C2H2_max,0.18942753438353693
+4,Low-temperature overheating,H2_trend_r2,0.18668808628597158
+4,Low-temperature overheating,C2H4_trend_r2,0.1813570620349738
+4,Low-temperature overheating,C2H2_early_mean,0.13501118847036236
+4,Low-temperature overheating,corr_H2_C2H2,0.11786664131368867
+4,Low-temperature overheating,C2H2_late_mean,0.09615650342574393
+4,Low-temperature overheating,CO_last,0.09051221378289487
+4,Low-temperature overheating,corr_CO_C2H2,0.03808450315479433
+4,Low-temperature overheating,corr_CO_C2H4,0.03765657254760369
+4,Low-temperature overheating,H2_max_abs_diff,0.027735331488336325
+4,Low-temperature overheating,C2H2_std,0.004163595820034683
+4,Low-temperature overheating,CO_trend_r2,0.0034511047366744345

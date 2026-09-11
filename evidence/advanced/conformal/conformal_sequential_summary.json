@@ -1,0 +1,14 @@
+{
+  "alpha": 0.1,
+  "target_fixed_horizon_coverage": 0.9,
+  "calibration_fraction": 0.3,
+  "proper_training_size": 1470,
+  "calibration_size": 630,
+  "sequential_policy": "first identical singleton conformal set at two consecutive horizons; exploratory only",
+  "sequential_warning": "No anytime-valid coverage claim is made under optional stopping.",
+  "fraction_stopped_with_stable_singleton": 0.9888888888888889,
+  "mean_stop_percent_all": 26.816666666666666,
+  "median_stop_percent_all": 15.0,
+  "accuracy_all_with_endpoint_fallback": 0.8633333333333333,
+  "accuracy_among_stable_singletons": 0.8674157303370786
+}

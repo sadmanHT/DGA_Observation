@@ -1,0 +1,2 @@
+model,cv_folds,best_cv_macro_f1,test_accuracy,test_balanced_accuracy,test_macro_f1,test_weighted_f1,best_params
+Tuned_LogisticRegression,5,0.9151149577722736,0.96,0.9104725106450019,0.9026070418115872,0.9607952787498242,"{""model__C"": 30.0, ""model__class_weight"": null}"

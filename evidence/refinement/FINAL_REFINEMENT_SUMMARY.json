@@ -1,0 +1,203 @@
+{
+  "selected_convergence_stable_model": {
+    "tol": 1e-06,
+    "C": 100.0,
+    "class_weight": "balanced",
+    "training_cv_macro_f1": 0.9158686431719729,
+    "test_metrics_descriptive_only_after_selection": {
+      "accuracy": 0.9522222222222222,
+      "balanced_accuracy": 0.923012183349024,
+      "macro_f1": 0.8966122944927221,
+      "weighted_f1": 0.9542605897731167
+    }
+  },
+  "redundancy_aware_feature_counts": {
+    "Statistical-28": 28,
+    "Temporal-70": 70,
+    "Temporal-82": 82
+  },
+  "noise_robust_selection": {
+    "selection_data": "training OOF only",
+    "noise_model": "independent multiplicative Gaussian, clipped nonnegative",
+    "selection_noise_levels": [
+      0.02,
+      0.05
+    ],
+    "selection_repeats_per_level": 3,
+    "clean_retention_constraint": 0.98,
+    "unsmoothed_clean_oof_macro_f1": 0.8632003428408511,
+    "minimum_eligible_clean_oof_macro_f1": 0.8459363359840341,
+    "selected_causal_moving_average_window": 11
+  },
+  "clean_test_comparison": [
+    {
+      "model": "Temporal-82 original",
+      "accuracy": 0.9511111111111111,
+      "balanced_accuracy": 0.9262003529656183,
+      "macro_f1": 0.8945665618972186,
+      "weighted_f1": 0.9530081923961655
+    },
+    {
+      "model": "Temporal-70 unsmoothed",
+      "accuracy": 0.9466666666666667,
+      "balanced_accuracy": 0.9414127847753724,
+      "macro_f1": 0.8906950067905379,
+      "weighted_f1": 0.9490876957778139
+    },
+    {
+      "model": "Temporal-70 robust w=11",
+      "accuracy": 0.9477777777777778,
+      "balanced_accuracy": 0.9374012315019449,
+      "macro_f1": 0.8963850067465826,
+      "weighted_f1": 0.9504284482535965
+    }
+  ],
+  "noise_test_summary": [
+    {
+      "severity": 0.02,
+      "model": "Temporal-70 robust w=11",
+      "macro_f1_mean": 0.6250262543199961,
+      "macro_f1_std": 0.016417748892073734,
+      "macro_f1_min": 0.5921462550728391,
+      "macro_f1_max": 0.6697312537662183,
+      "balanced_accuracy_mean": 0.7551685439677259,
+      "accuracy_mean": 0.7551111111111111
+    },
+    {
+      "severity": 0.02,
+      "model": "Temporal-70 unsmoothed",
+      "macro_f1_mean": 0.4291975396637115,
+      "macro_f1_std": 0.014642314824531048,
+      "macro_f1_min": 0.403236804352181,
+      "macro_f1_max": 0.4501037094537085,
+      "balanced_accuracy_mean": 0.5890285430230247,
+      "accuracy_mean": 0.396
+    },
+    {
+      "severity": 0.02,
+      "model": "Temporal-82 original",
+      "macro_f1_mean": 0.24764572096989554,
+      "macro_f1_std": 0.010006137607910375,
+      "macro_f1_min": 0.23194705965929135,
+      "macro_f1_max": 0.26774072253858366,
+      "balanced_accuracy_mean": 0.47172521156416114,
+      "accuracy_mean": 0.10172222222222223
+    },
+    {
+      "severity": 0.05,
+      "model": "Temporal-70 robust w=11",
+      "macro_f1_mean": 0.4690547514904078,
+      "macro_f1_std": 0.020240608905886956,
+      "macro_f1_min": 0.4352595136059039,
+      "macro_f1_max": 0.5132166464155408,
+      "balanced_accuracy_mean": 0.6322231148631647,
+      "accuracy_mean": 0.6261111111111111
+    },
+    {
+      "severity": 0.05,
+      "model": "Temporal-70 unsmoothed",
+      "macro_f1_mean": 0.3989312856560288,
+      "macro_f1_std": 0.017300331460956365,
+      "macro_f1_min": 0.37765172575537237,
+      "macro_f1_max": 0.4479602268160398,
+      "balanced_accuracy_mean": 0.5571683149780198,
+      "accuracy_mean": 0.3561111111111111
+    },
+    {
+      "severity": 0.05,
+      "model": "Temporal-82 original",
+      "macro_f1_mean": 0.21489026523091495,
+      "macro_f1_std": 0.0075320719155624995,
+      "macro_f1_min": 0.20364722399939636,
+      "macro_f1_max": 0.22681603899039868,
+      "balanced_accuracy_mean": 0.4346956443860644,
+      "accuracy_mean": 0.08766666666666667
+    },
+    {
+      "severity": 0.1,
+      "model": "Temporal-70 robust w=11",
+      "macro_f1_mean": 0.4199128296027486,
+      "macro_f1_std": 0.024250032719750698,
+      "macro_f1_min": 0.36430028958599,
+      "macro_f1_max": 0.46883375809543726,
+      "balanced_accuracy_mean": 0.596602530315646,
+      "accuracy_mean": 0.5721111111111111
+    },
+    {
+      "severity": 0.1,
+      "model": "Temporal-70 unsmoothed",
+      "macro_f1_mean": 0.3841555593237207,
+      "macro_f1_std": 0.018091637192317933,
+      "macro_f1_min": 0.348408942737337,
+      "macro_f1_max": 0.42118385934358454,
+      "balanced_accuracy_mean": 0.5434285070268965,
+      "accuracy_mean": 0.34338888888888885
+    },
+    {
+      "severity": 0.1,
+      "model": "Temporal-82 original",
+      "macro_f1_mean": 0.20483972395933128,
+      "macro_f1_std": 0.014108169429615548,
+      "macro_f1_min": 0.17235732123200337,
+      "macro_f1_max": 0.22203509374200925,
+      "balanced_accuracy_mean": 0.4193822888441283,
+      "accuracy_mean": 0.08505555555555555
+    }
+  ],
+  "noise_paired_gain_summary": [
+    {
+      "severity": 0.02,
+      "comparison": "Temporal-70 robust w=11 minus Temporal-82 original",
+      "mean_delta_macro_f1": 0.37738053335010063,
+      "std_delta_macro_f1": 0.02162025535541596,
+      "min_delta_macro_f1": 0.32443452725992067,
+      "max_delta_macro_f1": 0.437784194106927
+    },
+    {
+      "severity": 0.02,
+      "comparison": "Temporal-70 robust w=11 minus Temporal-70 unsmoothed",
+      "mean_delta_macro_f1": 0.19582871465628465,
+      "std_delta_macro_f1": 0.025576196285498093,
+      "min_delta_macro_f1": 0.15364843252916566,
+      "max_delta_macro_f1": 0.26242354620232206
+    },
+    {
+      "severity": 0.05,
+      "comparison": "Temporal-70 robust w=11 minus Temporal-82 original",
+      "mean_delta_macro_f1": 0.25416448625949284,
+      "std_delta_macro_f1": 0.02171534103020418,
+      "min_delta_macro_f1": 0.2099453460580439,
+      "max_delta_macro_f1": 0.3030220802229841
+    },
+    {
+      "severity": 0.05,
+      "comparison": "Temporal-70 robust w=11 minus Temporal-70 unsmoothed",
+      "mean_delta_macro_f1": 0.07012346583437898,
+      "std_delta_macro_f1": 0.022924486636379075,
+      "min_delta_macro_f1": 0.049147045352923524,
+      "max_delta_macro_f1": 0.12141471439837698
+    },
+    {
+      "severity": 0.1,
+      "comparison": "Temporal-70 robust w=11 minus Temporal-82 original",
+      "mean_delta_macro_f1": 0.21507310564341728,
+      "std_delta_macro_f1": 0.031277671462842625,
+      "min_delta_macro_f1": 0.14226519584398073,
+      "max_delta_macro_f1": 0.2964764368634339
+    },
+    {
+      "severity": 0.1,
+      "comparison": "Temporal-70 robust w=11 minus Temporal-70 unsmoothed",
+      "mean_delta_macro_f1": 0.035757270279027906,
+      "std_delta_macro_f1": 0.02768559928379721,
+      "min_delta_macro_f1": -0.027673664881691873,
+      "max_delta_macro_f1": 0.09837445389659272
+    }
+  ],
+  "interpretation_guardrails": [
+    "Hyperparameters and smoothing window were selected without TEST labels.",
+    "The Gaussian-noise experiment is a controlled stress test, not field sensor validation.",
+    "Feature-family mechanism claims should prioritize training-CV patterns.",
+    "TEST results are held-out confirmation/descriptive evaluation after training-side selection."
+  ]
+}

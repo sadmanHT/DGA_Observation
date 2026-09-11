@@ -1,0 +1,41 @@
+id,class,class_name,rank,feature,feature_value,shap_value
+2_trans_1853.csv,1,Normal mode,1,C2H2_max_abs_diff,1.5877264099000018e-06,6.9907697461867535
+2_trans_1853.csv,1,Normal mode,2,C2H4_late_minus_early,0.0035069579406440477,5.88994452987653
+2_trans_1853.csv,1,Normal mode,3,CO_first,0.026699328818,5.8443269762711125
+2_trans_1853.csv,1,Normal mode,4,CO_median,0.029257095087499997,5.097189576778551
+2_trans_1853.csv,1,Normal mode,5,CO_q75,0.02997147489075,4.310333576767119
+2_trans_1853.csv,1,Normal mode,6,CO_early_mean,0.02729249798761904,4.243966131137852
+2_trans_1853.csv,1,Normal mode,7,C2H4_slope,9.88685149880218e-06,3.8929849149558544
+2_trans_1853.csv,1,Normal mode,8,CO_last,0.035278705823,3.2296700721905025
+2_trans_1853.csv,1,Normal mode,9,C2H2_std_diff,5.193396069724867e-07,-3.1348133400239875
+2_trans_1853.csv,1,Normal mode,10,CO_late_mean,0.03276233996205952,3.0866298057449053
+2_trans_2977.csv,2,Partial discharge,1,CO_median,0.00192528075659995,6.731093259430449
+2_trans_2977.csv,2,Partial discharge,2,CO_q25,0.0012740342781499998,6.458606545937484
+2_trans_2977.csv,2,Partial discharge,3,CO_mean,0.0021499660038052197,5.880187458627004
+2_trans_2977.csv,2,Partial discharge,4,CO_q75,0.003165988968825,5.548990443085768
+2_trans_2977.csv,2,Partial discharge,5,CO_max,0.0034059515429,3.978087909337807
+2_trans_2977.csv,2,Partial discharge,6,CO_slope,3.856690370040108e-07,3.6465387345505698
+2_trans_2977.csv,2,Partial discharge,7,CO_min,0.0010988854039,2.705358910859285
+2_trans_2977.csv,2,Partial discharge,8,corr_H2_CO,-0.3019065558995394,2.6550614995167785
+2_trans_2977.csv,2,Partial discharge,9,C2H4_q75,0.0004252414367125,2.5571929701614127
+2_trans_2977.csv,2,Partial discharge,10,C2H4_median,0.00018262324607495,2.531472009986021
+2_trans_2142.csv,3,Low energy discharge,1,C2H2_max_abs_diff,1.4244125399999962e-06,-9.879840359878708
+2_trans_2142.csv,3,Low energy discharge,2,C2H2_std_diff,4.817057785258572e-07,5.888590490222213
+2_trans_2142.csv,3,Low energy discharge,3,CO_first,0.00019020164136,5.791157942461559
+2_trans_2142.csv,3,Low energy discharge,4,CO_last,0.004914501053,5.3916909344339805
+2_trans_2142.csv,3,Low energy discharge,5,CO_max_abs_diff,5.093460470000002e-05,4.694100175902876
+2_trans_2142.csv,3,Low energy discharge,6,CO_min,0.00019020164136,3.3641555557995844
+2_trans_2142.csv,3,Low energy discharge,7,CO_early_mean,0.0010519543376640334,3.1145585592444935
+2_trans_2142.csv,3,Low energy discharge,8,CO_late_mean,0.0030646753089571257,3.0134908039222696
+2_trans_2142.csv,3,Low energy discharge,9,H2_first,0.00013834565113,2.061819113895313
+2_trans_2142.csv,3,Low energy discharge,10,C2H4_positive_diff_fraction,0.918854415274463,2.060632865233263
+2_trans_1258.csv,4,Low-temperature overheating,1,CO_q25,0.0027670790642499252,-5.955303820133779
+2_trans_1258.csv,4,Low-temperature overheating,2,C2H4_min,0.0011910184924,4.91028238221429
+2_trans_1258.csv,4,Low-temperature overheating,3,C2H2_std_diff,5.913649485471452e-07,-3.9328778783069755
+2_trans_1258.csv,4,Low-temperature overheating,4,C2H2_mean_diff,6.484327636279236e-07,3.7292790961854982
+2_trans_1258.csv,4,Low-temperature overheating,5,C2H2_delta,0.0002716933279601,3.729279096159779
+2_trans_1258.csv,4,Low-temperature overheating,6,C2H4_std,0.0012662280595077953,3.7101574272142623
+2_trans_1258.csv,4,Low-temperature overheating,7,C2H4_max_abs_diff,3.1034285400000604e-05,-3.5519846374605852
+2_trans_1258.csv,4,Low-temperature overheating,8,CO_max_abs_diff,0.00013162393199999886,3.5499921865628514
+2_trans_1258.csv,4,Low-temperature overheating,9,C2H4_first,0.0011910184924,3.5192778617448366
+2_trans_1258.csv,4,Low-temperature overheating,10,C2H4_late_minus_early,0.0031968414277166626,-3.0069172207295605

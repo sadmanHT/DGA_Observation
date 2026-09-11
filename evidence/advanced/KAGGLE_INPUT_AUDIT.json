@@ -1,0 +1,18 @@
+{
+  "raw_source": "/kaggle/input/datasets/sharianhasan/def-files/power_transformers_fdd_and_rul(1)",
+  "raw_archive_resolved": "/kaggle/working/power_transformers_fdd_and_rul_repacked.zip",
+  "raw_archive_sha256": "356cf70428e6e860f0fa568bdbfa8348b2e1c825443c0e192d367a31c788f8fc",
+  "canonical_source": "/kaggle/input/datasets/sharianhasan/def-files/final_5fold(1)",
+  "canonical_root_resolved": "/kaggle/working/final_5fold_canonical",
+  "canonical_zip_resolved": null,
+  "canonical_zip_sha256": null,
+  "advanced_bundle_sha256": "17d2a4eba793382dbca60b845a12f962ea9afeefe4cdc53bdc39027959341fc0",
+  "sklearn_install_method": "pip --target, --no-deps",
+  "sklearn_target_directory": "/kaggle/working/pydeps_sklearn190",
+  "required_sklearn_version": "1.9.0",
+  "advanced_lr_C": 30.0,
+  "advanced_lr_class_weight": null,
+  "advanced_lr_tol": 1e-06,
+  "robustness_repeats": 20,
+  "bootstrap": 5000
+}
