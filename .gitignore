@@ -4,19 +4,19 @@ __pycache__/
 .ipynb_checkpoints/
 .DS_Store
 
-# raw data is never redistributed
+# Raw data is not redistributed
 data/raw/
-*.whl
 
-# generated runs
+# Generated experiment outputs
 runs/
 advanced_run/
 refinement_run/
+*.zip
 
-# LaTeX auxiliaries
-paper/*.aux
-paper/*.log
-paper/*.out
-paper/*.blg
-paper/*.toc
-paper/*.synctex.gz
+# Regenerated manuscript figures
+figures/
+
+# Local package/cache artifacts
+*.whl
+.pytest_cache/
+.mypy_cache/

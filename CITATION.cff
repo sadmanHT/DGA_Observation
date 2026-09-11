@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the accompanying manuscript or this software repository."
+title: "Adaptive Observation-Efficient Power Transformer Fault Diagnosis from Partial DGA Histories Using Explainable Lightweight Machine Learning"
+type: software
+authors:
+  - family-names: "Fuad"
+    given-names: "Taufikur Rahman"
+repository-code: "https://github.com/sadmanHT/DGA_Observation"
+url: "https://github.com/sadmanHT/DGA_Observation"
+license: MIT
+version: "1.0"
+date-released: 2026-09-11
+keywords:
+  - power transformer
+  - dissolved gas analysis
+  - fault diagnosis
+  - adaptive stopping
+  - explainable machine learning
+  - conformal prediction
+  - robustness

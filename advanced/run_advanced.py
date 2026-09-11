@@ -29,7 +29,7 @@ def main():
                f"was serialized with scikit-learn {RECOMMENDED_SKLEARN}. Exact advanced thesis numbers must be "
                "generated in the locked canonical environment.")
         if not args.allow_version_mismatch:
-            raise SystemExit(msg + "\nInstall requirements-advanced.txt or pass --allow-version-mismatch for code-path testing only.")
+            raise SystemExit(msg + "\nInstall requirements/reproducible.txt or pass --allow-version-mismatch for code-path testing only.")
         print("WARNING:", msg, flush=True)
 
     root = Path(__file__).resolve().parent

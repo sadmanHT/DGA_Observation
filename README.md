@@ -1,57 +1,89 @@
 # Adaptive Observation-Efficient Power Transformer Fault Diagnosis from Partial DGA Histories
 
-Complete reproducibility repository for the updated IEEE-format paper.
+This repository contains the code and reference results for the research project **Adaptive Observation-Efficient Power Transformer Fault Diagnosis from Partial DGA Histories Using Explainable Lightweight Machine Learning**.
 
-## What this repository contains
+The project studies a practical condition-monitoring question: **how much dissolved-gas-analysis (DGA) history is actually needed before a reliable transformer diagnosis can be issued?** Instead of treating the full monitoring record as mandatory, the experiments evaluate diagnosis as evidence accumulates and ask when the system should **stop, continue observing, or defer to engineering review**.
 
-The current paper is built from **three deliberately separated experimental protocols**. This repository
-preserves all code that contributes to the reported results rather than presenting only the latest scripts.
+The implementation is intentionally lightweight. The principal classifier is standardized multinomial logistic regression; the research contribution is the joint design of **observation horizon, feature representation, stopping policy, uncertainty, explanation, and robustness**, not a larger neural architecture.
 
-```text
-.
-├── canonical/      # original 25/50/75/100% paper experiment
-├── advanced/       # dense horizons, adaptive stopping, interaction, conformal, SHAP, stress tests
-├── refinement/     # convergence-stable grid, Temporal-70, causal smoothing/noise refinement
-├── notebooks/      # exact successful Kaggle execution notebooks
-├── evidence/       # machine-readable outputs used by the paper
-├── paper/          # current LaTeX manuscript + native vector PDF figures
-├── requirements/   # locked and historical environments
-├── tools/          # evidence checks
-├── data/           # dataset placement instructions (raw data not redistributed)
-└── run_full_pipeline.py
-```
+## Main findings
 
-## Why the protocols are separated
+The current manuscript is supported by three deliberately separated experimental layers: the original canonical experiment, the dense/adaptive extension, and the final robustness/refinement study.
 
-The canonical paper experiment used the original numerical logistic-regression protocol and selected
-`C=30`, `class_weight=None` from training-only five-fold CV. The advanced extension holds that classifier
-choice fixed while using a tighter `tol=1e-6` for numerical convergence. The final refinement independently
-reruns the 18-combination LR grid under `tol=1e-6` and uses its selected configuration only for the
-redundancy/noise-refinement study. This avoids silently overwriting the original paper metrics.
+| Finding | Result |
+| --- | --- |
+| 75% partial-history diagnosis | Temporal-82 reaches **0.8971 macro-F1** versus **0.9026** at 100%, retaining **99.39%** of endpoint performance |
+| Horizon × representation interaction | Difference-of-differences = **0.0761**, 95% CI **[0.0278, 0.1263]** |
+| Dense observation study | Temporal features provide their clearest advantage in the **intermediate-history regime (~55–75%)**, not at every horizon |
+| Adaptive stopping | Training-selected policy (`tau=0.95`, persistence `K=3`) reaches **0.8865 macro-F1**, retains **98.29%** of its endpoint reference, and stops at **37.8% history on average** |
+| Observation demand | Median stopping horizon = **20%**; **93.6%** of held-out cases stop before full history |
+| Fixed-horizon conformal uncertainty | At 75% history, empirical coverage = **90.56%** for a nominal 90% target |
+| Representation redundancy | Temporal-82 has numerical rank **70**; a 36-feature statistical-plus-endpoint representation captures much of the 75% benefit |
+| Robustness failure and mitigation | At 2% independent multiplicative noise, Temporal-82 falls to **0.2476 macro-F1**; redundancy removal plus causal smoothing raises this to **0.6250**, while clean performance remains near **0.896** |
+
+These results support the central engineering conclusion:
+
+> **Observation duration should be case-specific, and feature representation should be designed together with the decision horizon.**
 
 ## Dataset
 
-The repository does not redistribute the raw Power Transformers FDD and RUL dataset. See `data/README.md`.
-Place the original ZIP at, for example:
+Experiments use the public **Power Transformers FDD and RUL** dataset by I. Katser:
+
+https://www.kaggle.com/datasets/yuriykatser/power-transformers-fdd-and-rul
+
+The repository does not redistribute the dataset. The benchmark contains:
+
+- **3,000** labeled transformer histories;
+- **2,100 training** and **900 test** histories in the supplied split;
+- **420** measurements per history at **12-hour** intervals;
+- four gases: **H2, CO, C2H4, C2H2**;
+- four classes: normal mode, partial discharge, low-energy discharge, and low-temperature overheating.
+
+Place the original archive at:
 
 ```text
 data/raw/power_transformers_fdd_and_rul.zip
 ```
 
-## Recommended environment
+See [`data/README.md`](data/README.md) for the expected archive contents.
 
-Python 3.12 is recommended. The successful advanced/refinement run used Python 3.12.13.
+## Repository structure
+
+```text
+.
+├── canonical/          # original four-horizon experiment and endpoint SHAP
+├── advanced/           # dense horizons, adaptive stopping, interaction, conformal, SHAP stability, stress tests
+├── refinement/         # Temporal-70/redundancy analysis and causal smoothing/noise refinement
+├── evidence/           # reference machine-readable outputs used by the manuscript
+├── notebooks/          # optional exact Kaggle execution notebooks
+├── requirements/       # pinned environment for exact reproduction
+├── data/               # dataset placement instructions; raw data is ignored by Git
+├── tools/              # result verification utility
+├── run_full_pipeline.py
+├── generate_figures.py # regenerate the six current manuscript figures as vector PDFs
+├── CITATION.cff
+├── LICENSE
+└── README.md
+```
+
+The command-line scripts are the primary reproduction path. The notebooks are retained only as optional execution provenance for the successful Kaggle runs.
+
+## Environment
+
+The successful advanced/refinement environment used Python 3.12.13 and scikit-learn 1.9.0. Exact package versions are pinned in `requirements/reproducible.txt`.
 
 ```bash
 python -m venv .venv
-source .venv/bin/activate        # Linux/macOS
-# .venv\Scripts\Activate.ps1   # Windows PowerShell
+source .venv/bin/activate          # Linux/macOS
+# .venv\Scripts\Activate.ps1     # Windows PowerShell
 pip install -r requirements/reproducible.txt
 ```
 
-Exact paper reproduction expects **scikit-learn 1.9.0**.
+The full study is CPU-compatible; no GPU is required.
 
-## One-command full computational reproduction
+## Reproduce the complete project
+
+After placing the dataset archive under `data/raw/`, run:
 
 ```bash
 python run_full_pipeline.py \
@@ -61,49 +93,131 @@ python run_full_pipeline.py \
   --robustness-repeats 20
 ```
 
-This executes, in order:
+This executes the complete computational path used by the manuscript:
 
-1. canonical feature extraction/model selection/four-horizon evaluation/endpoint SHAP;
-2. dense horizon + adaptive stopping + formal interaction + advanced uncertainty/robustness/XAI analyses;
-3. final convergence-stable redundancy/noise refinement.
+1. **Canonical experiment**
+   - leakage-safe 25/50/75/100% prefixes;
+   - Statistical-28 and Temporal-82 feature extraction;
+   - lightweight model comparison and training-only model selection;
+   - endpoint evaluation, class-wise metrics, paired bootstrap comparisons;
+   - fixed-horizon selective diagnosis and endpoint SHAP.
+2. **Advanced extension**
+   - dense 10, 15, ..., 100% observation horizons;
+   - formal horizon × representation interaction test;
+   - training-OOF adaptive stopping;
+   - feature-family ablation;
+   - class-conditional split conformal prediction;
+   - SHAP at 50/75/100% with rank/family stability;
+   - missingness, contiguous-gap, drift, and synthetic-noise stress tests.
+3. **Final refinement**
+   - convergence-stable 18-configuration logistic-regression grid;
+   - redundancy-aware Temporal-70 analysis;
+   - compact feature-family comparisons;
+   - training-only causal smoothing selection;
+   - independent held-out noise evaluation.
 
-No GPU is required.
+Generated outputs are written under `runs/` and are ignored by Git.
 
-## Reproducing only one layer
+## Reproduce one experiment layer
 
-See the README inside `canonical/`, `advanced/`, or `refinement/`.
+### Canonical
 
-## Checked-in evidence
+```bash
+python canonical/run_canonical.py \
+  --archive data/raw/power_transformers_fdd_and_rul.zip \
+  --run-dir runs/canonical_final_5fold \
+  --tuning-iterations 20 \
+  --bootstrap 5000
+```
 
-The repository includes the machine-readable result files used in the manuscript, including canonical
-per-case prediction files required for the formal interaction contrast. To check headline values:
+### Advanced
+
+```bash
+python advanced/run_advanced.py \
+  --archive data/raw/power_transformers_fdd_and_rul.zip \
+  --canonical-final runs/canonical_final_5fold \
+  --work-dir runs/advanced \
+  --robustness-repeats 20
+```
+
+### Refinement
+
+```bash
+python refinement/run_refinement.py \
+  --archive data/raw/power_transformers_fdd_and_rul.zip \
+  --canonical-final runs/canonical_final_5fold \
+  --work-dir runs/refinement \
+  --bootstrap 5000 \
+  --noise-test-repeats 20
+```
+
+Each experiment directory contains a short README explaining its protocol and why it is kept separate from the other layers.
+
+## Reference results and verification
+
+`evidence/` contains the machine-readable outputs from the successful runs used to write the manuscript. They are checked in so that reported values can be audited without repeating every experiment.
+
+To verify the headline values:
 
 ```bash
 python tools/verify_paper_evidence.py
 ```
 
-## Paper and figures
+The verifier checks, among other quantities, the formal interaction estimate, adaptive-stopping policy, convergence-stable refinement model, selected causal smoothing window, and 2% noise result.
 
-The current LaTeX manuscript is under `paper/`. The repository uses **native vector PDF figures**.
-Regenerate them from evidence with:
+## Reproduce the manuscript figures
+
+The six figures used in the current manuscript can be regenerated directly from the checked-in reference outputs as **native vector PDFs**:
 
 ```bash
-python paper/generate_vector_figures.py
+python generate_figures.py
 ```
 
-Then compile with IEEEtran using the commands in `paper/README.md`.
+They are written to `figures/` (ignored by Git). The plotting code uses vector primitives rather than PNG-to-PDF conversion, so text, axes, lines, markers, bars, and confusion-matrix cells remain sharp under zoom.
 
-## Reproducibility principles
+## Experimental protocol notes
 
-- Supplied 2,100/900 train-test split is preserved.
-- Prefixes are truncated before feature extraction; no future observations enter shorter horizons.
-- Model/policy/filter selection is confined to training or training OOF data as documented by each protocol.
-- Macro-F1 is the primary metric because the benchmark is strongly imbalanced.
-- Paired bootstrap comparisons resample identical held-out cases.
-- Sequential conformal reuse is explicitly exploratory; no anytime-valid claim is made.
-- Robustness tests are controlled synthetic stress tests, not field validation.
-- SHAP is model attribution, not physical causality.
+The three experiment layers are intentionally not collapsed into one fitted model:
+
+- **Canonical:** original paper protocol; `C=30`, `class_weight=None`, original logistic-regression tolerance.
+- **Advanced:** keeps `C=30`, `class_weight=None`, but uses `tol=1e-6` for convergence stability.
+- **Refinement:** reruns the full 18-combination logistic-regression grid under `tol=1e-6`; the selected configuration is used only for the redundancy/noise-refinement study.
+
+This separation prevents later numerical refinements from silently overwriting the original canonical paper results.
+
+Across all layers:
+
+- the supplied 2,100/900 train-test split is preserved;
+- shorter histories are truncated **before** feature extraction, preventing future-information leakage;
+- model, stopping-policy, and smoothing-window selection use training or training-OOF data only;
+- macro-F1 is the primary metric because the benchmark is strongly imbalanced;
+- paired comparisons resample the same held-out transformer cases;
+- sequential reuse of ordinary split-conformal sets is treated as exploratory, not anytime-valid;
+- robustness experiments are controlled synthetic stress tests, not field sensor validation;
+- SHAP is used for model attribution, not as proof of physical causality.
+
+## Scope and limitations
+
+This repository reproduces the reported benchmark study; it does not establish deployment performance on another transformer fleet. External validation remains the main unresolved step. The synthetic high-frequency-noise experiment is deliberately a stress test and should not be interpreted as a calibrated model of field DGA sensor error.
+
+## Citation
+
+This repository accompanies the manuscript:
+
+**Taufikur Rahman Fuad, _Adaptive Observation-Efficient Power Transformer Fault Diagnosis from Partial DGA Histories Using Explainable Lightweight Machine Learning_, 2026.**
+
+Until final publication metadata is available, the repository can be cited as:
+
+```bibtex
+@misc{fuad2026dgaobservation,
+  author       = {Taufikur Rahman Fuad},
+  title        = {Adaptive Observation-Efficient Power Transformer Fault Diagnosis from Partial DGA Histories Using Explainable Lightweight Machine Learning},
+  year         = {2026},
+  howpublished = {GitHub repository},
+  url          = {https://github.com/sadmanHT/DGA_Observation}
+}
+```
 
 ## License
 
-Code is released under the MIT License. The dataset retains its own license and terms of use.
+Code in this repository is released under the [MIT License](LICENSE). The external dataset remains subject to its own license and terms of use.
