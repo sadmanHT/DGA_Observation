@@ -1,18 +1,3 @@
-#!/usr/bin/env python3
-"""Stress-test the clean-trained 75%-history temporal model under imperfect DGA data.
-
-Stressors are injected at the RAW-sequence level before feature extraction:
-  1) multiplicative Gaussian measurement noise,
-  2) randomly missing timestamps + linear interpolation,
-  3) one contiguous missing block + linear interpolation,
-  4) gradual multiplicative sensor drift on one randomly chosen gas per case.
-
-The classifier is NEVER retrained on corrupted TEST data. This is a deployment-style
-stress test, not field validation. Repeated perturbations quantify Monte-Carlo variation.
-
-Feature extraction is vectorized across the 900 test histories so 20+ repeats are practical
-on CPU. The vectorized extractor implements the exact formulas in 01_build_features.py.
-"""
 from __future__ import annotations
 
 import argparse
@@ -45,13 +30,13 @@ def load_base(path: Path):
 
 
 def batch_extract(raw: np.ndarray, feature_cols: list[str]) -> np.ndarray:
-    """Exact feature formulas, vectorized across cases. raw=(cases,time,4)."""
+
     x = np.asarray(raw, dtype=float)
     if x.ndim != 3 or x.shape[2] != 4 or x.shape[1] < 2:
         raise ValueError(f"Expected (cases,time,4), got {x.shape}")
     ncase, nt, _ = x.shape
     d = np.diff(x, axis=1)
-    q = np.percentile(x, [25, 50, 75], axis=1)  # (3,cases,gases)
+    q = np.percentile(x, [25, 50, 75], axis=1)
     mean = x.mean(axis=1)
     std = x.std(axis=1, ddof=1)
     xmin = x.min(axis=1)
@@ -116,7 +101,7 @@ def batch_extract(raw: np.ndarray, feature_cols: list[str]) -> np.ndarray:
 
 
 def interpolate_masked_timestamps(x: np.ndarray, masks: np.ndarray) -> np.ndarray:
-    """Linear interpolation for per-case timestamp masks; endpoints must remain observed."""
+
     out = x.copy()
     t = np.arange(x.shape[1])
     for i in range(x.shape[0]):
@@ -192,7 +177,7 @@ def main():
         raw = np.stack([base.read_series(root / "data_test" / fid)[:315, :] for fid, _ in labels], axis=0)
         y = np.array([lab for _, lab in labels], dtype=int)
 
-        # Validate vectorized feature route against the canonical scalar extractor on a sample.
+
         fast_sample = batch_extract(raw[:12], full)
         slow_sample = np.array(
             [[base.extract_features(a)[c] for c in full] for a in raw[:12]], dtype=float

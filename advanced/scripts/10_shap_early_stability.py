@@ -1,18 +1,3 @@
-#!/usr/bin/env python3
-"""SHAP at the actual partial-history model plus attribution stability analysis.
-
-Runs 50%, 75%, and 100% temporal-82 models. All 900 TEST cases are explained. The
-same TRAIN background row indices are used at every horizon to avoid conflating
-horizon effects with different SHAP background samples. Outputs include:
-  * global feature importance on all 900 cases,
-  * true-class-conditioned importance for the output corresponding to that class,
-  * grouped importance by temporal family and by gas,
-  * rank stability across horizons.
-
-SHAP is descriptive attribution, not causal transformer physics. The feature set contains
-correlated/algebraically related descriptors, so family-level patterns are emphasized over
-individual rank positions.
-"""
 from __future__ import annotations
 
 import argparse
@@ -84,7 +69,7 @@ def main():
     cols_all = pd.read_csv(args.features_dir / "features_train_h100.csv", nrows=1).columns.tolist()
     full = feature_groups_from_columns(cols_all)["full"]
 
-    # All horizons preserve TRAIN row order. Use exactly the same background identities.
+
     Xtr100, ytr100, ids_tr100, _ = load_table(args.features_dir / "features_train_h100.csv", full)
     rng = np.random.default_rng(RANDOM_STATE)
     bgidx = rng.choice(len(Xtr100), min(args.background, len(Xtr100)), replace=False)
@@ -120,7 +105,7 @@ def main():
                 "gas": gas_for_feature(f),
             })
 
-        # True-class-conditioned attribution for that class's model output.
+
         for ci, c in enumerate(linear.classes_):
             mask = yte == c
             vals = np.mean(np.abs(arr[mask, :, ci]), axis=0)
@@ -136,8 +121,7 @@ def main():
                     "gas": gas_for_feature(f),
                 })
 
-        # Both mean-per-feature and total/share are useful: mean avoids automatically
-        # favoring larger groups; total share describes aggregate attribution mass.
+
         d = pd.DataFrame([r for r in allrows if r["horizon_percent"] == h])
         total_imp = float(d.mean_abs_shap.sum())
         for group_type, col in (("family", "family"), ("gas", "gas")):

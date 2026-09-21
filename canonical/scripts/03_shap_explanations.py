@@ -1,10 +1,3 @@
-#!/usr/bin/env python3
-"""Generate SHAP explanations for the final 100%-history model.
-
-The predictive model is already fixed before this script is run. The SHAP background
-is sampled from TRAIN features only; TEST labels are not used to construct the explainer.
-"""
-
 from __future__ import annotations
 
 import argparse
@@ -50,7 +43,7 @@ def write_rows(path: Path, rows: list[dict]) -> None:
 
 
 def normalize_shap(values, n_samples: int, n_features: int, n_classes: int) -> np.ndarray:
-    """Normalize SHAP outputs to shape (samples, features, classes)."""
+
     if isinstance(values, list):
         arr = np.stack(values, axis=-1)
     else:

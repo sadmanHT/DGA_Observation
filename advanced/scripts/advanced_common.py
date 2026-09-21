@@ -29,12 +29,7 @@ DENSE_HORIZONS = list(range(10, 101, 5))
 
 
 def fixed_lr() -> Pipeline:
-    """Canonical classifier configuration from the final 5-fold paper.
 
-    The original canonical run was serialized by scikit-learn 1.9.0.  Keep C and
-    class weighting fixed for all strengthening analyses so the new experiments
-    study observation/representation effects rather than re-selecting a model on TEST.
-    """
     return Pipeline([
         ("scale", StandardScaler()),
         ("model", LogisticRegression(
@@ -126,11 +121,7 @@ def save_environment(path: Path) -> None:
 
 
 def _macro_f1_fast(y_true: np.ndarray, y_pred: np.ndarray) -> float:
-    """Macro-F1 over the fixed four labels using a 4x4 confusion matrix.
 
-    This is numerically equivalent to sklearn's macro F1 for this project but avoids
-    metric-construction overhead inside thousands of bootstrap iterations.
-    """
     yt = np.asarray(y_true, dtype=int)
     yp = np.asarray(y_pred, dtype=int)
     cat = (yt - 1) * 4 + (yp - 1)

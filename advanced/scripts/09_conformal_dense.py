@@ -1,16 +1,3 @@
-#!/usr/bin/env python3
-"""Class-conditional split-conformal prediction sets over dense observation horizons.
-
-A stratified proper-training/calibration split is made ONLY inside the supplied TRAIN
-partition. TEST is untouched until class-conditional conformity thresholds are fixed.
-Per-horizon coverage statements are standard split-conformal diagnostics under the
-usual exchangeability assumption.
-
-The optional stable-singleton sequential summary is explicitly exploratory: repeated
-optional stopping across horizons is NOT claimed to preserve anytime-valid conformal
-coverage. The primary thesis evidence from this script is the fixed-horizon coverage,
-set-size, singleton-rate, and class-conditional coverage curves.
-"""
 from __future__ import annotations
 
 import argparse
@@ -142,7 +129,7 @@ def main():
     pd.DataFrame(per_h).to_csv(args.output_dir / "conformal_by_horizon.csv", index=False)
     pd.DataFrame(class_cov_rows).to_csv(args.output_dir / "conformal_classwise_coverage.csv", index=False)
 
-    # Exploratory sequential summary only. Not used as a coverage guarantee.
+
     stop = np.full(len(ytest), 100, int)
     pred = np.full(len(ytest), -1, int)
     setsize = np.full(len(ytest), -1, int)

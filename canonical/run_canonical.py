@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-"""One-command reproducible pipeline: feature extraction -> 5-fold experiments -> SHAP."""
-
 from __future__ import annotations
 
 import argparse
@@ -55,11 +52,11 @@ def main() -> None:
         "--run-dir", str(run_dir),
     ])
 
-    # Rebuild ZIP after SHAP so the archive contains every final output.
+
     zip_base = run_dir.parent / run_dir.name
     zip_path = Path(shutil.make_archive(str(zip_base), "zip", root_dir=run_dir))
     print(f"\nFINAL OUTPUT ZIP: {zip_path}")
-    print("Upload that ZIP back to ChatGPT.")
+    print("Run complete.")
 
 
 if __name__ == "__main__":

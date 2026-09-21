@@ -1,16 +1,3 @@
-#!/usr/bin/env python3
-"""Dense horizon x representation analysis (10%..100% in 5% steps).
-
-For each horizon, fit the paper's fixed logistic-regression configuration separately on
-Statistical-28 and Temporal-82 features using TRAIN only, then evaluate the untouched
-900-case TEST split.  A paired bootstrap quantifies Temporal-minus-Statistical macro-F1
-at each horizon.  The script also writes training 5-fold CV scores so TEST is not the only
-view of the dense curve.
-
-This is descriptive benchmarking across multiple horizons. Individual per-horizon CIs are
-not interpreted as a multiplicity-adjusted family of hypothesis tests; the pre-specified
-75%-vs-100% difference-of-differences remains the primary formal interaction contrast.
-"""
 from __future__ import annotations
 import argparse
 from pathlib import Path

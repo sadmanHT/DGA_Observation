@@ -1,15 +1,3 @@
-#!/usr/bin/env python3
-"""Feature-family ablation: identify which temporal descriptors create the 75% benefit.
-
-The classifier is fixed to the paper's selected logistic-regression pipeline. We evaluate:
-  * statistical-28 baseline,
-  * full temporal-82,
-  * statistical + one temporal family,
-  * full temporal minus one family.
-
-For 75% history, paired bootstrap intervals are added for every incremental/drop
-comparison so the thesis can distinguish robust family effects from point-estimate noise.
-"""
 from __future__ import annotations
 
 import argparse
@@ -87,7 +75,7 @@ def main():
     out = pd.DataFrame(rows)
     out.to_csv(args.output_dir / "feature_family_ablation.csv", index=False)
 
-    # 75% paired comparisons, the core scientific question.
+
     h = 75
     y = y_by_h[h]
     stat_pred = preds[(h, "Statistical_28")]
@@ -106,7 +94,7 @@ def main():
             y, stat_pred, preds[(h, plus_name)], n_boot=args.bootstrap,
             seed=RANDOM_STATE + 100 + temporal_groups.index(name),
         )
-        # helper reports B-A, here B=full and A=full-minus -> drop attributable to family
+
         remove_ci = paired_macro_f1_bootstrap(
             y, preds[(h, minus_name)], full_pred, n_boot=args.bootstrap,
             seed=RANDOM_STATE + 200 + temporal_groups.index(name),

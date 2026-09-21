@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-"""Formal paired bootstrap difference-of-differences from canonical predictions."""
 from __future__ import annotations
 import argparse, json
 from pathlib import Path

@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-"""Fail fast if the checked-in evidence no longer matches the paper's key results."""
 from pathlib import Path
 import json, math, pandas as pd
 R=Path(__file__).resolve().parents[1]

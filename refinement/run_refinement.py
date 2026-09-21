@@ -1,15 +1,3 @@
-#!/usr/bin/env python3
-"""Final compact robustness/refinement experiment used by the updated paper.
-
-This is the script form of the successful Kaggle notebook preserved under
-notebooks/DGA_Final_Compact_Robustness_Refinement_Kaggle.ipynb.
-
-Selection discipline:
-- LR hyperparameters: training-only stratified 5-fold CV.
-- Robust smoothing window: training OOF only under predeclared stress.
-- Held-out TEST never selects C, class weight, feature family, or smoothing window.
-- TEST noise seeds are disjoint from training-side selection seeds.
-"""
 from __future__ import annotations
 
 import argparse
@@ -49,7 +37,7 @@ SMOOTHING_WINDOWS = [1, 3, 5, 7, 11]
 
 
 def extract_archive(archive: Path, work: Path) -> Path:
-    """Extract the raw Kaggle ZIP and return the directory containing label CSVs."""
+
     raw_extract = work / "_raw_extract"
     if raw_extract.exists():
         shutil.rmtree(raw_extract)
@@ -96,14 +84,12 @@ print("Canonical root:", CANON_ROOT)
 print("Output:", OUT)
 
 
-# 3. Resolve canonical feature tables and raw dataset structure
-
 def find_required(root: Path, relative_candidates):
     for rel in relative_candidates:
         p = root / rel
         if p.exists():
             return p
-    # Nested folder fallback
+
     target_name = Path(relative_candidates[0]).name
     hits = list(root.rglob(target_name))
     if hits:
@@ -118,7 +104,7 @@ TEST100  = find_required(CANON_ROOT, ["features/features_test_h100.csv"])
 LABEL_TRAIN = find_required(RAW_ROOT, ["labels_fdd_train.csv"])
 LABEL_TEST  = find_required(RAW_ROOT, ["labels_fdd_test.csv"])
 
-# Find folders by one known file relationship.
+
 DATA_TRAIN = LABEL_TRAIN.parent / "data_train"
 DATA_TEST = LABEL_TEST.parent / "data_test"
 assert DATA_TRAIN.is_dir()
@@ -149,7 +135,6 @@ FEATURE82 = [c for c in tr75.columns if c not in META]
 assert len(FEATURE82) == 82, len(FEATURE82)
 print("Temporal feature count:", len(FEATURE82))
 
-# 4. Feature families and shared helpers
 
 GASES = ["H2", "CO", "C2H4", "C2H2"]
 
@@ -159,11 +144,7 @@ STAT28 = [
     for s in ["mean", "std", "min", "max", "median", "q25", "q75"]
 ]
 
-# Nonredundant temporal additions.
-# Deliberately omitted exact algebraic redundancies:
-#   delta = last - first
-#   mean_diff = delta / (N - 1)
-#   late_minus_early = late_mean - early_mean
+
 ENDPOINT = [f"{g}_{s}" for g in GASES for s in ["first", "last"]]
 TREND = [f"{g}_{s}" for g in GASES for s in ["slope", "trend_r2"]]
 ROUGHNESS = [f"{g}_{s}" for g in GASES for s in [
@@ -215,7 +196,7 @@ def metrics(y, pred):
     }
 
 def paired_bootstrap_delta(y, pred_a, pred_b, n=BOOTSTRAP, seed=SEED):
-    # Delta = A - B
+
     y = np.asarray(y)
     a = np.asarray(pred_a)
     b = np.asarray(pred_b)
@@ -239,7 +220,6 @@ for k, v in FAMILIES.items():
     print(k, len(v))
 print("Nonredundant Temporal-70:", len(TEMP70))
 
-# 5. Exact 18-configuration training-only grid under tol=1e-6
 
 X100 = tr100[FEATURE82].to_numpy(float)
 y100 = tr100["label"].to_numpy()
@@ -293,7 +273,6 @@ print(grid_out.to_string(index=False))
 print("\nSelected from TRAINING CV only:")
 print(json.dumps(selection, indent=2))
 
-# 6. Redundancy-aware ablation at 75%
 
 representations = {
     "Statistical-28": STAT28,
@@ -345,7 +324,7 @@ for name, cols in representations.items():
 
 abl = pd.DataFrame(ablation_rows)
 
-# Paired TEST uncertainty versus Statistical-28.
+
 base_pred = test_predictions["Statistical-28"]
 boot_rows = []
 for name, pred in test_predictions.items():
@@ -366,7 +345,6 @@ pred_df.to_csv(OUT / "02_ablation_test_predictions.csv", index=False)
 print("\nSorted by TRAINING CV:")
 print(abl.sort_values("training_cv_macro_f1_mean", ascending=False).to_string(index=False))
 
-# 7. Raw loading + exact vectorized feature extraction
 
 EPS = 1e-12
 
@@ -482,7 +460,7 @@ def extract82(x):
     return matrix_from_dict(all_feature_dict(x), FEATURE82)
 
 def extract70_hybrid(raw_x, smoothing_window):
-    # Statistical levels/distributions stay on raw observations.
+
     raw_vals = all_feature_dict(raw_x)
     smooth_x = causal_moving_average(raw_x, smoothing_window)
     dyn_vals = all_feature_dict(smooth_x)
@@ -499,7 +477,7 @@ def extract70_hybrid(raw_x, smoothing_window):
     assert cols == TEMP70
     return np.column_stack(arrays).astype(float)
 
-# Validate exact clean extraction against canonical CSVs.
+
 x82_check = extract82(raw_test[:20])
 x82_canon = te75.loc[:19, FEATURE82].to_numpy(float)
 max_abs82 = float(np.max(np.abs(x82_check - x82_canon)))
@@ -515,7 +493,6 @@ assert np.allclose(x70_check, x70_canon, rtol=1e-9, atol=1e-10)
 validation = {"max_abs_82": max_abs82, "max_abs_70": max_abs70}
 (OUT / "03_feature_extractor_validation.json").write_text(json.dumps(validation, indent=2))
 
-# 8. Precompute clean candidate features and training-only noisy stress features
 
 def add_relative_gaussian_noise(raw, severity, seed):
     rng = np.random.default_rng(seed)
@@ -527,7 +504,7 @@ for w in SMOOTHING_WINDOWS:
     print("Clean feature candidate window", w)
     clean70_by_w[w] = extract70_hybrid(raw_train, w)
 
-# Use exactly the same noisy raw realization across all smoothing candidates.
+
 noisy_train_features = {}
 for severity in NOISE_SELECTION_LEVELS:
     for rep in range(NOISE_SELECTION_REPEATS):
@@ -539,7 +516,6 @@ for severity in NOISE_SELECTION_LEVELS:
 
 print("Precomputation complete.")
 
-# 9. OOF robust-window selection using TRAINING data only
 
 candidate_rows = []
 oof_detail_rows = []
@@ -596,10 +572,7 @@ cand["eligible"] = cand["clean_oof_macro_f1"] >= threshold
 eligible = cand[cand["eligible"]].copy()
 assert len(eligible) > 0
 
-# Predeclared ordering:
-# 1) highest stressed OOF mean
-# 2) highest clean OOF
-# 3) smaller smoothing window
+
 eligible = eligible.sort_values(
     ["stressed_oof_macro_f1_mean", "clean_oof_macro_f1", "window"],
     ascending=[False, False, True],
@@ -626,19 +599,17 @@ print(cand.to_string(index=False))
 print("\nSelected robust window:", SELECTED_WINDOW)
 print(json.dumps(selection_noise, indent=2))
 
-# 10. Fit clean training models and evaluate clean TEST performance
 
-# Original Temporal-82
 X82_train = tr75[FEATURE82].to_numpy(float)
 X82_test_clean = te75[FEATURE82].to_numpy(float)
 m82 = make_lr(BEST_C, BEST_WEIGHT, tol=1e-6).fit(X82_train, ytr)
 
-# Unsmoothed nonredundant Temporal-70
+
 X70_train = clean70_by_w[1]
 X70_test_clean = extract70_hybrid(raw_test, 1)
 m70 = make_lr(BEST_C, BEST_WEIGHT, tol=1e-6).fit(X70_train, ytr)
 
-# Training-selected robust Temporal-70
+
 Xrob_train = clean70_by_w[SELECTED_WINDOW]
 Xrob_test_clean = extract70_hybrid(raw_test, SELECTED_WINDOW)
 mrob = make_lr(BEST_C, BEST_WEIGHT, tol=1e-6).fit(Xrob_train, ytr)
@@ -658,7 +629,7 @@ for name, (model, Xtest) in models.items():
 clean_df = pd.DataFrame(clean_rows)
 clean_df.to_csv(OUT / "04_clean_test_comparison.csv", index=False)
 
-# Pair robust clean prediction against original 82 and unsmoothed 70.
+
 clean_boot = []
 rob_name = f"Temporal-70 robust w={SELECTED_WINDOW}"
 for base_name in ["Temporal-82 original", "Temporal-70 unsmoothed"]:
@@ -673,14 +644,13 @@ print("Clean TEST:")
 print(clean_df.to_string(index=False))
 print(pd.DataFrame(clean_boot).to_string(index=False))
 
-# 11. Independent TEST noise stress: paired realizations for all three models
 
 noise_rows = []
 class_rows = []
 
 for severity in NOISE_TEST_LEVELS:
     for rep in range(NOISE_TEST_REPEATS):
-        # Deliberately disjoint seed range from training selection.
+
         seed = 900000 + int(severity * 10000) + rep
         damaged = add_relative_gaussian_noise(raw_test, severity, seed)
 
@@ -734,7 +704,7 @@ agg = noise_reps.groupby(["severity", "model"]).agg(
     accuracy_mean=("accuracy", "mean"),
 ).reset_index()
 
-# Paired robust gains on identical TEST perturbations.
+
 wide = noise_reps.pivot_table(
     index=["severity", "repeat", "seed"],
     columns="model",
@@ -768,9 +738,7 @@ print(agg.to_string(index=False))
 print("Paired robust gains:")
 print(gain_df.to_string(index=False))
 
-# 12. Plots and decision-oriented summary
 
-# Ablation plot: training CV is primary.
 plot_abl = abl.sort_values("training_cv_macro_f1_mean", ascending=True)
 plt.figure(figsize=(9, 6))
 plt.barh(plot_abl["representation"], plot_abl["training_cv_macro_f1_mean"])
@@ -780,7 +748,7 @@ plt.tight_layout()
 plt.savefig(OUT / "fig_ablation_training_cv.png", dpi=180)
 plt.close()
 
-# Noise plot
+
 plt.figure(figsize=(8, 5))
 for name in agg["model"].unique():
     sub = agg[agg["model"] == name].sort_values("severity")
@@ -799,7 +767,7 @@ plt.tight_layout()
 plt.savefig(OUT / "fig_noise_robustness.png", dpi=180)
 plt.close()
 
-# Candidate selection plot
+
 plt.figure(figsize=(7, 5))
 plt.plot(cand["window"], cand["clean_oof_macro_f1"], marker="o", label="Clean OOF")
 plt.plot(cand["window"], cand["stressed_oof_macro_f1_mean"], marker="o", label="Stressed OOF mean")
@@ -832,7 +800,7 @@ summary = {
 }
 (OUT / "FINAL_REFINEMENT_SUMMARY.json").write_text(json.dumps(summary, indent=2))
 
-# Human-readable markdown
+
 lines = [
     "# Final Compact Refinement Summary",
     "",
@@ -860,7 +828,6 @@ lines += [
 
 print((OUT / "FINAL_REFINEMENT_SUMMARY.md").read_text())
 
-# 13. Integrity audit and ZIP export
 
 def sha256(path, block=1024*1024):
     h = hashlib.sha256()
@@ -921,7 +888,7 @@ shutil.make_archive(
 )
 
 print("\nSUCCESS")
-print("Download and upload this file:")
+print("Output ZIP:")
 print(ZIP_OUT)
 print("Size MB:", round(ZIP_OUT.stat().st_size / 1024**2, 2))
 print("SHA256:", sha256(ZIP_OUT))

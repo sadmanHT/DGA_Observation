@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-"""Run the thesis-strengthening suite. CPU is sufficient; no GPU is required."""
 from __future__ import annotations
 import argparse, subprocess, sys
 from pathlib import Path
@@ -42,7 +40,7 @@ def main():
     run([py, scripts/"04_build_dense_features.py", "--archive", args.archive, "--output-dir", feat])
     run([py, scripts/"05a_dense_representation_curve.py", "--features-dir", feat, "--output-dir", out/"dense_representation"])
     run([py, scripts/"05_dense_adaptive_stopping.py", "--features-dir", feat, "--output-dir", out/"adaptive"])
-    # This one intentionally uses the already-canonical final_5fold predictions.
+
     run([py, scripts/"06_formal_interaction.py", "--predictions-dir", args.canonical_final/"predictions", "--output-dir", out/"interaction"])
     run([py, scripts/"07_feature_family_ablation.py", "--features-dir", feat, "--output-dir", out/"ablation"])
     run([py, scripts/"08_robustness_stress.py", "--archive", args.archive, "--features-dir", feat, "--output-dir", out/"robustness", "--repeats", args.robustness_repeats])

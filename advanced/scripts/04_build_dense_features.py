@@ -1,9 +1,3 @@
-#!/usr/bin/env python3
-"""Build leakage-safe features every 5 percentage points from 10% to 100% history.
-
-This extends the original 25/50/75/100 feature builder without changing any feature
-formula.  Each horizon is computed from the raw prefix before feature extraction.
-"""
 from __future__ import annotations
 
 import argparse

@@ -1,21 +1,3 @@
-#!/usr/bin/env python3
-"""Dense-horizon evaluation and training-selected adaptive stopping.
-
-The paper's fixed C=30, unweighted logistic-regression pipeline is used at every
-horizon. Policy selection uses five-fold out-of-fold (OOF) TRAIN predictions only;
-TEST is evaluated exactly once after the rule has been fixed.
-
-A policy is defined by two parameters:
-  * score threshold tau
-  * persistence K: the same predicted class must meet tau for K consecutive
-    dense horizons before stopping.
-
-The default selection rule is deliberately engineering-oriented rather than an
-accuracy-only optimum: choose the earliest mean OOF stopping horizon among rules
-that (i) retain >=97% of the 100%-history OOF macro-F1 and (ii) keep every class
-recall >=0.75. Both constraints can be changed from the command line and the full
-OOF policy grid is always saved, so the thesis can report the Pareto trade-off.
-"""
 from __future__ import annotations
 
 import argparse
@@ -100,7 +82,7 @@ def policy_row(y, stop_h, pred, satisfied, threshold, persistence, endpoint_macr
 
 
 def pareto_frontier(df: pd.DataFrame) -> pd.DataFrame:
-    """Return nondominated policies: earlier mean stop and higher macro-F1 are better."""
+
     keep = []
     vals = df[["mean_stop_percent", "macro_f1"]].to_numpy(float)
     for i, (stop_i, f1_i) in enumerate(vals):
@@ -150,7 +132,7 @@ def main():
         t0 = time.perf_counter()
         prob_oof = cross_val_predict(clone(model), Xtr, ytr, cv=cv, method="predict_proba", n_jobs=1)
         elapsed_cv = time.perf_counter() - t0
-        # Classes are fixed to 1..4 for this dataset; map by probability column order.
+
         classes = np.sort(np.unique(ytr))
         pred_oof = classes[np.argmax(prob_oof, axis=1)]
 
@@ -195,8 +177,8 @@ def main():
 
     eligible = cand[cand.eligible].copy()
     if eligible.empty:
-        # Do not silently pretend constraints were met. Choose a transparent fallback for
-        # smoke-testing and mark it as such; thesis reporting should state this outcome.
+
+
         chosen = cand.sort_values(
             ["retention_vs_endpoint", "minimum_class_recall", "mean_stop_percent"],
             ascending=[False, False, True],

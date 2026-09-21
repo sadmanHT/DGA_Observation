@@ -1,21 +1,3 @@
-#!/usr/bin/env python3
-"""Run the complete 5-fold evaluation protocol for observation-efficient DGA FDD.
-
-Protocol
---------
-* Preserve the dataset's supplied 2100/900 train/test split.
-* Use stratified 5-fold CV on TRAIN only for model comparison and tuning.
-* Select/tune the primary explainable model using TRAIN-CV macro-F1 only.
-* Evaluate the untouched 900-case TEST split after model selection.
-* Use the tuned model configuration unchanged for representation/horizon studies.
-* Report macro-F1 as the primary metric because the class distribution is imbalanced.
-* Use paired bootstrap resampling on identical test cases for paired comparisons.
-* Use native classifier confidence for selective diagnosis; no calibration claim is made.
-
-Outputs are intentionally verbose and machine-readable so the complete run can be
-archived, audited, and used directly for a paper/thesis.
-"""
-
 from __future__ import annotations
 
 import argparse
@@ -481,7 +463,7 @@ def main() -> None:
     X_train, y_train, train_ids = load_table(args.features_dir / "features_train_h100.csv", full_features)
     X_test, y_test, test_ids = load_table(args.features_dir / "features_test_h100.csv", full_features)
 
-    # 1) Five-fold model benchmark.
+
     print("[1/8] Five-fold TRAIN-CV model benchmark")
     benchmark_rows = []
     for name, model in base_models(args.smoke).items():
@@ -490,13 +472,13 @@ def main() -> None:
         benchmark_rows.append({"model": name, **row})
     write_rows(results_dir / "01_model_benchmark_5fold.csv", benchmark_rows)
 
-    # Select from models supported by the explanation pipeline; test metrics are NOT used.
+
     explainable_names = {"LogisticRegression", "RandomForest", "ExtraTrees", "HistGradientBoosting"}
     explainable_rows = [r for r in benchmark_rows if r["model"] in explainable_names]
     selected_name = max(explainable_rows, key=lambda r: r["cv_macro_f1_mean"])["model"]
     print(f"Selected by TRAIN-CV macro-F1 only: {selected_name}")
 
-    # 2) Five-fold randomized tuning on TRAIN only.
+
     print("[2/8] Five-fold randomized hyperparameter search")
     search = RandomizedSearchCV(
         estimator=base_models(args.smoke)[selected_name],
@@ -549,7 +531,7 @@ def main() -> None:
         best_model.classes_ if hasattr(best_model, "classes_") else LABELS,
     )
 
-    # 3) Endpoint feature ablation with fixed tuned model configuration.
+
     print("[3/8] Endpoint feature ablation")
     ablation_specs = {
         "Snapshot_final_value": fg["snapshot"],
@@ -564,7 +546,7 @@ def main() -> None:
         ablation_rows.append({"feature_set": name, "n_features": len(cols), **row})
     write_rows(results_dir / "06_feature_ablation_5fold.csv", ablation_rows)
 
-    # 4) Controlled representation x observation-horizon experiment.
+
     print("[4/8] Representation x observation-history experiment")
     representations = {
         "Statistical_28": stat_features,
@@ -611,7 +593,7 @@ def main() -> None:
     plot_classwise(class_df, "Full_temporal_82", figures_dir / "classwise_full_temporal.png")
     plot_classwise(class_df, "Statistical_28", figures_dir / "classwise_statistical.png")
 
-    # 5) Paired bootstrap: 75 vs 100 within representation.
+
     print("[5/8] Paired bootstrap comparisons")
     h_boot_rows = []
     for rep_name in representations:
@@ -633,7 +615,7 @@ def main() -> None:
     h_boot_df = pd.DataFrame(h_boot_rows)
     h_boot_df.to_csv(results_dir / "09_paired_bootstrap_75_vs_100.csv", index=False)
 
-    # Paired bootstrap: temporal minus statistical at each horizon.
+
     rep_boot_rows = []
     for h in HORIZONS:
         stat = prediction_store[("Statistical_28", h)]
@@ -652,7 +634,7 @@ def main() -> None:
     rep_boot_df.to_csv(results_dir / "10_paired_bootstrap_representation_by_horizon.csv", index=False)
     plot_temporal_advantage(rep_boot_df, figures_dir / "temporal_advantage_by_horizon.png")
 
-    # 6) Imbalance check on endpoint tuned configuration.
+
     print("[6/8] Class-weight sensitivity")
     imbalance_rows = []
     for strategy in ["none", "balanced"]:
@@ -664,7 +646,7 @@ def main() -> None:
         imbalance_rows.append({"class_weight_strategy": strategy, **row})
     write_rows(results_dir / "11_imbalance_strategy_5fold.csv", imbalance_rows)
 
-    # 7) Native-confidence selective diagnosis for proposed 75% model + endpoint 100% model.
+
     print("[7/8] Confidence-based selective diagnosis")
     selective = []
     for rep_name in representations:
@@ -679,7 +661,7 @@ def main() -> None:
         plot_selective(selective_df, "Full_temporal_82", 75, figures_dir / "selective_diagnosis_full82_h75.png")
         plot_selective(selective_df, "Full_temporal_82", 100, figures_dir / "selective_diagnosis_full82_h100.png")
 
-    # 8) Reproducibility metadata + summary.
+
     print("[8/8] Reproducibility metadata")
     fingerprint_rows = []
     paths = [args.features_dir / "feature_manifest.json"]
@@ -715,7 +697,7 @@ def main() -> None:
     }
     (results_dir / "run_summary.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")
 
-    # Human-readable compact report.
+
     lines = [
         "DGA OBSERVATION-EFFICIENT FDD — FINAL 5-FOLD RUN",
         "=" * 60,
@@ -724,13 +706,13 @@ def main() -> None:
         f"Full-82 / 100% TEST macro-F1: {final_metrics[0]['test_macro_f1']:.6f}",
         f"Full-82 / 100% TEST accuracy: {final_metrics[0]['test_accuracy']:.6f}",
         "",
-        "Upload the entire output ZIP back to ChatGPT; do not cherry-pick files.",
+        "Results are saved in this output directory.",
     ]
     (args.output_dir / "READ_ME_FIRST.txt").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
     zip_base = args.output_dir.parent / args.output_dir.name
     zip_path = shutil.make_archive(str(zip_base), "zip", root_dir=args.output_dir)
-    print(f"Done. Upload: {zip_path}")
+    print(f"Output ZIP: {zip_path}")
 
 
 if __name__ == "__main__":

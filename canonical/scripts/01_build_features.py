@@ -1,14 +1,3 @@
-#!/usr/bin/env python3
-"""Build leakage-safe transformer-level features from the Power Transformers FDD/RUL dataset.
-
-Input: Kaggle archive.zip containing data_train/, data_test/, labels_fdd_train.csv,
-       labels_fdd_test.csv.
-Output: Transformer-level feature tables for 25%, 50%, 75%, and 100% observation histories.
-
-Only the prefix of each 420-point time series is used for a given observation horizon.
-No information from later measurements leaks into shorter-horizon feature tables.
-"""
-
 from __future__ import annotations
 
 import argparse
@@ -248,7 +237,7 @@ def main() -> None:
         with (args.output_dir / "feature_manifest.json").open("w", encoding="utf-8") as f:
             json.dump(manifest, f, indent=2)
 
-        # Verify feature tables contain no NaN/Inf by scanning numeric cells from the full-history files.
+
         for split in ("train", "test"):
             p = args.output_dir / f"features_{split}_h100.csv"
             with p.open(newline="", encoding="utf-8") as f:

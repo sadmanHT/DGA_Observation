@@ -1,10 +1,3 @@
-#!/usr/bin/env python3
-"""Regenerate the six current manuscript figures as native vector PDFs.
-
-The plotted values are read from the checked-in reference results under ``evidence/``.
-No PNG-to-PDF conversion is used: axes, text, markers, lines, bars, arrows, and
-confusion-matrix cells are written as vector objects.
-"""
 from pathlib import Path
 import numpy as np
 import pandas as pd
@@ -37,7 +30,7 @@ def save(fig,name):
     fig.savefig(OUT/name,format="pdf",bbox_inches="tight",pad_inches=.025)
     plt.close(fig)
 
-# Figure 1: adaptive pipeline
+
 fig,ax=plt.subplots(figsize=(TWOCOL,1.70)); ax.set_xlim(0,1); ax.set_ylim(0,1); ax.axis("off")
 boxes=[(.015,.42,.16,.37,"Observe current\nDGA prefix"),(.215,.42,.16,.37,"Extract compact\ntemporal features"),
        (.415,.42,.16,.37,"Predict class\nand score"),(.615,.42,.16,.37,"Persistent\nhigh confidence?")]
@@ -57,7 +50,7 @@ ax.add_patch(FancyArrowPatch((.825,.23),(.095,.42),connectionstyle="arc3,rad=-.2
 ax.text(.44,.08,"next observation horizon",fontsize=7.4,color=MUTED,ha="center")
 save(fig,"adaptive_pipeline.pdf")
 
-# Figure 2: canonical confusion matrix as vector rectangles (no raster image/colorbar)
+
 cm=np.array([[713,0,6,12],[0,34,0,4],[4,0,42,3],[4,2,1,75]],float); cls=["Normal","PD","Low-E","Overheat"]
 fig,ax=plt.subplots(figsize=(ONECOL,3.05)); mx=cm.max()
 import matplotlib.colors as mcolors
@@ -72,7 +65,7 @@ ax.set_xlim(0,4); ax.set_ylim(4,0); ax.set_aspect("equal"); ax.set_xticks(np.ara
 ax.set_xlabel("Predicted class"); ax.set_ylabel("True class"); ax.tick_params(length=0)
 save(fig,"confusion_matrix_final.pdf")
 
-# Figure 3: dense horizon representation
+
 df=pd.read_csv(E/"advanced/dense_representation/dense_representation_curve.csv")
 fig,ax=plt.subplots(figsize=(ONECOL,2.55))
 for rep,c,m,ls,label in [("Statistical_28",NAVY,"o","-","Statistical-28"),("Temporal_82",MID,"s","--","Temporal-82")]:
@@ -81,12 +74,12 @@ for rep,c,m,ls,label in [("Statistical_28",NAVY,"o","-","Statistical-28"),("Temp
 ax.axvspan(55,75,color=PALE,lw=0); ax.set_xlabel("Available DGA history (%)"); ax.set_ylabel("Test macro-F1"); ax.set_xlim(10,100); ax.set_xticks([10,25,50,75,100]); ax.set_ylim(.66,.95); clean(ax,"both"); ax.legend(frameon=False,loc="upper left")
 save(fig,"dense_horizon_representation.pdf")
 
-# Figure 4: adaptive stopping distribution
+
 df=pd.read_csv(E/"advanced/adaptive/adaptive_policy_test_per_case.csv")
 counts=df.stop_horizon_percent.value_counts().sort_index(); hs=list(range(10,101,5)); vals=[int(counts.get(h,0)) for h in hs]
 fig,ax=plt.subplots(figsize=(ONECOL,2.5)); ax.bar(hs,vals,width=3.9,color=BLUE,edgecolor=NAVY,lw=.35); ax.set_xlabel("Stopping history (%)"); ax.set_ylabel("Test cases"); ax.set_xlim(8,102); ax.set_xticks([10,20,40,60,80,100]); clean(ax,"y"); save(fig,"adaptive_stop_distribution.pdf")
 
-# Figure 5: SHAP family stability
+
 df=pd.read_csv(E/"advanced/shap/shap_grouped.csv"); d=df[df.group_type=="family"]
 fams=["statistical","endpoint_change","local_dynamics","phase_shift","trend","cross_gas_correlation"]
 labels={"statistical":"Statistical","endpoint_change":"Endpoint/change","local_dynamics":"Local dynamics","phase_shift":"Phase shift","trend":"Trend","cross_gas_correlation":"Cross-gas corr."}
@@ -96,7 +89,7 @@ for off,h,c in zip([-bh,0,bh],[50,75,100],[LIGHT,MID,NAVY]):
     ax.barh(y+off,vals,height=bh*.92,color=c,label=f"{h}%")
 ax.set_yticks(y,[labels[f] for f in fams]); ax.invert_yaxis(); ax.set_xlabel("Share of total mean |SHAP|"); clean(ax,"x"); ax.tick_params(axis="y",length=0); ax.legend(frameon=False,loc="lower right",ncol=3,columnspacing=.8); save(fig,"shap_family_by_horizon.pdf")
 
-# Figure 6: final robustness refinement
+
 noise=pd.read_csv(E/"refinement/04_noise_test_summary.csv"); clean_df=pd.read_csv(E/"refinement/04_clean_test_comparison.csv")
 styles=[("Temporal-82 original",LIGHT,"o",":","Temporal-82"),("Temporal-70 unsmoothed",MID,"s","--","Temporal-70"),("Temporal-70 robust w=11",NAVY,"^","-","Robust Temporal-70")]
 fig,ax=plt.subplots(figsize=(ONECOL,2.65))

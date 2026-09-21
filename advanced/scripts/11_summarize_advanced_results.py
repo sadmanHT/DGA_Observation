@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-"""Create a compact Markdown audit/summary after the advanced suite finishes."""
 from __future__ import annotations
 import argparse, json
 from pathlib import Path

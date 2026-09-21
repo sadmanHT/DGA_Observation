@@ -3,20 +3,12 @@ __pycache__/
 *.py[cod]
 .ipynb_checkpoints/
 .DS_Store
-
-# Raw data is not redistributed
 data/raw/
-
-# Generated experiment outputs
 runs/
 advanced_run/
 refinement_run/
 *.zip
-
-# Regenerated manuscript figures
 figures/
-
-# Local package/cache artifacts
 *.whl
 .pytest_cache/
 .mypy_cache/

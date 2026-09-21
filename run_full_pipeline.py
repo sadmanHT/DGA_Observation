@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-"""Run all computational layers that contribute to the updated paper."""
 from __future__ import annotations
 import argparse, subprocess, sys
 from pathlib import Path
@@ -28,7 +26,7 @@ canon = runs / "canonical_final_5fold"
 advanced = runs / "advanced"
 refine = runs / "refinement"
 
-# 1) Canonical paper experiment: original numerical protocol.
+
 run([
     sys.executable, root/"canonical/run_canonical.py",
     "--archive", args.archive,
@@ -37,8 +35,7 @@ run([
     "--bootstrap", str(args.bootstrap),
 ])
 
-# 2) Advanced extension: dense horizons, adaptive stopping, interaction,
-#    ablation, stress tests, conformal prediction, horizon-specific SHAP.
+
 run([
     sys.executable, root/"advanced/run_advanced.py",
     "--archive", args.archive,
@@ -47,8 +44,7 @@ run([
     "--robustness-repeats", str(args.robustness_repeats),
 ])
 
-# 3) Final compact refinement: convergence-stable grid, nonredundant features,
-#    training-selected causal smoothing, held-out noise evaluation.
+
 run([
     sys.executable, root/"refinement/run_refinement.py",
     "--archive", args.archive,
